@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postal &amp; Copy Plus — What’s Next Proposal</title>
+<style>:root{--ink:#0F2233;--brand:#2E86C1;--brand2:#85C1E9;--accent:#1AA0C0;
+--wash:#F0F7FB;--azwash:#E6F0F8;--line:#E2E8F0;--slate:#475569;
+--h2:#2E86C1;--h3:#205E87;--h4:#1AA0C0;--boxbg:#EAF3F9;--boxborder:#B0D1E7;--boxlabel:#2A7BB2;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo wordmark" style="font-size:27px;font-weight:800;letter-spacing:-.5px;color:#0F2233">Postal &amp; Copy Plus</span><div class="kicker">Postal &amp; Copy Plus</div><h1>What’s Next Proposal</h1><div class="accentrule"></div><p class="tagline">The defined work that turns the position into a storefront, the proof it runs on, and the test that settles the open calls.</p><div class="meta">Prepared by [Author - to be filled]<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>0. The Commitment</h2>
+<div class="callout"><strong>Bottom line.</strong> The next phase builds the trust-layer storefront, gathers the first-party customer proof the company has never collected, and runs the two tests that settle the open strategic calls. Six initiatives carry it. The customer-story program comes first, because every other move borrows its credibility and it waits on nothing but a decision.</div>
+<p>The Strategic Alignment Brief named one position: a local print shop where a named human owns the order and stands behind it, sold online to buyers leaving the faceless giants over off-color prints, blown deadlines, and store-credit traps. This phase operationalizes that position. It produces the customer stories that make accountability believable, the Shopify storefront that sells it, the giveback program that surfaces the founder’s mission, and the segmentation, capacity guardrail, and mission test that the Brief flagged as open until first-party data answers them. Each initiative below carries a definite scope, a conviction rating, an effort rating, and what it waits on. The work is sequenced so the credibility assets land before the channels that spend against them.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg></span>1. Initiatives</h2>
+<h3>Initiative 1. The customer-story program</h3>
+<ol class="numlist"><li><strong>Why now.</strong> The company has no published case studies and no first-party customer evidence at all; the Voice of Customer work ran entirely on public sources because the engagement carried zero first-party interviews. Accountability is the whole position, and right now nothing on an owned surface shows a real Postal &amp; Copy Plus customer naming the reprint that got fixed or the deadline that got hit.</li><li><strong>The Move.</strong> We collect and publish a first set of authentic customer stories that show the accountable human delivering, in the customers’ own words.</li><li><strong>Scope.</strong> We run AI-led interviews with recent and repeat customers drawn from walk-in records and the relationship network, transcribe and edit them into short written stories and pull-quotes, and produce a publishable case-study set built around the failures buyers name when they leave a giant: off-color prints, missed deadlines, store-credit-not-refund. The deliverable is the interview transcripts, an edited story library, and a quote bank the storefront and the value proposition draw from.</li><li><strong>Confidence this is the right next move.</strong> 5/5. The position rests on accountability, the company owns the goodwill, and no proof of it currently exists on any surface the firm controls.</li><li><strong>What would raise it.</strong> A signed list of named customers willing to be quoted on the record.</li></ol>
+<p><strong>Effort.</strong> 2/5.</p>
+<p><strong>Sequence note.</strong> Waits on nothing. Its output feeds Initiatives 2, 3, and 6.</p>
+<p><strong>Do first.</strong> This is the only initiative that needs no partner conversation, no build, and no test result. It needs a decision and a list of customers to call. Every downstream move that claims accountability is weaker until these stories exist.</p>
+<h3>Initiative 2. The trust-layer storefront</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We specify and build the Shopify storefront with the trust layer native to the flow, not bolted on after launch.</li><li><strong>Why now.</strong> Alignment Point 2 settles the design call: a borrowed UX over a borrowed catalog yields a commodity clone that inherits the giants’ failure modes. The storefront is a blank slate today, so the four trust elements have to be launch requirements while the build is still on the drawing board.</li><li><strong>Scope.</strong> Four elements ship at launch. The name and photo of the accountable human on every order. In-person proofing and same-day pickup surfaced at checkout. A no-caveats reprint guarantee written in plain terms against the store-credit traps buyers cite. The ship-copy-notary bundle as a checkout convenience. The catalog integrates through the free Shopify fulfillment partner. The deliverable is a built, launch-ready store with the customer stories from Initiative 1 placed on the product and guarantee pages.</li><li><strong>Confidence this is the right next move.</strong> 5/5; the feasibility and design direction are settled, with borrowable UX and a free catalog path confirmed.</li><li><strong>What would raise it.</strong> Already at ceiling; a confirmed fulfillment-partner integration locks it.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Depends on Initiative 1 for the stories that fill the trust pages, and on Initiative 4 for the capacity figures the guarantee and pickup promises must honor.</p>
+<h3>Initiative 3. The giveback program</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We define a specific, credible affiliate and giveback program tied to the founder’s mission and surface it on the storefront.</li><li><strong>Why now.</strong> Alignment Point 4 holds the mission as a moat with high potential that sits invisible on every owned surface, backed by zero purchase evidence. Cause framing lifts purchase only when the claim is concrete, and the say-do gap closes once a program is substantiated. A real program is the thing the mission test in Initiative 6 measures.</li><li><strong>Scope.</strong> We design one program with a named beneficiary, a defined contribution mechanic, and a substantiated claim the company can stand behind, then build the storefront page and order-flow placement that surface it. We deliberately avoid the broad cause-marketing language Vistaprint and Custom Ink already own at scale. The deliverable is the program definition, the substantiation behind the claim, and the live storefront surface.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Surfacing the mission is the right move and the program is the prerequisite for testing it. The conviction stops short of full because the program earns its result through the test in Initiative 6, before any purchase lift is on the books.</li><li><strong>What would raise it.</strong> A confirmed beneficiary and a contribution mechanic the company can stand behind on the record.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Depends on Initiative 2 being far enough along to host the program surface. Feeds the mission test in Initiative 6.</p>
+<h3>Initiative 4. The service-capacity guardrail</h3>
+<p>The constraint comes first here. The counter can promise only what the counter can keep, and the storefront copy will make promises the moment it goes live.</p>
+<ol class="numlist"><li><strong>Why now.</strong> Failure Mode 1 in the Brief names the live risk: the service promise outruns the staffed counter, and a reprint guarantee the shop cannot honor at online volume converts the wedge into a liability.</li><li><strong>The Move.</strong> We set the order volume and turnaround the counter can honestly deliver and surface that capacity at checkout.</li><li><strong>Scope.</strong> We work out the honest throughput of the staffed counter for reprints, same-day pickups, and the named-human promise, define the order volume and turnaround the store can guarantee, and translate it into checkout logic that flexes the promise with real capacity. The deliverable is the capacity model and the checkout rules that keep the guarantee deliverable.</li><li><strong>Confidence this is the right next move.</strong> 5/5. The guarantee is the storefront’s central claim, and a broken guarantee is worse than none.</li><li><strong>What would raise it.</strong> Already at ceiling; the counter’s measured throughput numbers confirm the promises it sets.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Runs alongside Initiative 2; its numbers set the promises the storefront is allowed to make.</p>
+<h3>Initiative 5. The segment and acquisition test</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We acquire through both the faith-and-relationship network and local service-led channels and measure which segment yields sustainable unit economics first.</li><li><strong>Why now.</strong> Alignment Point 1 leaves one question open that desk research cannot answer: whether the local quality-and-accountability segment is large enough to lead acquisition against the broad commodity base. The local trade area is real but modest, and no public source sizes the service-first versus price-first split, so first-party acquisition data has to settle it.</li><li><strong>Scope.</strong> We run acquisition through the two channels in parallel, tag every order by source, and track conversion, order value, and repeat rate per source. The output tells the company which segment to lead spend against. The deliverable is the channel test design, the per-source measurement, and a read on which segment converts and retains at a sustainable cost.</li><li><strong>Confidence this is the right next move.</strong> 4/5. National quality-over-price data and cross-platform defection voices back the direction; the local magnitude stays unknown until this test runs.</li><li><strong>What would raise it.</strong> First-party per-channel conversion and repeat-rate data from a live storefront.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Depends on a live storefront from Initiative 2 and the stories from Initiative 1 that the defecting-buyer channels lead with.</p>
+<h3>Initiative 6. The mission and relationship test</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We test mission and relationship framing against commodity framing on conversion and retention, and track whether the relationship base produces repeat and referral revenue a generic competitor cannot win.</li><li><strong>Why now.</strong> Alignment Point 4 refuses to crown the mission as the moat before proof, and routes it to a test instead. A field experiment with more than 17,000 consumers shows cause framing lifts purchase. The local purchase evidence does not exist yet, so the company surfaces the mission and measures it before claiming it.</li><li><strong>Scope.</strong> We run the giveback and relationship framing from Initiative 3 against a commodity control, measure conversion and retention on each, and follow the cohort acquired through the relationship base for repeat and referral revenue against a commodity-acquired cohort. The deliverable is the test design, the cohort tracking, and a clear read on whether the mission graduates to the lead or holds as a loyalty layer behind the service wedge.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Running the test is the right move whatever the result, because it converts the company’s deepest conviction from a belief into a measured call.</li><li><strong>What would raise it.</strong> A cohort readout of mission-versus-commodity framing on conversion and repeat revenue.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Depends on Initiative 3 for the program to test and Initiative 2 for the surface to run it on. It reads out last.</p>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>2. Sequencing</h2>
+<p>The order follows dependency and impact, not the calendar.</p>
+<p>The customer-story program starts first and alone. It needs only a decision and a customer list, and its stories are the credibility input the storefront, the giveback program, and the defecting-buyer channels all draw on.</p>
+<p>The storefront build and the capacity guardrail run together as the asset-development stage. The guardrail sets the promises the storefront is allowed to make, so the two have to be worked in lockstep. The store cannot launch its guarantee ahead of the capacity that backs it. The giveback program is defined in this stage and surfaced on the storefront as the build reaches its trust pages.</p>
+<p>The two tests open once the storefront is live and carrying real traffic. The segment and acquisition test reads first, because the company needs to know which segment to lead spend against before it commits the full budget. The mission and relationship test reads last, because it depends on a defined program, a live surface, and a cohort old enough to show repeat and referral behavior.</p>
+<p>Readiness gates each stage. Asset development opens when the first customer stories are in hand. The test stage opens when the storefront is live with the guarantee its capacity can keep.</p>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>3. What We Need From You</h2>
+<p>Each initiative starts on a decision or an input only the leadership team can supply.</p>
+<ol class="numlist"><li><strong>For the customer-story program.</strong> A decision to proceed and a list of recent and repeat customers to interview, including the relationship-network contacts most likely to speak to the accountability story.</li><li><strong>For the storefront.</strong> Sign-off on the four trust elements as launch requirements that ship with the build, and the operational detail behind the reprint guarantee: what it covers, and what, if anything, it excludes.</li><li><strong>For the giveback program.</strong> The choice of beneficiary and contribution mechanic, and the substantiation the company can stand behind for the claim. Confirm any release approvals the named claim requires before it goes live.</li><li><strong>For the capacity guardrail.</strong> The counter’s honest throughput for reprints, same-day pickups, and the named-human promise, and who owns the call on what the store is allowed to guarantee.</li><li><strong>For the segment and acquisition test.</strong> Access to the relationship and faith-network channels for the warm-start acquisition arm, and agreement to tag and measure every order by source.</li><li><strong>For the mission and relationship test.</strong> Agreement to run a commodity control against the mission framing, and the patience to let the relationship cohort age before reading the repeat and referral signal.</li></ol></main>
+ <footer class="foot"><span class="logo wordmark" style="font-size:13px;font-weight:800;letter-spacing:-.5px;color:#0F2233">Postal &amp; Copy Plus</span></footer>
+</div></body></html>
