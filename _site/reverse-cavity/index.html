@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reverse Cavity — Report Library</title>
+<style>:root{--ink:#0E2336;--brand:#2D7FBE;--brand2:#A7D2EE;--accent:#16507C;
+--wash:#F0F6FA;--azwash:#E6F0F7;--line:#E2E8F0;--slate:#475569;
+--h2:#2D7FBE;--h3:#205985;--h4:#16507C;--boxbg:#EAF2F8;--boxborder:#AFCEE6;--boxlabel:#2975AF;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}
+.hero{padding:60px 64px 30px;border-bottom:1px solid var(--line);}
+.hero .logo{height:52px;margin-bottom:26px;}
+.hero .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:12px;}
+.hero h1{font-size:38px;font-weight:800;letter-spacing:-.5px;margin:0 0 12px;}
+.hero .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 18px;}
+.hero p{font-size:15px;color:var(--slate);margin:0;}
+.grid{padding:34px 64px 64px;display:grid;gap:14px;}
+.card{display:flex;gap:20px;align-items:flex-start;padding:20px 22px;border:1px solid var(--line);border-left:5px solid var(--c);border-radius:10px;text-decoration:none;color:inherit;background:#fff;transition:box-shadow .12s,transform .12s;}
+.card:hover{box-shadow:0 6px 20px rgba(15,23,42,.08);transform:translateY(-1px);}
+.cnum{font-size:24px;font-weight:800;color:var(--c);min-width:36px;line-height:1.1;}
+.ctitle{font-size:18px;font-weight:700;margin-bottom:4px;}
+.badge{font-size:11px;font-weight:600;color:var(--boxlabel);background:var(--boxbg);padding:2px 8px;border-radius:20px;vertical-align:middle;margin-left:6px;}
+.ctag{font-size:13.5px;color:var(--slate);margin-bottom:8px;}
+.copen{font-size:13px;font-weight:600;color:var(--c);display:flex;align-items:center;gap:6px;}
+.foot{padding:20px 64px;border-top:1px solid var(--line);color:var(--slate);font-size:12px;}
+</style></head><body><div class="page">
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="hero"><span class="logo wordmark" style="font-size:32px;font-weight:800;letter-spacing:-.5px;color:#0E2336">Reverse Cavity</span><div class="kicker">Reverse Cavity</div><h1>Report Library</h1>
+  <div class="accentrule"></div><p>Prepared by Fenn and Hart · June 2026</p></header>
+ <main class="grid"><a class="card" href="strategic_alignment_brief_executive_decision_edition.html" style="--c:#2D7FBE">
+  <div class="cnum">01</div><div class="cbody"><div class="ctitle">Strategic Alignment Brief: Executive Decision Edition </div>
+  <div class="ctag">One source of truth, and the decisions that close the gap between it and the market.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="strategic_alignment_brief.html" style="--c:#2D7FBE">
+  <div class="cnum">02</div><div class="cbody"><div class="ctitle">Strategic Alignment Brief </div>
+  <div class="ctag">One source of truth, and the moves that close the gap between it and the market.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="marketing_messaging_guide.html" style="--c:#2D7FBE">
+  <div class="cnum">03</div><div class="cbody"><div class="ctitle">Marketing &amp; Messaging Guide </div>
+  <div class="ctag">The guide for everyone who writes, says, or ships a word about the company.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="competitive_intelligence_report.html" style="--c:#2D7FBE">
+  <div class="cnum">04</div><div class="cbody"><div class="ctitle">Competitive Intelligence Report </div>
+  <div class="ctag">The competitive battlefield, the exposures, and the lanes Reverse Cavity can take.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="voice_of_customer_report.html" style="--c:#2D7FBE">
+  <div class="cnum">05</div><div class="cbody"><div class="ctitle">Voice of Customer Report </div>
+  <div class="ctag">What customers actually say, and the language that moves them.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="whats_next_proposal.html" style="--c:#2D7FBE">
+  <div class="cnum">06</div><div class="cbody"><div class="ctitle">What’s Next Proposal </div>
+  <div class="ctag">The next phase: the work that turns the alignment into a brand the market can see.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a></main>
+ <footer class="foot">Click any report to open it. Each report has a Print / Save PDF button for a print-ready version.</footer>
+</div></body></html>

@@ -2,5 +2,6 @@
 // Maps company slug -> SHA-256 hex of its password. Not served (outside _site).
 export const PASSWORDS = {
   "demo": "8ad7d9dcb49893d10e4429c4b107bca23a1b27cc8ac27ebeabdccf8e9bd00c61",
-  "redx": "d81a8592d51bb085fb5bb76b54bd357153c24bd85141547ed6b30ad0a9b71797"
+  "redx": "d81a8592d51bb085fb5bb76b54bd357153c24bd85141547ed6b30ad0a9b71797",
+  "reverse-cavity": "3a7c17d6f32f8bf17176b3632a726c463314a95d3c81d189ec5bb53406de6843"
 };
