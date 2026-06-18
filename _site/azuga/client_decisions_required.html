@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title> — Client Decisions Required</title>
+<style>:root{--ink:#0B1220;--brand:#2563EB;--brand2:#0DA2E7;--accent:#F59E0B;
+--wash:#F0F4FE;--azwash:#E5ECFD;--line:#E2E8F0;--slate:#475569;
+--h2:#2563EB;--h3:#1A45A4;--h4:#F59E0B;--boxbg:#E9EFFD;--boxborder:#ACC4F7;--boxlabel:#225BD8;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo" style="height:44px;display:inline-flex"><svg style="height:44px;width:auto;display:block" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg"><polygon points="26,0 100,0 100,54 74,80 0,80 0,26" fill="#0B1220"/><text x="50" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="1">BE</text></svg>
+</span><h1>Client Decisions Required</h1><div class="accentrule"></div></header>
+ <main class="wrap"><p>Items the pipeline deliberately did not fabricate. Resolve these before publication.</p>
+<h3>Claims awaiting verification</h3>
+<ul class="cues"><li>[MKT-023] On average, a commercial company is looking at about <strong class="stat">$74,200 </strong>in cost for a not-at-fault accident; an accident involving a fatality averages about <strong class="stat">$500,000</strong>; accidents with no injuries and minor damage run roughly <strong class="stat">$10,000 </strong>to <strong class="stat">$20,000</strong>. On Azuga’s driver-scoring platform, a 10-point score increase (e.g., 40 to 50) yields on average about a <strong class="stat">57%</strong> reduction in the scorecard behaviors. (source attempt: Call Transcript_ Justin.txt, accident-cost / driver-scoring segment (line 73))</li><li>[MKT-024] The average cost of an accident or a fatality is over <strong class="stat">$500,000, </strong>far exceeding years of investment in the Azuga platform. (source attempt: Call Transcript_ Justin.txt, ROI/accident-cost segment (line 43))</li><li>[MKT-025] Azuga has roughly a <strong class="stat">60%</strong> market infiltration in the United States today (per partnerships leadership, experience-based, not independently verified). (source attempt: Call Transcript_ Justin.txt, market-penetration segment (line 61))</li><li>[MKT-026] Azuga reports approximately <strong class="stat">$100M</strong> in annual revenue with a stated 2026 target of <strong class="stat">$120M</strong> (self-reported, not independently verified). (source attempt: pipeline_metadata.json intake_flags; Call Transcript_ Doug.txt)</li></ul>
+<h3>Intake ambiguities</h3>
+<ul class="cues"><li>No customer or partner interviews in the set; all nine transcripts are Azuga executives/employees, so external Voice-of-Customer evidence must come from research, not interviews.</li><li>Company name appears as ‘Azuga’ throughout; speakers occasionally mispronounce/misspell it (Asuga, Azugo) in transcription, but the subject company is Azuga (azuga.com).</li><li>Annual revenue self-reported at ~<strong class="stat">$100M</strong> with a stated 2026 target of <strong class="stat">$120M</strong> (Doug); not independently verified.</li><li>Interview dates not stated in any transcript.</li><li>Call Transcript_ Tammy.txt: ambiguous speaker_role indeterminate beyond ‘Director’</li></ul>
+<h3>Quality items not auto-resolved</h3>
+<ul class="cues"><li>None.</li></ul></main>
+ <footer class="foot"><span class="logo" style="height:22px;display:inline-flex"><svg style="height:22px;width:auto;display:block" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg"><polygon points="26,0 100,0 100,54 74,80 0,80 0,26" fill="#0B1220"/><text x="50" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="1">BE</text></svg>
+</span></footer>
+</div></body></html>

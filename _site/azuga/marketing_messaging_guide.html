@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AZUGA — Marketing &amp; Messaging Guide</title>
+<style>:root{--ink:#15201A;--brand:#3B8A1B;--brand2:#4EBD20;--accent:#7F56D9;
+--wash:#F1F7EF;--azwash:#E7F1E4;--line:#E2E8F0;--slate:#475569;
+--h2:#3B8A1B;--h3:#296113;--h4:#7F56D9;--boxbg:#EBF3E8;--boxborder:#B5D3A8;--boxlabel:#367F19;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo" style="height:44px;display:inline-flex"><svg style="height:44px;width:auto;display:block" viewBox="0 0 232 70" xmlns="http://www.w3.org/2000/svg"><text x="0" y="54" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#1A2330">azuga</text><circle cx="210" cy="22" r="9" fill="#4EBD20"/></svg>
+</span><div class="kicker">AZUGA</div><h1>Marketing &amp; Messaging Guide</h1><div class="accentrule"></div><p class="tagline">The guide for everyone who writes, says, or ships a word about the company.</p><div class="meta">Prepared by Be Vizual. Presented by Ethan Galloway.<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>0. How to Use This Guide</h2>
+<p>This guide turns Azuga’s source of truth into positioning and copy a team can ship. Every sample line is finished copy in one committed voice, written to be lifted, adapted, and put on a surface this week. Where the guide states the position, it states it in the exact words of the source of truth, so the homepage, the deck, the cold email, and the renewal note all march to the same line. The source of truth is the single statement three inputs resolve into, weighted to what leadership knows about the business.</p>
+<ul class="bul deflist"><li><strong>Internal View</strong> - what leadership believes, weighted most heavily.</li><li><strong>Customer-Facing View</strong> - what the website and public materials say today.</li><li><strong>Market Perception</strong> - how customers and the market see the company now.</li></ul>
+<p>Two pillars in this guide rest on calls leadership is still deciding. Those are marked as the bet Azuga is making, and the copy on them is held in opportunity language until the proof clears. Treat the marked lines as drafts to ship once the numbers publish, the rest as ready now.</p>
+<h4>What each team pulls from here</h4>
+<ol class="numlist"><li><strong>Marketing:</strong> headlines, ad copy, and the hero options in Section 9.</li><li><strong>Sales:</strong> talk-tracks and the objection responses in Section 7.</li><li><strong>Customer success:</strong> the lifecycle email language in Section 9.6.</li><li><strong>Partners:</strong> the channel message in Section 3 and the reseller objection responses in Section 7.</li></ol>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>1. The Unified Source of Truth</h2>
+<p>Everything in this guide builds up from one statement. Read it first, then build every headline, deck, email, and answer downward from it.</p>
+<p><strong>Source of truth.</strong> Azuga turns fleet safety into money for the small service-trade businesses the enterprise giants price out and lock in: safer driving becomes fewer accidents, documented performance, and lower accident-related costs, sold simply, transparently, and without the three-year traps. Every leader has been describing one layer of that platform. The job is to make the market see the whole of it, and to fix the one place the company’s own customers say the promise breaks before marketing it harder.</p>
+<p>Today the market sees a generic safety telematics vendor where leadership sees a platform that turns safety into measurable business outcomes. It sees a company courting enterprise where the service trades are the home, and a Bridgestone badge in the footer where leadership sees a tire-and-insurance engine. This guide builds the brand perception the company has already earned, moving what the market sees toward what leadership knows is true.</p>
+<h3>1.1 Brand Line Options</h3>
+<p>A CMO can write a campaign from either of these, and both carry the whole.</p>
+<p><em class="q">“Safety that pays for itself. Built for the trades.”</em></p>
+<p><em class="q">“The fleet platform that turns safe driving into lower bills.”</em></p>
+<h3>1.2 The Three Things This Guide Holds in One Line</h3>
+<ol class="numlist"><li><strong>Who it is built for:</strong> service-trade fleets running 5 to 250+ vehicles, the plumbing, HVAC, pest-control, landscaping, and electrical operators the enterprise vendors out-price and out-complicate.</li><li><strong>How it wins:</strong> safer driving turns into fewer accidents, fewer accident dollars, and documentation fleets can take to their insurer, sold on transparent per-vehicle pricing and honest terms, on a platform a non-expert owner can run.</li><li><strong>Why it exists:</strong> to give the small operator the safety-and-savings engine the giants reserve for enterprise, backed by a tire-and-insurance parent no telematics rival owns.</li></ol>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>2. Messaging Pillars</h2>
+<p>Five pillars carry the one source of truth, each a layer of the same platform seen from a different seat. Each lands hardest on the personas it was built for, so concentrate the proof where it converts.</p>
+<h4>Pillar 1: Safety that pays.</h4>
+<ol class="numlist"><li><strong>Connects to HOW it wins:</strong> Safety is the engine, and the headline is the outcomes it produces: fewer accidents, better driver behavior, stronger risk visibility, and potential cost reduction. Acree Plumbing &amp; Air cut its accident rate from two to zero and reduced insurance premiums by <strong class="stat">$80,000 </strong>a year. California UMI, a 169-vehicle plumbing and HVAC fleet, cut accidents <strong class="stat">89%</strong> and took a <strong class="stat">12%</strong> fleet-wide insurance discount. Across the customer base, Azuga reports <strong class="stat">38%</strong> fewer accidents, <strong class="stat">57%</strong> fewer citations, and <strong class="stat">$9,462 </strong>in average annual savings. Against an average large-truck crash near <strong class="stat">$91,000, </strong>one avoided crash pays for the system many times over.</li><li><strong>The move (make the market see it):</strong> Lead the homepage and paid search on the business outcome, with the driver-scoring and SafetyCam features named as the mechanism underneath. Put the Acree and California UMI numbers in the hero band and on the sales deck cover. Keep the aggregate <strong class="stat">$9,462 </strong>in a supporting row, not the headline, and anchor the lead on the two named, quantified cases.</li><li><strong>What each team gets:</strong> Marketing gets a dollar-led hero. Sales gets the crash-cost ROI math to open with. Content and CS get a savings case study to publish per named customer.</li></ol>
+<h4>Pillar 2: Honest terms.</h4>
+<ol class="numlist"><li><strong>Connects to the SERVICE RELATIONSHIP and the customer experience:</strong> Azuga’s own customers describe a three-year lock-in, a 60-day auto-renewal that fires before anyone calls, and full-balance termination bills, the exact traps they left the giants to escape. That contradiction sits in roughly two-thirds of the negative reviews. This is earn-it-then-claim-it: the standard contract and the billing-after-cancellation defect get fixed first, then the lived no-trap experience becomes the headline against Samsara’s 36-month full-balance exit and Verizon Connect’s auto-renewing buyout. This pillar tracks the one settled call in the Brief.</li><li><strong>The move (make the market see it):</strong> Hold the no-traps headline until a cancelled unit demonstrably stops billing and the standard terms carry no auto-renewal trap. Once true, run the line on the pricing page and the switch campaign: <em class="q">“Month-to-month available. Cancel a vehicle and the billing stops.”</em> Aim it at fleets sitting inside competitor contracts.</li><li><strong>What each team gets:</strong> Marketing gets the lock-in counter-position campaign. Sales gets a clean answer to <em class="q">“what’s the catch.”</em> CS gets a cancellation script that does not bill a customer for a truck they no longer own.</li></ol>
+<h4>Pillar 3: Built for the trades.</h4>
+<ol class="numlist"><li><strong>Connects to WHO it is built for:</strong> The home is service-trade fleets at 5 to 250 vehicles, plumbing, HVAC, pest control, landscaping, electrical, and towing, the largest and least-penetrated slice of the market. Small fleets sit near 40 to <strong class="stat">50%</strong> telematics penetration while large fleets passed <strong class="stat">80%</strong>, so roughly half of small operators still run without telematics. The platform scales beyond the core: Service Experts runs 500 vehicles on it today and holds a fleet driver score around 85.</li><li><strong>The move (make the market see it):</strong> Re-weight the public surface onto the named service-trade verticals and away from the enterprise-switching hero. Publish one tiered band, a 5 to 250 core and an opportunistic band to about 500 through partners, and point demo triage and ad targeting at the service trades.</li><li><strong>What each team gets:</strong> Marketing gets vertical landing pages by trade. Sales gets a qualifying band. Partners get the 5 to 250 core to sell into.</li></ol>
+<h4>Pillar 4: A rep who answers.</h4>
+<ol class="numlist"><li><strong>Connects to the SERVICE RELATIONSHIP:</strong> A dedicated rep who knows your trade is the thing the giants will not give a small fleet, and Azuga’s own delivery does not back it yet: the dedicated success manager is gated to the top CompleteFleet tier, and customers report ghosting, offshore support, and unanswered demo requests. This is earn-it-then-claim-it: ungate a baseline of named human support and out-deliver on response time first, then claim the flank against Verizon Connect’s faceless 1-800 line and Samsara’s off-renewal ghosting. This pillar is the bet the company is making, and it tracks an open call in the Brief.</li><li><strong>The move (make the market see it):</strong> Make the packaging change and stand up response-time measurement before the claim ships. Once the lived experience is fixed, run <em class="q">“a person who knows your trade answers when you call”</em> on the service comparison page and the switch campaign. Until then, keep the service claim out of the hero.</li><li><strong>What each team gets:</strong> Marketing gets a service flank against faceless rivals. Sales gets a named point of contact to promise. CS gets the response-time standard the claim depends on.</li></ol>
+<h4>Pillar 5: The Bridgestone cost advantage.</h4>
+<ol class="numlist"><li><strong>Connects to the MISSION and the durable advantage:</strong> Azuga is a Bridgestone company, with a tire-and-service network and an insurance lane no telematics rival owns. Firestone discounts at national garages and underwritten premium savings are the engine under the <em class="q">“safety that pays”</em> story. This is the bet the company is making, and it tracks a leaning, open call in the Brief: the exclusive tire-and-insurance economics are not yet proven to buyers, the Firestone figure (roughly <strong class="stat">15%</strong> off retail at about 2,500 garages) is [client to confirm], and Bridgestone shows up today only as a badge and a footer. Hold this in opportunity language until the quantified, named-customer economics are confirmed and cleared to publish.</li><li><strong>The move (make the market see it):</strong> Build the page that explains what the Bridgestone backing delivers, in opportunity language, while the proof program runs. Promote the cost advantage to the headline only when the quantified named-customer savings publish. Do not harden the Firestone percentage or the underwriting economics into a public claim before they are confirmed.</li><li><strong>What each team gets:</strong> Marketing gets a future headline to fund and a <em class="q">“what the backing delivers”</em> page to draft now. Sales gets a reason-to-believe to tee up, framed as a program in progress. Content gets the proof program to document customer by customer.</li></ol>
+<p>Five pillars, one platform: built for the trades, sold on honest terms, driven by safety that pays, delivered by a rep who answers, and backed, once proven, by the Bridgestone cost advantage.</p>
+<p>Azuga Nice — the experience promise. Two of these pillars, honest terms and a rep who answers, ladder up to one experience promise the team calls Azuga Nice: flexible terms, transparent pricing, human support, a dedicated rep, and an easier path from adoption to measurable value. Position Nice as how Azuga treats the customer, not just what the product does. The earn-it discipline still applies: lead with Nice where the lived experience already delivers it, and out-deliver before scaling the claim.</p>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>3. Audience</h2>
+<p>The interviews surfaced one primary buyer and several secondary segments, each a real seat at the same platform. The service-trade fleet owner gets the full profile. The others get compact blocks, each pointing back to the same source of truth. A narrowed strategy concentrates the message; it never deletes a real audience.</p>
+<h3>3.1 Primary Persona: The Service-Trade Fleet Owner-Operator</h3>
+<ol class="numlist"><li><strong>Who they are:</strong> The owner or operations lead of a plumbing, HVAC, pest-control, landscaping, or electrical company running 5 to 250+ vehicles. They are not a fleet-tech expert. They bought tracking to settle customer disputes and keep an eye on the day, and they care first about price and whether the thing is good enough. One on Capterra stayed for one reason: <em class="q">“The price was lower than competition. That is the only reason.”</em></li><li><strong>Pain:</strong> Insurance premiums climb after every at-fault accident, a single crash can run six figures, and the enterprise vendors quote complex platforms behind a reseller, then lock the operator into a three-year term they cannot exit without a surprise bill.</li><li><strong>Job to be done:</strong> when premiums spike or a customer disputes a no-show, they want to cut accidents and prove where every truck was, so they can lower their insurance bill and run the day without babysitting it.</li><li><strong>Goal:</strong> fewer accidents, a lower insurance bill, and a tracker that does not trap them. <em class="q">“My favorite feature is the bread crumbs. This help when customers say we never showed up. It’s nice to have that record.”</em></li><li><strong>How they fit the whole:</strong> they feel every pillar. Safety that pays helps lower their accident costs and strengthens their renewal case, honest terms keep them from the trap they fled, built-for-the-trades means the platform speaks their verticals, and a rep who answers means they are not lost in the shuffle. This is who the platform is built for.</li></ol>
+<h3>3.2 Secondary Persona: The Integrated-Software / Reseller Partner</h3>
+<ol class="numlist"><li><strong>Who they are:</strong> the reseller and integrated-software partner whose end customers run anywhere from 4 to 500 vehicles, the channel the direct-sales giants do not run. Named by Justin Leith and Ty Lambert.</li><li><strong>Job to be done:</strong> when a partner’s end customer needs telematics bolted onto the partner’s platform, they want a vendor that bolts on cleanly and pays a margin, so they can add fleet safety to their stack without becoming a telematics company.</li><li><strong>The message that lands:</strong> <em class="q">“Azuga bolts on to what you already sell, with a channel margin the direct-only giants will not give you, and a 5 to 250 core that matches your service-trade book.”</em></li><li><strong>Where to reach them:</strong> partner program outreach, integrated-software marketplaces, and field-service software communities.</li></ol>
+<h3>3.3 Secondary Persona: The Public-Sector / Government Buyer</h3>
+<ol class="numlist"><li><strong>Who they are:</strong> the municipal, utility, or agency fleet buyer purchasing under public procurement rules. Owned by Tom Lundin.</li><li><strong>Job to be done:</strong> when a public fleet needs telematics on a compliant contract, they want a vendor whose people will stand behind the account, so they can defend the purchase and get support that does not vanish after signing.</li><li><strong>The message that lands:</strong> <em class="q">“The people behind the account win it and keep it, with the references and the contract terms a public buyer can stand behind.”</em></li><li><strong>Where to reach them:</strong> government procurement portals, public-sector fleet associations, and named-reference outreach.</li></ol>
+<h3>3.4 Secondary Persona: The Enterprise / Larger Fleet</h3>
+<ol class="numlist"><li><strong>Who they are:</strong> the larger fleet above the core band, often reached through partners. Owned by Doug Plowman, welcome on top of the standard service-trade core.</li><li><strong>Job to be done:</strong> when a larger fleet outgrows a basic tracker, they want a platform that scales without enterprise complexity, so they can run hundreds of vehicles on one driver-safety standard.</li><li><strong>The message that lands:</strong> <em class="q">“Service Experts runs 500 vehicles on Azuga at a sustained driver score around 85. The platform scales with you, without the enterprise tax.”</em></li><li><strong>Where to reach them:</strong> partner-led upper-tier deals and named-customer scale references.</li></ol>
+<h3>3.5 Secondary Persona: The Safety Manager vs. the Fleet Manager</h3>
+<ol class="numlist"><li><strong>Who they are:</strong> two buyers inside the same account. The safety manager owns crash rates, driver scores, and the insurance conversation. The fleet manager owns uptime, location, and the day-to-day. Megan Azadi named the split.</li><li><strong>Job to be done:</strong> the safety manager wants to drive accidents and premiums down and prove it to the insurer. The fleet manager wants to see every truck and settle customer disputes without fighting the tool.</li><li><strong>The message that lands:</strong> for the safety manager, <em class="q">“turn your driver scores into documentation you can take to your insurer.”</em> For the fleet manager, <em class="q">“see every truck and prove every stop, on a screen you do not have to study.”</em></li><li><strong>Where to reach them:</strong> reach the safety manager through insurance-renewal and risk content. Reach the fleet manager through dispatch, location, and dispute-proof content.</li></ol>
+<p class="figcap"> <em>Figure. Cell shade indicates how strongly each pillar resonates with each persona. Use this to choose which pillar to lead with when opening a conversation with each audience.</em></p>
+<figure class="chart"><svg viewBox="0 0 840 430" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif" role="img" aria-label="Each persona has its own lead pillar - don't open every audience the same way">
+<text x="0" y="20" font-size="16.5" font-weight="700" fill="#15201A">Each persona has its own lead pillar - don't open every audience the same way</text>
+<text x="0" y="40" font-size="12" fill="#475569">Cell shade = pillar's resonance with each persona. Lead with the darkest cell when opening a conversation.</text>
+<text x="248.0" y="86" text-anchor="middle" font-size="11" fill="#475569">Service-trade</text>
+<text x="248.0" y="98" text-anchor="middle" font-size="11" fill="#475569">owner-operator</text>
+<text x="336.0" y="86" text-anchor="middle" font-size="11" fill="#475569">Reseller /</text>
+<text x="336.0" y="98" text-anchor="middle" font-size="11" fill="#475569">ISV partner</text>
+<text x="424.0" y="86" text-anchor="middle" font-size="11" fill="#475569">Public-sector</text>
+<text x="424.0" y="98" text-anchor="middle" font-size="11" fill="#475569">buyer</text>
+<text x="512.0" y="86" text-anchor="middle" font-size="11" fill="#475569">Enterprise /</text>
+<text x="512.0" y="98" text-anchor="middle" font-size="11" fill="#475569">larger fleet</text>
+<text x="600.0" y="86" text-anchor="middle" font-size="11" fill="#475569">Safety</text>
+<text x="600.0" y="98" text-anchor="middle" font-size="11" fill="#475569">manager</text>
+<text x="192" y="142.0" text-anchor="end" font-size="12" fill="#15201A">Safety that pays</text>
+<rect x="207.0" y="115" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="248.0" y="142.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<rect x="295.0" y="115" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="383.0" y="115" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="471.0" y="115" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="559.0" y="115" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="600.0" y="142.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<text x="192" y="194.0" text-anchor="end" font-size="12" fill="#15201A">Honest terms</text>
+<rect x="207.0" y="167" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="248.0" y="194.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<rect x="295.0" y="167" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="383.0" y="167" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="471.0" y="167" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="559.0" y="167" width="82.0" height="46" rx="4" fill="#ffffff" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="192" y="246.0" text-anchor="end" font-size="12" fill="#15201A">Built for the trades</text>
+<rect x="207.0" y="219" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="248.0" y="246.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<rect x="295.0" y="219" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="336.0" y="246.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<rect x="383.0" y="219" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="471.0" y="219" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="512.0" y="246.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<rect x="559.0" y="219" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<text x="192" y="298.0" text-anchor="end" font-size="12" fill="#15201A">A rep who answers</text>
+<rect x="207.0" y="271" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="295.0" y="271" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="383.0" y="271" width="82.0" height="46" rx="4" fill="#3B8A1B"/>
+<text x="424.0" y="298.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">LEAD</text>
+<rect x="471.0" y="271" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="559.0" y="271" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<text x="192" y="350.0" text-anchor="end" font-size="12" fill="#15201A">Bridgestone cost advantage</text>
+<rect x="207.0" y="323" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<rect x="295.0" y="323" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="383.0" y="323" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="471.0" y="323" width="82.0" height="46" rx="4" fill="#D8E8D1"/>
+<rect x="559.0" y="323" width="82.0" height="46" rx="4" fill="#93BF82"/>
+<path d="M 656 282.0 Q 616 242.0 384.0 242.0" fill="none" stroke="#7F56D9" stroke-width="1.5"/>
+<path d="M 384.0 242.0 l 9 -4 l -1 9 z" fill="#7F56D9"/>
+<text x="662" y="276.0" font-size="11" font-style="italic" fill="#7F56D9">Open partner conversations</text>
+<text x="662" y="291.0" font-size="11" font-style="italic" fill="#7F56D9">with 'built for the trades' -</text>
+<text x="662" y="306.0" font-size="11" font-style="italic" fill="#7F56D9">the 5-250 core that matches</text>
+<text x="662" y="321.0" font-size="11" font-style="italic" fill="#7F56D9">their book</text>
+<rect x="204" y="389" width="16" height="16" rx="3" fill="#3B8A1B"/>
+<text x="226" y="401" font-size="11.5" fill="#475569">Lead with this</text>
+<rect x="334" y="389" width="16" height="16" rx="3" fill="#93BF82"/>
+<text x="356" y="401" font-size="11.5" fill="#475569">Supports</text>
+<rect x="464" y="389" width="16" height="16" rx="3" fill="#D8E8D1"/>
+<text x="486" y="401" font-size="11.5" fill="#475569">Context</text>
+<rect x="594" y="389" width="16" height="16" rx="3" fill="#ffffff" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="616" y="401" font-size="11.5" fill="#475569">Not relevant</text>
+<text x="0" y="426" font-size="10.5" font-style="italic" fill="#94A3B8">Source: Marketing and Messaging Guide pillar and persona sections; Customer Voice Report. 2026.</text>
+</svg></figure>
+<h2 class="sec" id="sec5"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>4. The Buyer’s Journey &amp; Internal Voice</h2>
+<p>The buyer’s internal voice at each stage, in the words the customers actually use.</p>
+<h4>Awareness (the customer realizes they have a problem)</h4>
+<p><em class="q">“Our insurance went up again after that last accident, and I do not know how to get it back down.”</em></p>
+<h4>Research (the customer is actively looking for solutions)</h4>
+<p><em class="q">“I am thinking about switching for dash cameras, GPS, and maintenance, but I have tried for two months to get a demo and that makes me nervous.”</em></p>
+<h4>Evaluation (the customer is comparing solutions)</h4>
+<p><em class="q">“Our contract is month to month and theirs is a three-year contract. I thought that was alarming. We may have given it a shot if it was not for the three-year contract.”</em></p>
+<h4>Purchase (the customer is considering the logistics of buying)</h4>
+<p><em class="q">“They sold themselves as a cheap, effective alternative. They never went into detail about the cancellation policy, and I want to know the exit before I sign.”</em></p>
+<h4>Use &amp; Succeed (the customer is a user maximizing value)</h4>
+<p><em class="q">“It keeps a record of where I go between each job, and when a customer says we never showed up, I have that record.”</em></p>
+<h3>4.6 Trigger Events</h3>
+<p>The real-world moments that move a prospect between stages. Use them for retargeting, re-engagement, and ICP scoring.</p>
+<p><em class="q">“The insurance renewal just landed and the premium went up.”</em></p>
+<p><em class="q">“A customer disputed a no-show and we had no proof of where the truck was.”</em></p>
+<p><em class="q">“An at-fault accident put a claim on the books and the safety conversation got real.”</em></p>
+<p><em class="q">“The three-year contract with the current vendor is finally coming up for renewal.”</em></p>
+<p><em class="q">“A surprise full-balance cancellation bill arrived from the incumbent.”</em></p>
+<p><em class="q">“The fleet added trucks and the old tracker stopped keeping up.”</em></p>
+<h2 class="sec" id="sec6"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>5. Core Messaging Strategy</h2>
+<h3>5.1 Brand Promise</h3>
+<p>Drive safer, lower your risk. Azuga turns your drivers’ safety into documented performance and fewer accident dollars, on transparent per-vehicle pricing and terms you can walk away from, built for the trades and simple enough to run yourself.</p>
+<h3>5.2 Golden Formula, One-Liners &amp; Taglines</h3>
+<p>Three finished options per slot, written fresh in the resolved voice. Every slot ships vetted options with a one-line rationale.</p>
+<p><strong>The Golden Formula:</strong> [target audience] who want to [goal] but struggle with [hurdle]. Azuga helps them by [solution], so they can [outcome].</p>
+<p class="listlead"><strong>Golden Formula populated per persona:</strong></p>
+<ul class="bul"><li><strong>Service-trade fleet owner-operator:</strong> Service-trade owners who want to lower their insurance bill but struggle with rising premiums after every at-fault accident. Azuga helps them by turning safer driving into documented premium savings on simple per-vehicle pricing, so they can cut their insurance bill without a three-year trap.</li><li><strong>Integrated-software / reseller partner:</strong> Resellers who want to add fleet safety to their stack but struggle to become a telematics company. Azuga helps them by bolting on cleanly with a channel margin the direct-only giants will not give, so they can grow their book without building the product.</li><li><strong>Safety manager:</strong> Safety managers who want to drive accidents down but struggle to prove the savings to the insurer. Azuga helps them by tying driver scores to documented premium discounts, so they can take a number to renewal.</li></ul>
+<p class="listlead"><strong>Primary Tagline</p>
+<ul class="bul"><li>three finished options:</strong> 1. <em class="q">“Safety that pays.”</em></li><li>Rationale: states the dollar outcome and the safety engine in four words. 2. <em class="q">“Drive safer. Lower your costs.”</em></li><li>Rationale: the brand promise compressed; works as a verbal sign-off. 3. <em class="q">“Lower your insurance bill, one safe mile at a time.”</em></li><li>Rationale: names the exact outcome the safety manager takes to renewal. <strong>Recommended:</strong> Option 1, because it leads on the dollars rivals do not headline while keeping safety as the visible mechanism.</li></ul>
+<p><strong>Supporting Taglines - three options per surface.</strong></p>
+<p><em>Website hero:</em> 1. <em class="q">“Fewer accidents. Lower costs. Built for the trades.”</em> 2. <em class="q">“The fleet platform that turns safe driving into savings.”</em> 3. <em class="q">“Safety telematics for the 5 to 250 vehicle shop.”</em></p>
+<p><em>Signature / deck:</em> 1. <em class="q">“Azuga. Safety that pays.”</em> 2. <em class="q">“Azuga. Built for the trades, powered by safer driving.”</em> 3. <em class="q">“Azuga. Lower bills, honest terms, a rep who answers.”</em></p>
+<p class="listlead"><strong>Value Hook</p>
+<ul class="bul"><li>three finished options:</strong> 1. <em class="q">“Acree cut accidents to zero and <strong class="stat">$80,000 </strong>off their premium. Here is how the math works for your fleet.”</em></li><li>Rationale: leads with a named, quantified case. 2. <em class="q">“One avoided crash can pay for Azuga many times over. The average large-truck crash runs near <strong class="stat">$91,000</strong>.”</em></li><li>Rationale: the crash-cost ROI frame. 3. <em class="q">“Transparent per-vehicle pricing, terms you can leave, and a rep who knows your trade.”</em></li><li>Rationale: the three near-term wedges in one breath.</li></ul>
+<h2 class="sec" id="sec7"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>6. Product &amp; Service Messaging</h2>
+<p>Only products confirmed in the evidence base are named below. Where a product, tier, or certification is not confirmed, it is omitted or tagged for client confirmation.</p>
+<h3>6.1 Azuga GPS</h3>
+<p>Built for the operator who wants to see every truck and prove every stop without studying a dashboard. Azuga GPS gives location, breadcrumb history, and asset tracking on a screen a non-expert owner can read, and it installs easily and moves between vehicles. It is the tool that settles the customer dispute and recovers the stolen van, and it carries the day-to-day for the fleet manager who just needs to know where the trucks are.</p>
+<h3>6.2 Azuga Fleet and the SafetyCam dashcam</h3>
+<p>Azuga Fleet adds the safety engine to the tracking: driver scoring, gamification and rewards, and the dual-facing SafetyCam dashcam that flags distracted and risky driving. It is built for the operator who wants to drive accidents and premiums down and prove the improvement, the safety manager who needs a documented score to take to the insurer. The packaging runs across three tiers, BasicFleet, SafeFleet, and CompleteFleet, at transparent per-vehicle pricing. [Client to confirm before publication: the per-tier feature breakdown and any baseline-support change to the dedicated success manager currently shown on CompleteFleet.]</p>
+<h3>6.3 Feature-Benefit Set</h3>
+<p>Load-bearing features mapped to the customer outcomes they deliver. Emotional-benefit cells are fresh samples in the customer’s voice register.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Feature</th>
+<th>Functional Benefit</th>
+<th>Emotional Benefit (sample customer-voice)</th>
+<th>Buying-Committee Role</th>
+</tr></thead><tbody>
+<tr>
+<td>Driver scoring and coaching</td>
+<td>Raises fleet driver scores and lowers at-fault accident rates</td>
+<td><em class="q">“It makes me a better, more careful driver, even in my personal vehicle.”</em></td>
+<td>Safety Manager</td>
+</tr>
+<tr>
+<td>SafetyCam dual-facing dashcam</td>
+<td>Captures distracted and risky-driving events for coaching and claims</td>
+<td><em class="q">“Now I can show what actually happened instead of guessing.”</em></td>
+<td>Safety Manager / Exec</td>
+</tr>
+<tr>
+<td>Documented safety performance</td>
+<td>Turns safer driving into documented performance for renewal conversations</td>
+<td><em class="q">“For the first time I had a clean, documented year to bring into my renewal.”</em></td>
+<td>Finance / Exec</td>
+</tr>
+<tr>
+<td>Breadcrumb location history</td>
+<td>Proves where each vehicle was at any time</td>
+<td><em class="q">“When customers say we never showed up, I have that record.”</em></td>
+<td>Fleet Manager / Operator</td>
+</tr>
+<tr>
+<td>GPS asset tracking and recovery</td>
+<td>Locates trucks live and recovers stolen vehicles</td>
+<td><em class="q">“They found our stolen truck within hours.”</em></td>
+<td>Operator</td>
+</tr>
+<tr>
+<td>Transparent per-vehicle pricing</td>
+<td>One published price per vehicle, no reseller quote</td>
+<td><em class="q">“I could finally see what it costs without chasing a salesperson.”</em></td>
+<td>Finance / Operator</td>
+</tr>
+<tr>
+<td>Honest, leavable terms</td>
+<td>Cancel a vehicle and the billing stops</td>
+<td><em class="q">“I am not signing another three-year trap to get tracking.”</em></td>
+<td>Operator / Finance</td>
+</tr>
+<tr>
+<td>Easy self-install, portable units</td>
+<td>Stand up the fleet without a technician and move units between trucks</td>
+<td><em class="q">“It’s easy to install and portable between vehicles.”</em></td>
+<td>Operator / Fleet Manager</td>
+</tr>
+<tr>
+<td>Clean, owner-readable interface</td>
+<td>Run the platform without training a specialist</td>
+<td><em class="q">“The UI is cleaner and I can get what I need faster.”</em></td>
+<td>Fleet Manager</td>
+</tr>
+<tr>
+<td>Dedicated rep who knows your trade</td>
+<td>A named point of contact instead of a 1-800 queue</td>
+<td><em class="q">“I want a person who picks up, not a ticket that disappears.”</em></td>
+<td>Operator / Exec</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec8"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>7. Competitive Edge &amp; Differentiators</h2>
+<h3>7.1 Key Differentiators</h3>
+<ul class="persp"><li><strong>Safety that turns into dollars, proven at named customers.</strong> Acree cut premiums by <strong class="stat">$80,000 </strong>a year and accidents to zero. California UMI took a <strong class="stat">12%</strong> fleet-wide insurance discount and cut accidents <strong class="stat">89%</strong>. Rivals headline safety, and Azuga headlines what safety produces.</li></ul>
+<p><strong>Transparent per-vehicle pricing against reseller-gated rivals.</strong> Published per-vehicle tiers a buyer can read without chasing a quote, where the giants hide pricing behind a reseller.</p>
+<ul class="persp"><li><strong>Honest, leavable terms, once true.</strong> The flexible-terms counter-position against Samsara’s 36-month full-balance exit and Verizon Connect’s auto-renewing buyout, shipped only after the contract and billing fixes land.</li></ul>
+<p><strong>Built for the service-trade SMB the giants out-resource themselves out of.</strong> A focused platform for 5 to 250 vehicle trade fleets, the lane rivals leave under-built while they chase enterprise and over-the-road trucking.</p>
+<p><strong>A Bridgestone parent with a tire-and-insurance lane no rival owns.</strong> The durable advantage, held in opportunity language until the quantified economics publish.</p>
+<h3>7.2 Objection-Handling Library</h3>
+<p>The objections reps and partners hear most, with firm responses and proof anchors. Each response leads with the claim and ends in an operative verb.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Objection (buyer voice, sample)</th>
+<th>Firm Response (resolved voice, sample)</th>
+<th>Proof Anchor</th>
+</tr></thead><tbody>
+<tr>
+<td><em class="q">“We only run a handful of trucks. This is built for big fleets.”</em></td>
+<td><em class="q">“Small service-trade fleets are exactly who Azuga is built for, and one avoided accident pays for the system. Start with the trucks you have and add as you grow.”</em></td>
+<td>Average large-truck crash near <strong class="stat">$91,000</strong> (FMCSA); 5 to 250 core ICP.</td>
+</tr>
+<tr>
+<td><em class="q">“How do I know the safety stuff actually saves money?”</em></td>
+<td><em class="q">“Tie your driver scores to your renewal and bring documented safety to the table. Acree took <strong class="stat">$80,000 </strong>a year off theirs and cut accidents to zero.”</em></td>
+<td>Acree Plumbing &amp; Air: -<strong class="stat">$80,000</strong>/yr premiums, accidents 2 to 0.</td>
+</tr>
+<tr>
+<td><em class="q">“Telematics is too complicated for someone like me to run.”</em></td>
+<td><em class="q">“Run it yourself on a screen built for an owner, not an analyst. Install it without a technician and move the units between trucks.”</em></td>
+<td>Easy self-install, portable units, owner-readable UI (customer voice).</td>
+</tr>
+<tr>
+<td><em class="q">“We slow down in the off-season. I do not want to pay year-round for trucks we park.”</em></td>
+<td><em class="q">“Match the spend to the season and stop paying for what you park. Confirm the seasonal-pause options with your rep before you sign.”</em></td>
+<td>[Client to confirm: seasonal-pause / per-vehicle deactivation policy.]</td>
+</tr>
+<tr>
+<td><em class="q">“I got billed after I cancelled. Why would I trust the terms?”</em></td>
+<td><em class="q">“Cancel a vehicle and the billing stops, full stop. We fixed the cancellation process so a parked or totaled truck comes off your invoice.”</em></td>
+<td>Honest-terms pillar; billing-after-cancellation fix (ship before claiming).</td>
+</tr>
+<tr>
+<td><em class="q">“Your competitor locks me into three years. Are you the same?”</em></td>
+<td><em class="q">“Walk away on honest terms instead of buying out a contract. We built the leavable terms the giants will not offer.”</em></td>
+<td>Counter-position vs. Samsara 36-month full-balance exit, Verizon Connect auto-renew buyout.</td>
+</tr>
+<tr>
+<td><em class="q">“I am a reseller. Will you actually support my end customers?”</em></td>
+<td><em class="q">“Bolt Azuga onto what you already sell and keep the margin the direct-only giants will not share. Bring your 4 to 500 vehicle book to a partner channel built for it.”</em></td>
+<td>Partner channel; 4 to 500 partner end-customer band (Ty Lambert, Justin Leith).</td>
+</tr>
+<tr>
+<td><em class="q">“You are owned by a tire company. What does that even do for me?”</em></td>
+<td><em class="q">“Bridgestone gives Azuga a tire-and-insurance lane no telematics rival owns, and we are building the published savings to prove it. Ask your rep where the program stands today.”</em></td>
+<td>Bridgestone parent; Firestone discount [client to confirm]; held in opportunity language.</td>
+</tr>
+<tr>
+<td><em class="q">“I have heard your support disappears after you sign.”</em></td>
+<td><em class="q">“Get a named rep who knows your trade and a response-time standard we hold ourselves to. Tell us the last support failure and let us show you the fix.”</em></td>
+<td>Ungated-support pillar (out-deliver before claiming); rep-who-answers flank.</td>
+</tr>
+<tr>
+<td><em class="q">“Samsara and Geotab have more features. Why settle for less?”</em></td>
+<td><em class="q">“Buy the platform you will actually use instead of paying for breadth you will not. We win where their scale becomes complexity.”</em></td>
+<td>Focused-challenger positioning; rivals called complex and steep (reviews).</td>
+</tr>
+<tr>
+<td><em class="q">“We are a public agency. Can you meet our procurement and references?”</em></td>
+<td><em class="q">“Stand behind the account with the people, the references, and the contract terms a public buyer needs. Bring your procurement requirements and we will meet them.”</em></td>
+<td>Public-sector seat (Tom Lundin); named-customer references.</td>
+</tr>
+<tr>
+<td><em class="q">“Your 2.0 redesign dropped features I relied on. Why come back?”</em></td>
+<td><em class="q">“Tell us the exact feature you lost and we will show you where it lives now or where it is on the roadmap. We are repairing the 2.0 gaps the owners named.”</em></td>
+<td>2.0 regression repair on roadmap (frame honestly; do not overclaim).</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec9"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>8. Brand Voice &amp; Personality</h2>
+<h3>8.1 Brand Essence</h3>
+<p>The platform that turns a service-trade owner’s safer driving into a lower insurance bill, sold straight and run simply.</p>
+<h3>8.2 Voice Archetype</h3>
+<p>The Primary Voice is the Straight-Talking Trade Foreman: the seasoned shop veteran who has run the trucks himself, gives you the number straight, and answers the phone when you call. He respects the owner’s intelligence and never wastes their time, talks dollars and outcomes before features, and is honest about what the product does and does not do yet. He is an Everyman with a Sage’s command of the trade, the person on the job site you trust because he has done the work and will not sell you something you do not need.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>We Say (resolved-voice sample)</th>
+<th>We Do Not Say (the rejected generic register)</th>
+</tr></thead><tbody>
+<tr>
+<td><em class="q">“Acree took <strong class="stat">$80,000 </strong>a year off their premium. Here is the math for your fleet.”</em></td>
+<td><em class="q">“Unlock transformative ROI with our holistic safety ecosystem.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Cancel a vehicle and the billing stops.”</em></td>
+<td><em class="q">“We offer flexible, customer-centric contract solutions.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Built for the 5 to 250 truck service-trade shop.”</em></td>
+<td><em class="q">“Empowering fleets of all sizes to drive results at scale.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Run it yourself on a screen built for an owner, not an analyst.”</em></td>
+<td><em class="q">“Our intuitive, seamless interface elevates the user journey.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“A person who knows your trade answers when you call.”</em></td>
+<td><em class="q">“Best-in-class 24/7 support, every step of the way.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“One avoided crash can pay for the system many times over.”</em></td>
+<td><em class="q">“Drive meaningful safety outcomes with cutting-edge telematics.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“We win where their scale becomes complexity.”</em></td>
+<td><em class="q">“A robust, end-to-end platform that does it all.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Bridgestone gives us a tire-and-insurance lane no rival owns. We are building the proof now.”</em></td>
+<td><em class="q">“Leverage our synergistic parent-company partnership for next-gen value.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Document your safe-driving record and take it to your renewal.”</em></td>
+<td><em class="q">“Azuga lowers your insurance premiums.”</em> / <em class="q">“Guaranteed discount.”</em></td>
+</tr>
+</tbody></table></div>
+<h4>Tone calibration</h4>
+<ol class="numlist"><li><strong>Marketing / website / outbound:</strong> confident and dollar-first. State the named outcome, then the mechanism. Short lines, real numbers, no flourish.</li><li><strong>Sales / 1:1:</strong> a diagnostic peer. Open with a question about their premium or their last dispute, then do the math in their numbers.</li><li><strong>Support / post-purchase:</strong> the rep who already knows the account. Plain, accountable, fast. Name the fix, not the apology.</li></ol>
+<h3>8.3 Personality</h3>
+<ol class="numlist"><li><strong>Archetype:</strong> Everyman with a strong Sage influence.</li><li><strong>Personality traits:</strong> straight-talking, practical, trustworthy, unflashy, and quietly expert.</li><li><strong>How they make others feel:</strong> like they are finally talking to someone who has done the work and will give them the number straight.</li></ol>
+<p>If the team wants a warmer, more aspirational register for brand campaigns, lead with the Everyman warmth and keep the Sage’s numbers underneath. Keep the dollar specifics in every campaign.</p>
+<h2 class="sec" id="sec10"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>9. Channel Application Examples</h2>
+<p>Fresh sample copy in the resolved voice for the surfaces teams ship most.</p>
+<h3>9.1 Sample Homepage Hero (three finished options)</h3>
+<p class="listlead"><strong>Option A.</strong></p>
+<ul class="bul"><li>H1: <em class="q">“Safer driving, lower risk. Built for the trades.”</em></li><li>Sub-H1: <em class="q">“Azuga turns your drivers’ safety into documented performance you can take to your insurer, on transparent per-vehicle pricing built for service-trade fleets.”</em></li><li>CTA: <em class="q">“See your savings.”</em></li><li>Rationale: leads on the dollar outcome and the named segment in one line.</li></ul>
+<p class="listlead"><strong>Option B.</strong></p>
+<ul class="bul"><li>H1: <em class="q">“Acree cut accidents to zero and <strong class="stat">$80,000 </strong>off their premium.”</em></li><li>Sub-H1: <em class="q">“See how service-trade fleets turn safer driving into documented performance and lower costs with Azuga, on terms you can walk away from.”</em></li><li>CTA: <em class="q">“Run the math.”</em></li><li>Rationale: opens on a named, quantified, confirmed case, the strongest proof available.</li></ul>
+<p class="listlead"><strong>Option C.</strong></p>
+<ul class="bul"><li>H1: <em class="q">“The fleet platform built for the trades.”</em></li><li>Sub-H1: <em class="q">“Fewer accidents, lower costs, and a rep who knows your trade, for plumbing, HVAC, pest control, and landscaping fleets.”</em></li><li>CTA: <em class="q">“Get a demo.”</em></li><li>Rationale: compresses the promise and names the verticals for relevance.</li></ul>
+<p><strong>Recommended:</strong> Option B. A named customer with a confirmed dollar figure carries more weight than a claim, and it keeps the load-bearing hero off any unconfirmed number.</p>
+<h3>9.2 Sample LinkedIn Ad Headlines (three per persona)</h3>
+<p><em>Service-trade fleet owner-operator:</em> 1. <em class="q">“Your premium went up. Here is how to build a stronger case for your renewal.”</em> 2. <em class="q">“How Acree cut accidents to zero and <strong class="stat">$80,000 </strong>off their premium.”</em> 3. <em class="q">“Fleet tracking with no three-year trap.”</em></p>
+<p><em>Integrated-software / reseller partner:</em> 1. <em class="q">“Add fleet safety to your stack. Keep the margin.”</em> 2. <em class="q">“The telematics partner the direct-only giants will not be.”</em> 3. <em class="q">“Bolt Azuga onto what you already sell.”</em></p>
+<p><em>Public-sector / government buyer:</em> 1. <em class="q">“Telematics your procurement team can stand behind.”</em> 2. <em class="q">“The people behind the account win it and keep it.”</em> 3. <em class="q">“Public-fleet safety with references you can call.”</em></p>
+<p><em>Enterprise / larger fleet:</em> 1. <em class="q">“500 vehicles, one safety standard, no enterprise tax.”</em> 2. <em class="q">“Scale your fleet without scaling the complexity.”</em> 3. <em class="q">“Service Experts runs 500 trucks on Azuga. Here is why.”</em></p>
+<p><em>Safety manager vs. fleet manager:</em> 1. <em class="q">“Turn your driver scores into documentation for your insurer.”</em> (safety manager) 2. <em class="q">“Take a documented safety number to your renewal.”</em> (safety manager) 3. <em class="q">“See every truck. Prove every stop.”</em> (fleet manager)</p>
+<h3>9.3 Sample Cold-Email Openers (two per trigger event)</h3>
+<p><em>Trigger: the insurance renewal just landed and the premium went up.</em> 1. <em class="q">“Your renewal probably came in higher again this year. Acree took <strong class="stat">$80,000 </strong>a year off theirs by turning driver scores into a documented safety case for renewal, and I can show you the math on your fleet in fifteen minutes.”</em> 2. <em class="q">“Premiums climb after every at-fault accident. Azuga gives you the safety number your insurer wants to see at renewal. Worth a quick look before your next quote?”</em></p>
+<p><em>Trigger: a customer disputed a no-show with no proof.</em> 1. <em class="q">“When a customer says your tech never showed, do you have the record to prove it? Azuga keeps the breadcrumb history that settles that argument in seconds. Want to see how it looks for your trucks?”</em> 2. <em class="q">“No-show disputes cost you the job and the trust. Azuga proves where every truck was, all day. I can walk you through it whenever works.”</em></p>
+<p><em>Trigger: the three-year contract with the incumbent is coming up for renewal.</em> 1. <em class="q">“If your current tracker is about to auto-renew you into another three years, there is a version with no trap. Azuga lets you cancel a vehicle and stop the billing. Want the comparison?”</em> 2. <em class="q">“Before you re-sign for three more years, it is worth seeing terms you can actually leave. I can send the side-by-side this week.”</em></p>
+<p><em>Trigger: an at-fault accident put a claim on the books.</em> 1. <em class="q">“An at-fault claim is the moment the safety conversation gets real. Azuga drove California UMI’s accidents down <strong class="stat">89%</strong> and earned them a <strong class="stat">12%</strong> insurance discount. Happy to show you the path.”</em> 2. <em class="q">“One accident can cost six figures. Azuga turns safer driving into fewer claims and a lower premium. Fifteen minutes to see the numbers?”</em></p>
+<p><em>Trigger: a surprise full-balance cancellation bill arrived from the incumbent.</em> 1. <em class="q">“If your last vendor billed you for years you never used, you are not alone. Azuga is built on terms you can walk away from. Want to see what honest looks like?”</em> 2. <em class="q">“A full-balance buyout to leave a tracker is the trap operators hate most. Azuga does not run that play. I can show you the difference.”</em></p>
+<p><em>Trigger: the fleet added trucks and the old tracker stopped keeping up.</em> 1. <em class="q">“Growing fleets outrun basic trackers fast. Service Experts runs 500 vehicles on Azuga at a sustained driver score around 85. Want to see how it scales for you?”</em> 2. <em class="q">“If your tracker is lagging as you add trucks, Azuga keeps up without the enterprise tax. Quick demo this week?”</em></p>
+<h3>9.4 Sample Sales-Deck Cover Slide</h3>
+<ol class="numlist"><li><strong>Title:</strong> <em class="q">“Safety that pays.”</em></li><li><strong>Subtitle:</strong> <em class="q">“How service-trade fleets turn safer driving into documented performance and lower costs, on honest terms.”</em></li><li><strong>Recommended visual anchor:</strong> a service-trade truck (a plumbing or HVAC van) on a job-site street, with a clean overlay of the two confirmed numbers, accidents cut to zero and <strong class="stat">$80,000 </strong>off the premium. The concept is the owner’s truck and the owner’s savings, the everyday surface where the dollars show up.</li></ol>
+<h3>9.5 Sales Talk-Tracks (one per persona)</h3>
+<p class="listlead"><em>Service-trade fleet owner-operator:</em></p>
+<ul class="bul"><li><strong>Diagnostic opener:</strong> <em class="q">“What did your insurance renewal do this year, and how many at-fault accidents are behind it?”</em></li><li><strong>Reframe:</strong> <em class="q">“Your premium reflects a risk picture the insurer can see. Improve the score, document it, and you change the renewal conversation, which is exactly what Acree did when they cut accidents to zero and took <strong class="stat">$80,000 </strong>off their premium.”</em></li><li><strong>The move:</strong> run the crash-cost math on their fleet and book the savings review.</li></ul>
+<p class="listlead"><em>Integrated-software / reseller partner:</em></p>
+<ul class="bul"><li><strong>Diagnostic opener:</strong> <em class="q">“How many of your end customers are asking for fleet safety, and what are you handing them today?”</em></li><li><strong>Reframe:</strong> <em class="q">“You do not need to become a telematics company to capture that. Bolt Azuga onto your stack, keep the channel margin, and serve the same 4 to 500 vehicle book you already know.”</em></li><li><strong>The move:</strong> map their end-customer base to the partner program and size the channel.</li></ul>
+<p class="listlead"><em>Public-sector / government buyer:</em></p>
+<ul class="bul"><li><strong>Diagnostic opener:</strong> <em class="q">“What does your procurement need to see, and where did your last telematics vendor leave you stuck?”</em></li><li><strong>Reframe:</strong> <em class="q">“The people behind the account are what win it and keep it. You get the references, the terms, and the named support a public fleet has to stand behind.”</em></li><li><strong>The move:</strong> line up the references and the procurement-compliant paperwork.</li></ul>
+<p class="listlead"><em>Enterprise / larger fleet:</em></p>
+<ul class="bul"><li><strong>Diagnostic opener:</strong> <em class="q">“As you have added trucks, where has your current platform started to creak?”</em></li><li><strong>Reframe:</strong> <em class="q">“Scale should not mean an enterprise tax. Service Experts runs 500 vehicles on Azuga at a sustained driver score around 85, on one safety standard.”</em></li><li><strong>The move:</strong> scope the rollout and connect them to the scale reference.</li></ul>
+<p class="listlead"><em>Safety manager vs. fleet manager:</em></p>
+<ul class="bul"><li><strong>Diagnostic opener:</strong> <em class="q">“Who owns the insurance number in your shop, and who owns knowing where the trucks are?”</em></li><li><strong>Reframe:</strong> <em class="q">“Azuga serves both seats. The safety manager gets a documented score for renewal; the fleet manager gets every truck and every stop on a screen they do not have to study.”</em></li><li><strong>The move:</strong> give the safety manager the savings case and the fleet manager the live demo.</li></ul>
+<h3>9.6 Customer-Success / Lifecycle Email Templates</h3>
+<p>Editable templates in the resolved voice. No asserted facts unless a real per-account number exists.</p>
+<ol class="numlist"><li><strong>Onboarding.</strong> Subject: <em class="q">“Welcome to Azuga, [First Name]. Let’s get your trucks on the map.”</em> Body: <em class="q">“Hi [First Name], your [number] units are ready to install, and it takes minutes per truck with no technician needed. Your rep [Rep Name] is your point of contact, reachable at [phone/email]. Once you are live, your first driver scores land within [timeframe], and that is the number we will work down together. Reply here with any truck that needs a hand.”</em></li><li><strong>Mid-term check-in.</strong> Subject: <em class="q">“[First Name], here is where your safety number stands.”</em> Body: <em class="q">“Hi [First Name], your fleet driver score has moved from [start score] to [current score] since you started, and your at-fault events are [direction] over the same window. That trend is what your insurer wants to see at renewal. [Rep Name] can pull a one-page summary you can take to your broker. Want it?”</em></li><li><strong>Renewal.</strong> Subject: <em class="q">“Keeping your fleet on the road, [First Name].”</em> Body: <em class="q">“Hi [First Name], your team has held a driver score around [current score] this year, and that safety record is the result you keep building on. Continuing with Azuga keeps the program and the savings running without a break. [Rep Name] will confirm your per-vehicle plan and any seasonal adjustments for the year ahead. Reply and we will keep it simple.”</em></li></ol>
+<h2 class="sec" id="sec11"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>10. Banned-Word Glossary</h2>
+<p>The category cliches this engagement rejects, mapped to the resolved-voice replacement. In addition to the universal AI-tells bans in the firm’s style guide. Do not use any listed phrase elsewhere in this guide.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Banned / Avoid</th>
+<th>Use Instead</th>
+<th>Why</th>
+</tr></thead><tbody>
+<tr>
+<td><em class="q">“Best-in-class fleet management”</em></td>
+<td><em class="q">“Built for the 5 to 250 truck shop”</em></td>
+<td>Names who it is for instead of grading itself.</td>
+</tr>
+<tr>
+<td><em class="q">“Total fleet visibility”</em></td>
+<td><em class="q">“See every truck, prove every stop”</em></td>
+<td>The concrete action beats the abstraction.</td>
+</tr>
+<tr>
+<td><em class="q">“Industry-leading safety”</em></td>
+<td><em class="q">“Cut accidents the way Acree did, to zero”</em></td>
+<td>A named result outranks a self-ranking.</td>
+</tr>
+<tr>
+<td><em class="q">“Flexible contract options”</em></td>
+<td><em class="q">“Cancel a vehicle and the billing stops”</em></td>
+<td>States the exact term the buyer wants to hear.</td>
+</tr>
+<tr>
+<td><em class="q">“Trusted partner”</em></td>
+<td><em class="q">“A rep who knows your trade and answers”</em></td>
+<td>Names the person, not the platitude.</td>
+</tr>
+<tr>
+<td><em class="q">“All-in-one solution”</em></td>
+<td><em class="q">“Tracking and safety on one screen”</em></td>
+<td>Says what is actually on the screen.</td>
+</tr>
+<tr>
+<td><em class="q">“Enterprise-grade platform”</em></td>
+<td><em class="q">“Scales to 500 trucks without the enterprise tax”</em></td>
+<td>The number and the relief, not the prestige word.</td>
+</tr>
+<tr>
+<td><em class="q">“Maximize your ROI”</em></td>
+<td><em class="q">“One avoided crash pays for the system many times over”</em></td>
+<td>The literal payback, in the owner’s terms.</td>
+</tr>
+<tr>
+<td><em class="q">“Smart insights”</em></td>
+<td><em class="q">“The breadcrumb record that settles the dispute”</em></td>
+<td>The job done, not the buzzword.</td>
+</tr>
+<tr>
+<td><em class="q">“Future-proof your fleet”</em></td>
+<td><em class="q">“Add trucks and it keeps up”</em></td>
+<td>Plain capability instead of a hollow promise.</td>
+</tr>
+<tr>
+<td><em class="q">“Peace of mind”</em></td>
+<td><em class="q">“Know where the trucks are without babysitting it”</em></td>
+<td>Concrete relief over the greeting-card phrase.</td>
+</tr>
+<tr>
+<td><em class="q">“Affordable pricing”</em></td>
+<td><em class="q">“Per-vehicle pricing you can read without a quote”</em></td>
+<td>Names the transparency, not just the cost.</td>
+</tr>
+<tr>
+<td><em class="q">“World-class support”</em></td>
+<td><em class="q">“A named point of contact, not a 1-800 queue”</em></td>
+<td>Says what the buyer actually gets.</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec12"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>11. What Success Looks Like</h2>
+<p>Directional outcomes if the positioning lands. No metric targets or dates, with one countable leading indicator per horizon.</p>
+<h3>First 90 Days</h3>
+<p><strong>The contract contradiction stops growing.</strong> New cancellation-and-contract complaints across BBB, Trustpilot, Capterra, and the Aspire forum begin to taper as the terms and billing fix take hold, and the honest-terms line only ships once a cancelled unit demonstrably stops billing. Count the new contract-entrapment complaints per surface and watch the line bend down.</p>
+<h3>First Year</h3>
+<p><strong><em class="q">“Safety that pays”</em> carries the deals.</strong> Reps open on the dollar outcome and the named savings, and the public surface leads with the service-trade verticals. Count the published named-customer savings cases beyond Acree and California UMI, and the demo requests arriving from the 5 to 250 service-trade band.</p>
+<h3>Steady State</h3>
+<p><strong>The Bridgestone cost advantage is proven and leads.</strong> The tire-and-insurance economics are a published, quantified, multi-customer program, and the brand leads on the one advantage rivals cannot copy, with honest terms and a rep who answers as the wedges that win the next deal. Count the share of new service-trade logos that name the insurance savings or the honest terms as a buying reason.</p>
+<h2 class="sec" id="sec13"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>12. Final Takeaways</h2>
+<ol class="numlist"><li><strong>Takeaway 1:</strong> Azuga turns safer driving into lower insurance bills for service-trade fleets, with safety as the engine and dollars as the headline.</li><li><strong>Takeaway 2:</strong> The durable advantage is a Bridgestone parent with a tire-and-insurance lane no telematics rival owns, claimed once the proof publishes.</li><li><strong>Takeaway 3:</strong> The customer wins fewer accidents, a lower premium, and terms they can walk away from.</li><li><strong>Takeaway 4:</strong> The messaging centers the service-trade owner-operator running 5 to 250+ vehicles, with partners, public sector, and larger fleets as named secondary seats.</li><li><strong>Takeaway 5:</strong> Azuga commits to the focused service-trade lane and the honest, leavable terms that lane was built to win.</li></ol>
+<h2 class="sec" id="sec14"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12H4zM14 4v4h4M8 13h8M8 17h6"/></svg></span>Appendix A. Rationale for the 5 to 250 Service-Trade Band</h2>
+<p>The tiered ICP will draw the most challenge from anyone attached to the enterprise-switching story, so the band needs a defense.</p>
+<p>Small fleets sit near 40 to <strong class="stat">50%</strong> telematics penetration heading into 2026 while large fleets passed <strong class="stat">80%</strong>, so roughly half of small operators still run without telematics, the exact whitespace the band occupies.</p>
+<p>The rivals are aimed elsewhere: Motive’s small-business offering is a trucking-coded skin over an over-the-road product, and Verizon Connect’s marquee logos signal an enterprise center of gravity, leaving the local service-trade lane under-built.</p>
+<p>The band holds every leadership seat as one whole: Justin’s 5 to 250 core is the wedge, Ty’s partner end-customers to 500 are the opportunistic band, and Doug’s larger ambition is the partner-led upper tier.</p>
+<p>The platform already proves the upper reach: Service Experts runs 500 vehicles on it at a sustained driver score around 85, so the band scales without overclaiming a hard ceiling.</p>
+<p>The published market data sizes by fleet size and broad industry, and the US service-trade SMB fleet sub-segment stays absent across Mordor Intelligence, MarketsandMarkets, and PS Market Research, so the band must be modeled bottom-up as a leadership decision.</p></main>
+ <footer class="foot"><span class="logo" style="height:22px;display:inline-flex"><svg style="height:22px;width:auto;display:block" viewBox="0 0 232 70" xmlns="http://www.w3.org/2000/svg"><text x="0" y="54" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" letter-spacing="-3" fill="#1A2330">azuga</text><circle cx="210" cy="22" r="9" fill="#4EBD20"/></svg>
+</span></footer>
+</div></body></html>

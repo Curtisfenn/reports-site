@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AZUGA — What’s Next Proposal</title>
+<style>:root{--ink:#0B1220;--brand:#2563EB;--brand2:#0DA2E7;--accent:#F59E0B;
+--wash:#F0F4FE;--azwash:#E5ECFD;--line:#E2E8F0;--slate:#475569;
+--h2:#2563EB;--h3:#1A45A4;--h4:#F59E0B;--boxbg:#E9EFFD;--boxborder:#ACC4F7;--boxlabel:#225BD8;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo" style="height:44px;display:inline-flex"><svg style="height:44px;width:auto;display:block" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg"><polygon points="26,0 100,0 100,54 74,80 0,80 0,26" fill="#0B1220"/><text x="50" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="1">BE</text></svg>
+</span><div class="kicker">AZUGA</div><h1>What’s Next Proposal</h1><div class="accentrule"></div><p class="tagline">The defined work that turns the position into proof, sequenced by what each move depends on.</p><div class="meta">Prepared by Be Vizual. Presented by Ethan Galloway.<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>0. The Commitment</h2>
+<div class="callout"><strong>Bottom line.</strong> The next phase builds the proof the position needs and ships the surfaces that carry it. We run the customer-story program that turns Acree, California UMI, and Service Experts into a published savings record. From there we confirm and quantify the Bridgestone tire-and-insurance economics, model the service-trade band, ungate baseline support, and repair the simplicity claim. Each initiative produces named operational assets, not a plan to make them.</div>
+<p>The Brief settled one move and teed up five that lean on the evidence and wait on a leadership decision or a piece of internal data. This phase executes the work behind those five. It operationalizes the unified position: Azuga turns fleet safety into money for the small service-trade businesses the enterprise giants price out and lock in. The contract fix stays inside the Brief as the decision leadership makes alone. Everything that needs building, confirming, modeling, or publishing is scoped here as committed work.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg></span>1. Initiative Cards</h2>
+<h3>Initiative 1. The customer-story and premium-savings program</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We run AI-led custom interviews with named Azuga customers and publish a quantified premium-savings case-study set that ties safety-score improvement to underwritten insurance discounts.</li><li><strong>Why Now.</strong> Every interview in this engagement was an Azuga executive. All nine seats were leadership, so the dollar story rests on three published cases and an aggregate figure rather than a first-party record the company controls. Alignment Point 2 leans on exactly this: the <em class="q">“safety that pays”</em> reframe needs more named savings cases before it carries the deals, and Alignment Point 3 needs the same proof to lift Bridgestone from a badge to a quantified economic claim.</li><li><strong>Scope.</strong> Custom interviews with Acree Plumbing and Air, California UMI, and Service Experts, plus four to six additional named accounts drawn from the service-trade core. The program produces a published case-study set with quantified premium reductions, a testimonial library cleared for use across the site and sales, the premium-savings proof page that anchors <em class="q">“safety that pays for itself,”</em> and the underlying interview transcripts as a reusable asset. Each case ties a fleet’s safety-score gain to a named insurance discount, extending the Acree <strong class="stat">$80,000</strong>-a-year result and the California UMI <strong class="stat">12%</strong> fleet-wide discount into a repeatable pattern.</li><li><strong>Confidence this is the right next move.</strong> 5/5. Basis: the evidence gap is first-party and total, and two named deliverables in the Brief, the savings cases and the moat proof, both depend on this record existing.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Front of the line. Three other initiatives draw on the published savings record this program produces.</p>
+<p><em>Do this first. The savings cases, the moat proof, and the lock-in counter-position all wait on the customer record this program builds. Start it and the rest unblock; hold it and the highest-leverage moves stay stalled.</em></p>
+<h3>Initiative 2. Confirm and quantify the Bridgestone economics</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We confirm the exclusive Firestone tire-and-service figures and the Bridgestone- and Samba-underwritten insurance economics, then publish a Bridgestone page that states what the backing delivers in dollars.</li><li><strong>Why Now.</strong> Alignment Point 3 carries the one asset rivals cannot copy: a parent that owns a tire-and-service network and an insurance lane no telematics competitor owns. Geotab’s 700-partner marketplace falsifies the generic partnership claim, so the durable story narrows to this. Today Bridgestone shows up only as a footer badge with no page substantiating it. The moat the <em class="q">“safety that pays”</em> position rests on is named far more than it is proven.</li><li><strong>Scope.</strong> Internal confirmation of the per-vehicle tire-and-service discount economics and the exclusive insurance-underwriting terms. An updated About page and a dedicated Bridgestone page that surface the parent relationship and state the quantified Firestone and Samba savings. A one-line guardrail spec for the surface: <em class="q">“moat opportunity”</em> language until the numbers clear, the quantified claim once they do. The tire-and-service half is the load-bearing structural distinction, so it leads the page; the insurance half is published at the depth and exclusivity the confirmed figures support.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Basis: a tire-manufacturer parent is non-replicable, and surfacing it is the move regardless of how the underwriting figures land.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Depends on Initiative 1 for the named-customer savings that make the page concrete, and on internal confirmation of the exclusive economics before the quantified claim publishes.</p>
+<h3>Initiative 3. The service-trade band and surface re-weighting</h3>
+<ol class="numlist"><li><strong>Scope first.</strong> A bottom-up service-trade TAM model that sizes the band no published figure isolates. A published ICP statement naming the 5-250 service-trade core and the opportunistic band to about 500 via partners. A re-weighted public surface that leads with the service-trade verticals the site already names best and demotes the enterprise-switching hero. Sales targeting, demo triage, and partner scorecards reset to the band so the pipeline matches the surface.</li><li><strong>The Move.</strong> We model the service-trade TAM bottom-up, publish one tiered ICP, and re-weight the public surface from the enterprise hero toward the service trades.</li><li><strong>Why Now.</strong> Alignment Point 4 names a self-inflicted dilution: the site courts enterprise with the same weight it gives the service trades, while small fleets sit near 40 to <strong class="stat">50%</strong> telematics penetration against large fleets above <strong class="stat">80%</strong>. The least-served, fastest-converting whitespace is the exact band Azuga’s ICP occupies, and the rivals are aimed at enterprise and over-the-road trucking. No published figure isolates the service-trade segment, so the band must be modeled rather than cited.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Basis: the whitespace is well-evidenced and the rivals visibly cede it; the open piece is the band’s ceiling, which the leadership decision sets.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Runs in parallel with Initiative 1. Publishing the band waits on the leadership ICP decision and the bottom-up TAM model, which the failure-mode work flags must reach sales compensation and partner targets before the surface changes.</p>
+<h3>Initiative 4. Ungate baseline human support</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We ungate a baseline of named human support to every tier, instrument response time and a real point of contact, and ship the service claim once the data backs it.</li><li><strong>Why Now.</strong> Alignment Point 5 names a gap Azuga’s own packaging creates: the dedicated success manager sits behind the top CompleteFleet tier while customers report ghosting, offshore-support pain, and a prospect who spent two months chasing a demo. Every rival asserts the same 24/7 dedicated-support promise, so the claim is category-standard until Azuga out-delivers it. Verizon Connect’s faceless 1-800 line and Samsara’s off-renewal ghosting leave a real flank open, and it is claimable only after the lived experience is fixed.</li><li><strong>Scope.</strong> An ungated-support packaging spec that defines the baseline named-support level below the top tier and what each tier adds above it. Internal CSAT and response-time instrumentation stood up as the measurement that gates the claim. A sales talk-track v2 that carries <em class="q">“a person who knows your trade answers when you call”</em> once the response data supports it. The sequence is fix the delivery, measure it, then claim it.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Basis: Verizon’s faceless line and Samsara’s off-renewal ghosting leave a winnable flank, and the fix-then-claim sequence protects the customer; the packaging change and its cost-to-serve are the leadership call.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Depends on the leadership packaging decision and the internal CSAT and response-time baseline. The claim holds until the response data clears.</p>
+<h3>Initiative 5. Repair the simplicity claim and set the scope</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We schedule the Azuga 2.0 feature-regression repairs and publish the list of AI-breadth capabilities Azuga will deliberately not chase.</li><li><strong>Why Now.</strong> Alignment Point 6 makes simplicity winnable against rivals their own users call complex and steep, a Geotab dashcam <em class="q">“designed by someone who has never driven a van.”</em> The bound is self-inflicted: leadership concedes a 70-line-item feature trail, and Azuga’s own customers report the 2.0 redesign removed features. The simplicity claim is credible only once the regressions are repaired and the not-chasing scope is named, so the claim is honest about where it stops.</li><li><strong>Scope.</strong> A scheduled roadmap repair of the 2.0 features customers report were removed. A published <em class="q">“won’t chase”</em> scope naming the AI-breadth capabilities Azuga concedes to Samsara. A focused-challenger talk-track that reframes the resource gap as deliberate focus and wins where scale is a liability, without disputing the permanent gap (Samsara at roughly 17 times the revenue, Geotab past <strong class="stat">5 million</strong> subscriptions, Motive at <strong class="stat">$549M</strong>).</li><li><strong>Confidence this is the right next move.</strong> 3/5. Basis: the positioning lane is winnable but replicable, and bounded by a roadmap decision only product can make.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Independent of the other initiatives. Gated only by the product-roadmap decision on the regressions and the not-chasing scope.</p>
+<h3>Initiative 6. The lock-in counter-position campaign</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We aim the verified honest-terms message at fleets inside Samsara, Verizon Connect, and Motive contracts and drive the service-trade partner channel to the published band.</li><li><strong>Why Now.</strong> Once the contract reality is fixed inside the Brief, the no-trap experience becomes the headline against the exact rivals customers leave: Samsara’s 36-month full-balance exit and Verizon Connect’s auto-renewing buyout. Alignment Point 1 settles the diagnosis, and the counter-position lands only after the lived terms are true and the savings record from Initiative 1 gives the campaign its proof.</li><li><strong>Scope.</strong> A campaign aimed at fleets approaching renewal inside rival lock-in, leading with the verified honest terms and the published premium savings. A 60-day no-trap cancellation page that states the flexible terms once they are true: month-to-month available, cancel a vehicle and billing stops, no three-year trap, no surprise buyout. Partner channel resourcing against the 5-250 core and the partner-led opportunistic band, with the integrated-software resellers driven to the published ICP.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Basis: the counter-position is the sharpest move in the set, contingent on the contract fix and the published proof landing first.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Last in sequence. Waits on the contract decision inside the Brief, the published savings record from Initiative 1, and the published band from Initiative 3.</p>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>2. Sequencing</h2>
+<p>Initiative 1 leads because three later initiatives draw on the customer record it produces. Start it and the savings cases, the Bridgestone proof, and the lock-in campaign all gain the first-party evidence they need.</p>
+<p>Initiative 3 runs alongside Initiative 1. The TAM model and the surface re-weighting depend on the leadership ICP decision, not on the customer record, so the two run in parallel without contention.</p>
+<p>Initiatives 4 and 5 run independently of the proof program. Each gates on a single leadership input: the support-packaging decision for Initiative 4, the product-roadmap decision for Initiative 5. Neither waits on the others.</p>
+<p>Initiative 2 enters once Initiative 1 has published named savings and the internal Bridgestone economics are confirmed. The page needs both the concrete customer numbers and the verified parent economics before the quantified claim ships.</p>
+<p>Initiative 6 enters last. It waits on the contract decision leadership makes inside the Brief, the published savings record from Initiative 1, and the published band from Initiative 3. The campaign carries the most weight, so it ships only when the proof and the verified terms are already standing behind it.</p>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>3. What We Need From You</h2>
+<p>Each initiative starts on a decision or a piece of internal data only leadership can supply. These are the bridge to the client-decisions appendix.</p>
+<ol class="numlist"><li><strong>For Initiative 1.</strong> Permission to publish named case studies with quantified premium savings, and the customer contacts to interview. Confirmation of which accounts beyond Acree, California UMI, and Service Experts can be approached.</li><li><strong>For Initiative 2.</strong> Internal confirmation of the exclusive Firestone tire-and-service economics and the Bridgestone- and Samba-underwritten insurance figures, plus Bridgestone brand approval to surface the parent relationship and publish the Firestone and insurance economics.</li><li><strong>For Initiative 3.</strong> A leadership decision on the tiered band and its ceiling, and the internal data to build the bottom-up service-trade TAM the published figures do not isolate.</li><li><strong>For Initiative 4.</strong> A packaging decision to ungate baseline human support below the top tier, and the internal CSAT and response-time data Azuga holds but has not yet supplied.</li><li><strong>For Initiative 5.</strong> A product-roadmap decision on repairing the 2.0 regressions and the list of AI-breadth capabilities Azuga will deliberately not chase.</li><li><strong>For Initiative 6.</strong> The standard-contract-terms decision from the Brief, confirmed and shipped, since the campaign cannot lead with honest terms until the lived terms are true.</li></ol></main>
+ <footer class="foot"><span class="logo" style="height:22px;display:inline-flex"><svg style="height:22px;width:auto;display:block" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg"><polygon points="26,0 100,0 100,54 74,80 0,80 0,26" fill="#0B1220"/><text x="50" y="56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="1">BE</text></svg>
+</span></footer>
+</div></body></html>
