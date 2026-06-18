@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NexQloud Sealed — Report Library</title>
+<style>:root{--ink:#171717;--brand:#4647FF;--brand2:#191AD3;--accent:#750CFF;
+--wash:#F2F2FF;--azwash:#E9E9FF;--line:#E2E8F0;--slate:#475569;
+--h2:#4647FF;--h3:#3132B2;--h4:#750CFF;--boxbg:#ECEDFF;--boxborder:#B9B9FF;--boxlabel:#4041EB;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}
+.hero{padding:60px 64px 30px;border-bottom:1px solid var(--line);}
+.hero .logo{height:52px;margin-bottom:26px;}
+.hero .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:12px;}
+.hero h1{font-size:38px;font-weight:800;letter-spacing:-.5px;margin:0 0 12px;}
+.hero .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 18px;}
+.hero p{font-size:15px;color:var(--slate);margin:0;}
+.grid{padding:34px 64px 64px;display:grid;gap:14px;}
+.card{display:flex;gap:20px;align-items:flex-start;padding:20px 22px;border:1px solid var(--line);border-left:5px solid var(--c);border-radius:10px;text-decoration:none;color:inherit;background:#fff;transition:box-shadow .12s,transform .12s;}
+.card:hover{box-shadow:0 6px 20px rgba(15,23,42,.08);transform:translateY(-1px);}
+.cnum{font-size:24px;font-weight:800;color:var(--c);min-width:36px;line-height:1.1;}
+.ctitle{font-size:18px;font-weight:700;margin-bottom:4px;}
+.badge{font-size:11px;font-weight:600;color:var(--boxlabel);background:var(--boxbg);padding:2px 8px;border-radius:20px;vertical-align:middle;margin-left:6px;}
+.ctag{font-size:13.5px;color:var(--slate);margin-bottom:8px;}
+.copen{font-size:13px;font-weight:600;color:var(--c);display:flex;align-items:center;gap:6px;}
+.foot{padding:20px 64px;border-top:1px solid var(--line);color:var(--slate);font-size:12px;}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style id="nexqloud-fonts">body{font-family:'Lexend','Inter',system-ui,-apple-system,sans-serif;}h1,h2,h3,h4,h5,.cover h1,h2.sec,h3.sub,h4{font-family:'Lexend','Inter',sans-serif;}.cover .kicker,.kicker,.navlink,.printbtn,nav.toc h3{font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;}</style></head><body><div class="page">
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="hero"><span class="logo" style="height:52px;display:inline-flex"><svg style="height:52px;width:auto;display:block" viewBox="0 0 146 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1401_154)"><g clip-path="url(#clip1_1401_154)"><g clip-path="url(#clip2_1401_154)"><path d="M84.4524 6.7312H80.9317L76.8425 12.0687H80.3775L84.4524 6.7312Z" fill="url(#paint0_linear_1401_154)"/><path d="M90.837 6.77039C94.4647 6.77039 97.404 9.71305 97.404 13.3449V24.9263H94.5753V18.7482C93.5123 19.4838 92.2282 19.9196 90.837 19.9196C87.2093 19.9196 84.27 16.9769 84.27 13.3449C84.27 9.71305 87.2093 6.77039 90.837 6.77039ZM74.621 6.71324L84.452 19.5696H80.9313L77.7708 15.4503L74.621 19.5696H71.0647L75.998 13.1432L71.0647 6.71324H74.621ZM90.837 9.59878C88.7681 9.59878 87.0988 11.2701 87.0988 13.3414C87.0988 15.4127 88.7681 17.084 90.837 17.084C92.9059 17.084 94.5753 15.4127 94.5753 13.3414C94.5753 11.2701 92.9059 9.59878 90.837 9.59878ZM104.517 13.3449C104.517 16.9769 107.456 19.9196 111.083 19.9196C114.711 19.9196 117.651 16.9769 117.651 13.3449C117.651 9.71305 114.711 6.77039 111.083 6.77039C107.456 6.77039 104.517 9.71305 104.517 13.3449ZM107.346 13.3414C107.346 11.2701 109.015 9.59878 111.083 9.59878C113.152 9.59878 114.822 11.2701 114.822 13.3414C114.822 15.4127 113.152 17.084 111.083 17.084C109.015 17.084 107.346 15.4127 107.346 13.3414ZM66.242 16.6126C65.7033 16.9125 65.0862 17.084 64.4227 17.084C62.8568 17.084 61.5191 16.1233 60.9626 14.7592H70.8328C70.9327 14.302 70.9897 13.8306 70.9897 13.3414C70.9897 9.70949 68.0505 6.76681 64.4227 6.76681C60.795 6.76681 57.8557 9.70949 57.8557 13.3414C57.8557 16.9733 60.795 19.916 64.4227 19.916C66.8626 19.916 68.9815 18.5839 70.1158 16.609H66.242V16.6126ZM64.4227 9.60234C66.003 9.60234 67.3477 10.5808 67.8935 11.9629H60.9484C61.4978 10.5773 62.839 9.60234 64.4192 9.60234H64.4227ZM142.942 1.35645V7.94174C141.882 7.20607 140.595 6.77039 139.203 6.77039C135.575 6.77039 132.637 9.71305 132.637 13.3449C132.637 16.9769 135.575 19.9196 139.203 19.9196C142.831 19.9196 145.771 16.9769 145.771 13.3449V1.35645H142.942ZM135.468 13.3414C135.468 11.2701 137.138 9.59878 139.207 9.59878C141.276 9.59878 142.945 11.2701 142.945 13.3414C142.945 15.4127 141.276 17.084 139.207 17.084C137.138 17.084 135.468 15.4127 135.468 13.3414ZM49.9119 6.77039C46.6836 6.77039 44.1082 9.34879 44.1082 12.5808L44.1439 19.5696H46.9725V12.5808C46.9725 10.9451 48.2781 9.60234 49.9119 9.60234C51.5456 9.60234 52.8868 10.9451 52.8868 12.5808V19.5696H55.7155V12.5808C55.7155 9.3845 53.1401 6.77039 49.9119 6.77039ZM130.967 6.71324H128.138V13.8163C128.138 15.452 126.797 16.7948 125.163 16.7948C123.529 16.7948 122.188 15.452 122.188 13.8163V6.71324H119.36V13.8163C119.36 17.0126 121.935 19.6267 125.163 19.6267C128.392 19.6267 130.967 17.0483 130.967 13.8163V6.71324ZM99.7658 1.35645H102.594V19.5696H99.7658V1.35645Z" fill="#171717"/><path d="M19.7749 1.22046C26.2755 1.22046 31.5452 6.49021 31.5452 12.9908C31.5452 13.8474 31.4538 14.6826 31.2799 15.4872L27.9654 15.4875C28.2057 14.6976 28.3351 13.8593 28.3351 12.9908C28.3351 8.26309 24.5026 4.43054 19.7749 4.43054C15.0473 4.43054 11.2147 8.26309 11.2147 12.9908C11.2147 13.2955 11.2305 13.598 11.262 13.8974C11.2804 14.0723 11.3041 14.2458 11.333 14.4179L8.09038 14.4176L8.06948 14.2328C8.02633 13.8219 8.00461 13.4075 8.00461 12.9908C8.00461 11.2672 8.37509 9.63006 9.04077 8.15479C6.00027 8.82276 3.72449 11.5326 3.72449 14.7742C3.72449 18.5169 6.75858 21.551 10.5013 21.551V24.7611C4.9857 24.7611 0.514404 20.2898 0.514404 14.7742C0.514404 9.25852 4.9857 4.78722 10.5013 4.78722C10.77 4.78722 11.0375 4.79787 11.3034 4.81905C13.4439 2.60053 16.4483 1.22046 19.7749 1.22046ZM26.5518 17.2709V19.7676H23.5735C22.8815 19.7676 22.3215 20.326 22.3215 21.016C22.3215 21.7059 22.8815 22.2644 23.5735 22.2644H26.5518V24.7611H23.8874C21.8116 24.7611 20.1316 23.0859 20.1316 21.016C20.1316 18.9461 21.8151 17.2709 23.8874 17.2709H26.5518ZM27.9785 19.7676V17.2709L31.4917 17.278C33.1074 17.3349 34.3986 18.6188 34.3986 20.2797C34.3986 21.9407 33.0468 23.2886 31.3812 23.2886H30.1685V24.7611H27.9785V23.2459C27.9785 22.0402 28.9593 21.0622 30.1685 21.0622H31.5595C31.9198 21.0622 32.2086 20.7741 32.2086 20.4149C32.2086 20.0557 31.9161 19.7676 31.5595 19.7676H27.9785ZM15.3058 17.2709C17.3816 17.2709 19.0616 18.9461 19.0616 21.016C19.0616 23.0859 17.378 24.7611 15.3058 24.7611H12.6414V22.2644H15.6196C16.3116 22.2644 16.8716 21.7059 16.8716 21.016C16.8716 20.326 16.3116 19.7676 15.6196 19.7676H12.6414V17.2709H15.3058Z" fill="url(#paint1_linear_1401_154)"/></g></g></g><defs><linearGradient id="paint0_linear_1401_154" x1="77" y1="14" x2="81.4293" y2="2.44025" gradientUnits="userSpaceOnUse"><stop stop-color="#2179FF"/><stop offset="1" stop-color="#6324FF"/></linearGradient><linearGradient id="paint1_linear_1401_154" x1="-4.33683" y1="3.64607" x2="41.1435" y2="30.3279" gradientUnits="userSpaceOnUse"><stop stop-color="#0598FF"/><stop offset="0.5" stop-color="#4A44FF"/><stop offset="1" stop-color="#7C04FF"/></linearGradient><clipPath id="clip0_1401_154"><rect width="146" height="24.48" fill="#fff" transform="translate(0 0.550049)"/></clipPath><clipPath id="clip1_1401_154"><rect width="146" height="24.48" fill="#fff" transform="translate(0 0.550049)"/></clipPath><clipPath id="clip2_1401_154"><rect width="145.901" height="24.48" fill="#fff" transform="translate(0.0495605 0.550049)"/></clipPath></defs></svg></span><div class="kicker">NexQloud Sealed</div><h1>Report Library</h1>
+  <div class="accentrule"></div><p>Prepared by Fenn and Hart. The AI Governance Platform engagement. · June 2026</p></header>
+ <main class="grid"><a class="card" href="strategic_alignment_brief_executive_decision_edition.html" style="--c:#4647FF">
+  <div class="cnum">01</div><div class="cbody"><div class="ctitle">Strategic Alignment Brief: Executive Decision Edition </div>
+  <div class="ctag">The unified position, the calls the room must make, and what each costs to delay.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="strategic_alignment_brief.html" style="--c:#4647FF">
+  <div class="cnum">02</div><div class="cbody"><div class="ctitle">Strategic Alignment Brief </div>
+  <div class="ctag">One source of truth, and the moves that close the gap between it and the market.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="marketing_messaging_guide.html" style="--c:#4647FF">
+  <div class="cnum">03</div><div class="cbody"><div class="ctitle">Marketing &amp; Messaging Guide </div>
+  <div class="ctag">The guide for everyone who writes, says, or ships a word about the company.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="competitive_intelligence_report.html" style="--c:#4647FF">
+  <div class="cnum">04</div><div class="cbody"><div class="ctitle">Competitive Intelligence Report </div>
+  <div class="ctag">The battlefield map: where every rival screens at a gateway or seals the room, and where the per-action receipt they structurally lack opens the lane.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="voice_of_customer_report.html" style="--c:#4647FF">
+  <div class="cnum">05</div><div class="cbody"><div class="ctitle">Voice of Customer Report </div>
+  <div class="ctag">The customer translator: what regulated buyers and AI vendors say in their own words about governing AI, and what to do with it.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="whats_next_proposal.html" style="--c:#4647FF">
+  <div class="cnum">06</div><div class="cbody"><div class="ctitle">What’s Next Proposal </div>
+  <div class="ctag">The defined work that turns the proof artifact from a moat opportunity into a proven moat.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a>
+<a class="card" href="compliance_guide_for_review.html" style="--c:#4647FF">
+  <div class="cnum">07</div><div class="cbody"><div class="ctitle">Compliance Guide for Review </div>
+  <div class="ctag">A short alert layer: what we noticed in your market and your interviews that you ought to confirm before you publish.</div>
+  <div class="copen">Open report <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></a></main>
+ <footer class="foot">Click any report to open it. Each report has a Print / Save PDF button for a print-ready version.</footer>
+</div></body></html>
