@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PITCHPRO — Strategic Alignment Brief — Executive Decision Edition</title>
+<style>:root{--ink:#0C1E33;--brand:#1B4F8A;--brand2:#2E74B5;--accent:#E0A93B;
+--wash:#EFF3F7;--azwash:#E4EAF1;--line:#E2E8F0;--slate:#475569;
+--h2:#1B4F8A;--h3:#133761;--h4:#E0A93B;--boxbg:#E8EDF3;--boxborder:#A8BCD3;--boxlabel:#19497F;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo wordmark" style="font-size:27px;font-weight:800;letter-spacing:-.5px;color:#0C1E33">Fenn &amp; Hart</span><div class="kicker">PITCHPRO</div><h1>Strategic Alignment Brief — Executive Decision Edition</h1><div class="accentrule"></div><p class="tagline">The condensed brief, built to be read and decided in one leadership meeting.</p><div class="meta">Prepared by Fenn &amp; Hart<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>1. Executive Summary</h2>
+<div class="callout"><strong>Bottom line.</strong> PitchPro is the roofing-native platform for the <strong class="stat">$2</strong>-10M contractor who runs the whole business from one place, lead to QuickBooks, with automation built to all but run the job tracking itself. The job of this meeting is to make the market see that platform, fix the few public surfaces that contradict it today, and decide the handful of calls the evidence has teed up but not closed.</div>
+<p>PitchPro is the roofing-native operating system for the underserved <strong class="stat">$2</strong>-10M contractor: the operator who uses lots of software, is tech-savvy enough to run a desktop tool, and works mostly through per-job subcontractors the quoting and profitability tools already account for. It wins on three load-bearing advantages: roofing-native depth across the full lead-to-QuickBooks workflow, automation built to all but run itself, and predictable headcount-based pricing for a segment the incumbents nickel-and-dime. Eighty percent of contractors still run fragmented, disconnected systems, and <strong class="stat">84%</strong> manually re-enter data at three to five hours a week per user. PitchPro turns that chaos into one platform so a working roofer feels relief instead of overhead.</p>
+<p>The market perception lags that truth on every line. Roofers see four to six <em class="q">“all-in-one”</em> roofing platforms competing on the same phrase, where leadership sees one platform built to run itself for the <strong class="stat">$2</strong>-10M roofer. They see Roofr free to start and flat-priced, where leadership sees a predictable single bill with no per-seat tax and no add-on surprises. They search <em class="q">“roofing CRM”</em> and find competitors, while leadership has assumed those buyers are not searching at all. The single move that closes the distance is to lead every surface with roofing-native, runs-itself automation for the <strong class="stat">$2</strong>-10M roofer, repair the public surfaces that contradict it, and instrument the one asset that could compound into a moat.</p>
+<p>PitchPro is pre-revenue: <strong class="stat">$0 </strong>revenue, no customers, no testimonials, no case studies. State the case categorically until proof exists. The fragmentation it solves is documented across the category, the cost gap it attacks is real, and the competitor weaknesses it exploits are live. What remains is to make the market see the platform the way leadership does, fix the surfaces before marketing the promise harder, and collect the first named outcomes from trial customers so the next version of this brief can lead with proof.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>2. Decisions Required</h2>
+<p><em>Confidence: 5 Settled, 4 Strong lean, 3 Lean, 2 Open, 1 Judgment call.</em></p>
+<p>These are the calls for this meeting. Decision 1 can close in the room. Decisions 2 through 5 are greenlights for scoping; the Confidence tag on each marks how far the evidence carries it.</p>
+<h3>Decision 1. Fix the <em class="q">“only all-in-one”</em> claim and the broken surfaces</h3>
+<ol class="numlist"><li><strong>The decision.</strong> Keep the <em class="q">“only all-in-one”</em> superlative, or replace it with a defensible specific and repair the surfaces before any campaign ships.</li><li><strong>The recommended call.</strong> Replace <em class="q">“the only all-in-one”</em> everywhere with the roofing-native platform built to run itself for the <strong class="stat">$2</strong>-10M contractor, then take Stripe out of test mode, replace the placeholder demo with a real walkthrough, and fill the empty About and blog pages. Roofr uses <em class="q">“all-in-one”</em> verbatim across at least five live pages, Housecall Pro uses it sitewide, and four of the top six roofing platforms use the phrase, so the superlative is disprovable the moment a buyer checks.</li><li><strong>Confidence.</strong> 5/5. What would raise it: nothing further is needed to act; a verbatim competitor page cannot be un-falsified.</li><li><strong>What it costs to wait.</strong> Every campaign dollar spent before the fix lands a high-intent buyer on a broken demo and a test-mode checkout, and forfeits credibility against a funded incumbent on day one. [Decide and Pivot]</li></ol>
+<h3>Decision 2. Lead the brand on <em class="q">“built to run itself”</em></h3>
+<ol class="numlist"><li><strong>The decision.</strong> Lead the brand on roofing-native, runs-itself automation now, or let speed-to-quote carry the headline until the full automation is provable.</li><li><strong>The recommended call.</strong> Lead with roofing-native, runs-itself automation for the <strong class="stat">$2</strong>-10M roofer, the frame where the biggest competitor gaps and the strongest customer cravings overlap, and pour scarce engineering into the operational backbone the incumbents fail at: clean two-way QuickBooks, a real mobile experience, no add-on surprises. The <em class="q">“runs itself”</em> half cannot be demonstrated against a placeholder demo, so ship a working demo first.</li><li><strong>Confidence.</strong> 3/5. What would raise it: a working demo of the 15-second quote and auto-advancing whiteboard, plus trial-user tests measuring which message drives sign-up and activation.</li><li><strong>What it costs to wait.</strong> The competitor gaps PitchPro aims at, Roofr’s missing native mobile and thin QuickBooks sync, stay open only until a funded incumbent closes them. [Requires Next-Phase Scoping]</li></ol>
+<h3>Decision 3. Win on predictable total cost, never cheapest</h3>
+<ol class="numlist"><li><strong>The decision.</strong> Claim a flat total-cost price advantage, or hold to <em class="q">“predictable, no surprises”</em> until the net-cost math is proven.</li><li><strong>The recommended call.</strong> Position one predictable bill, no per-seat tax, up to 20 people for <strong class="stat">$399, </strong>aimed at the <strong class="stat">$2</strong>-10M roofer being nickel-and-dimed by add-on stacks, and never claim <em class="q">“cheapest.”</em> Incumbent stacks run <strong class="stat">$800</strong>-<strong class="stat">$2,600 </strong>a month, yet Roofr is already flat with a <strong class="stat">$0 </strong>tier and PitchPro’s <strong class="stat">$399 </strong>floor sits at the bottom of the stack it claims to replace. Build a net-cost comparison as a sales tool, not a headline, until the target customer’s report volume is known.</li><li><strong>Confidence.</strong> 3/5. What would raise it: a net-cost model for a representative <strong class="stat">$2</strong>-10M roofer, PitchPro flat <strong class="stat">$399 </strong>against Roofr Scale <strong class="stat">$349 </strong>plus reports times volume plus needed add-ons, across low, medium, and high measurement-report usage.</li><li><strong>What it costs to wait.</strong> Without the net-cost model, sales has no answer when a buyer compares <strong class="stat">$399 </strong>against Roofr’s <strong class="stat">$349</strong>-plus-fees, and the predictability advantage goes unspoken. [Requires Next-Phase Scoping]</li></ol>
+<h3>Decision 4. The moat opportunity: the roofing pricing data asset</h3>
+<ol class="numlist"><li><strong>The decision.</strong> Treat consolidation as the durable advantage, or name it as a present wedge and instrument the pricing and profitability data asset as the unproven moat opportunity.</li><li><strong>The recommended call.</strong> Name consolidation as a present speed-to-value wedge any funded rival can copy, which Roofr already has, and name the proprietary roofing pricing and job-profitability dataset as the only candidate with the shape of a moat. Commit engineering to capturing every quote’s pricing and realized profitability from the first customer, so the asset compounds into a recommendation engine no rival can copy by adding features. It is unproven today: PitchPro is pre-revenue with no data flowing, and the AI ingest remains a claimed product feature with no proof yet that pricing and profitability data is being captured and learned from.</li><li><strong>Confidence.</strong> 2/5. What would raise it: a quote and job volume where PitchPro’s pricing and profitability recommendations are measurably more accurate than a cold competitor’s, plus at least one defensible supplier or data relationship a new entrant could not assemble off the shelf.</li><li><strong>What it costs to wait.</strong> Every quote that flows before instrumentation is built is a record PitchPro cannot learn from, and the one asset that could become uncopyable never starts compounding. [Requires Next-Phase Scoping]</li></ol>
+<h3>Decision 5. Capture search demand, keep the push</h3>
+<ol class="numlist"><li><strong>The decision.</strong> Stay push-only to the passive majority, or run both push and a capture layer for the buyers already searching.</li><li><strong>The recommended call.</strong> Run both. Keep the outbound to the passive majority and the 15-day trial as the low-friction offer, fill the empty blog with roofing-specific content, and run a small paid-search test on <em class="q">“roofing CRM”</em> and <em class="q">“roofing software”</em> against an outbound test, then allocate budget by cost-per-activated-trial. Those terms are active search categories with competitors ranking and running paid search, while PitchPro’s blog returns an empty page.</li><li><strong>Confidence.</strong> 3/5. What would raise it: actual keyword volume and CPC data for <em class="q">“roofing CRM”</em> and <em class="q">“roofing software,”</em> plus a small paid-search test versus an outbound test comparing cost-per-activated-trial.</li><li><strong>What it costs to wait.</strong> Every high-intent buyer searching <em class="q">“roofing CRM”</em> today lands on a competitor, and PitchPro captures none of demand it could capture from an asset that is free to build. [Requires Next-Phase Scoping]</li></ol>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>3. Risk of Inaction</h2>
+<p>If the team leaves without deciding, these keep bleeding.</p>
+<ol class="numlist"><li><strong>The disprovable headline collapses on contact.</strong> Launch a campaign on <em class="q">“the only all-in-one”</em> and the first buyer who checks Roofr’s homepage falsifies it in thirty seconds, spending credibility against a funded rival rather than building it.</li><li><strong>First impressions burn on broken surfaces.</strong> A high-intent buyer who arrives at a test-mode checkout and a placeholder demo leaves, and the launch spends its scarcest resource on surfaces that contradict the promise.</li><li><strong>The moat candidate never starts.</strong> Quotes that flow before the data capture is instrumented become dead records, and the proprietary pricing and profitability asset that could compound into the one uncopyable advantage accumulates nothing.</li><li><strong>High-intent search demand goes to incumbents for free.</strong> Buyers searching <em class="q">“roofing CRM”</em> and <em class="q">“roofing software”</em> land on ranked competitors while PitchPro’s blog sits empty, ceding demand that costs almost nothing to begin capturing.</li></ol></main>
+ <footer class="foot"><span class="logo wordmark" style="font-size:13px;font-weight:800;letter-spacing:-.5px;color:#0C1E33">Fenn &amp; Hart</span></footer>
+</div></body></html>

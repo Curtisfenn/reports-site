@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PITCHPRO — Compliance Guide for Review</title>
+<style>:root{--ink:#0C1E33;--brand:#1B4F8A;--brand2:#2E74B5;--accent:#E0A93B;
+--wash:#EFF3F7;--azwash:#E4EAF1;--line:#E2E8F0;--slate:#475569;
+--h2:#1B4F8A;--h3:#133761;--h4:#E0A93B;--boxbg:#E8EDF3;--boxborder:#A8BCD3;--boxlabel:#19497F;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo wordmark" style="font-size:27px;font-weight:800;letter-spacing:-.5px;color:#0C1E33">Fenn &amp; Hart</span><div class="kicker">PITCHPRO</div><h1>Compliance Guide for Review</h1><div class="accentrule"></div><p class="tagline">A short list of things we noticed that you ought to confirm with a professional before you publish.</p><div class="meta">Prepared by Fenn &amp; Hart<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>0. How to Use This Guide, and Our Role</h2>
+<div class="callout"><strong>Our role, plainly.</strong> We work with you on marketing and strategy. Your legal counsel handles the law. This guide is <strong>not legal advice</strong>, and it does not serve as a compliance audit. What follows is a short list of things we noticed in your market and heard in your own interviews that you ought to be aware of and confirm with a qualified professional, an attorney or a regulatory specialist, before you publish. We flag and we point. We never tell you a claim is compliant or safe. That call belongs to you and your counsel.</div>
+<p>This guide is keyed to the claims your strategy recommends, the ones in your Strategic Alignment Brief and your Marketing &amp; Messaging Guide. It covers marketing communication only: what you say, where you say it, and what you may need to disclose. It does not touch employment, tax, corporate, or product-engineering questions.</p>
+<p>Our default assumption is US federal law, because your primary geography is not stated in the interviews. Where a rule is state-specific or international, we say so and mark it as a question for your counsel.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>1. What We Noticed</h2>
+<p>The handful of considerations most worth your attention before launch. We kept the list short on purpose; it raises awareness and does not attempt a full regime survey.</p>
+<h4>The truthful-and-substantiated baseline</h4>
+<ol class="numlist"><li><strong>The alert.</strong> The FTC expects every objective marketing claim to be truthful and backed by a reasonable basis, meaning competent and reliable evidence held before the claim runs.<a class="cref" href="#ref1"><sup>1</sup></a> This applies to essentially all US commercial marketing.</li><li><strong>Why it matters for your marketing.</strong> Your strategy makes several objective claims: that PitchPro replaces a stack of five tools, that the competing stack runs <em class="q">“<strong class="stat">$400</strong>-<strong class="stat">$900</strong>+/mo,”</em> and that one platform carries the whole lead-to-QuickBooks workflow. Each of these is an objective claim a regulator would expect you to be able to support with evidence on file.<a class="cref" href="#ref1"><sup>1</sup></a></li><li><strong>Confirm with a professional.</strong> Ask your counsel what documentation counts as a reasonable basis for your savings and feature-count claims, and assemble that file before the claims run.<a class="cref" href="#ref1"><sup>1</sup></a></li></ol>
+<h4>The <em class="q">“only all-in-one”</em> and the savings comparisons</h4>
+<ol class="numlist"><li><strong>The alert.</strong> Comparative claims that name or imply competitors, including a price comparison and a uniqueness claim like <em class="q">“the only all-in-one,”</em> carry a higher substantiation burden. The FTC’s comparative-advertising guidance asks that your own claims and any information about competitors both be truthful and substantiated.<a class="cref" href="#ref2"><sup>2</sup></a> A uniqueness or superiority claim must be provably true at the time it runs.<a class="cref" href="#ref2"><sup>2</sup></a></li><li><strong>Why it matters for your marketing.</strong> Your Brief already retired <em class="q">“the only all-in-one”</em> because four of the top six roofing platforms use the phrase, so the superlative is disprovable. The <em class="q">“<strong class="stat">$400</strong>-<strong class="stat">$900</strong>+/mo stack”</em> comparison implies the competitor figures are current and supportable, which a regulator would expect you to back.<a class="cref" href="#ref2"><sup>2</sup></a></li><li><strong>Confirm with a professional.</strong> Ask your counsel what a documented competitive-landscape review needs to contain before any uniqueness or named-competitor price comparison runs, and whether a qualified phrasing such as <em class="q">“one of the few”</em> is the safer position pre-launch.<a class="cref" href="#ref2"><sup>2</sup></a></li></ol>
+<h4>The 15-day free trial that converts to paid</h4>
+<ol class="numlist"><li><strong>The alert.</strong> A free trial that auto-converts to a paid subscription falls under the FTC’s amended Negative Option Rule, often called the Click-to-Cancel rule, finalized in October 2024.<a class="cref" href="#ref3"><sup>3</sup></a> It generally calls for clear disclosure of the subscription terms before billing information is collected, affirmative consent to the auto-renewal, a cancellation path at least as easy as sign-up, and a reminder before the trial ends.<a class="cref" href="#ref3"><sup>3</sup></a> California’s Automatic Renewal Law, amended in 2024 and effective July 1, 2025, is stricter and now expressly covers free-to-pay conversions.<a class="cref" href="#ref4"><sup>4</sup></a> It may apply to any business marketing to California residents.<a class="cref" href="#ref4"><sup>4</sup></a></li><li><strong>Why it matters for your marketing.</strong> Your 15-day free trial is the low-friction conversion offer across every channel in your MMG, so the offer page, the sign-up flow, and the cancellation path all sit inside this rule.<a class="cref" href="#ref3"><sup>3</sup></a> If California roofing contractors are in your addressable market, the state law may add obligations on top of the federal rule.<a class="cref" href="#ref4"><sup>4</sup></a></li><li><strong>Confirm with a professional.</strong> Ask your counsel to review your trial disclosures, your sign-up consent, and your cancellation flow against the federal rule, and whether your California subscriber volume triggers the state law.<a class="cref" href="#ref3"><sup>3</sup></a> <a class="cref" href="#ref4"><sup>4</sup></a></li></ol>
+<h4>Testimonials and reviews, once you have customers</h4>
+<ol class="numlist"><li><strong>The alert.</strong> The FTC’s revised Endorsement Guides, effective June 2023, generally call for clear and conspicuous disclosure of any material connection between an endorser and the brand, such as payment, a free product, a discount, or equity.<a class="cref" href="#ref5"><sup>5</sup></a> The Consumer Reviews and Testimonials Rule, effective October 21, 2024, bans fake and incentivized reviews and the suppression of negative ones.<a class="cref" href="#ref5"><sup>5</sup></a></li><li><strong>Why it matters for your marketing.</strong> This is forward-looking for you, because PitchPro is pre-revenue with no testimonials yet. The moment you solicit reviews or case studies from early customers, beta users, or pilot partners, any incentive you offer them generally needs to be disclosed next to the endorsement.<a class="cref" href="#ref5"><sup>5</sup></a> Your Brief’s plan to secure testimonial-release language in the first trial agreements is the right place to build this in.</li><li><strong>Confirm with a professional.</strong> Before you run your first testimonial, ask your counsel how to disclose any incentive you give a customer for a review, and how to handle negative reviews without running afoul of the rule.<a class="cref" href="#ref5"><sup>5</sup></a></li></ol>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>2. Claim Flags</h2>
+<p>The specific claims your strategy makes that are worth a check before you publish. We do not clear any of these. The right-hand column points to the defensible version your MMG already carries.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>The claim</th>
+<th>What to confirm</th>
+<th>The defensible version (already in your MMG)</th>
+</tr></thead><tbody>
+<tr>
+<td><em class="q">“The only all-in-one”</em> roofing platform</td>
+<td>A uniqueness claim must be provably true when it runs; with competitors using the phrase, confirm whether it can be supported at all or should be dropped.<a class="cref" href="#ref2"><sup>2</sup></a></td>
+<td><em class="q">“The roofing-native platform built to run itself for the <strong class="stat">$2</strong>-10M contractor.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Replaces 5 tools”</em> / <em class="q">“<strong class="stat">$400</strong>-<strong class="stat">$900</strong>+/mo stack”</em> savings comparison</td>
+<td>What evidence counts as a reasonable basis for the savings figure and the competitor price comparison, held on file before the claim runs.<a class="cref" href="#ref1"><sup>1</sup></a> <a class="cref" href="#ref2"><sup>2</sup></a></td>
+<td><em class="q">“One bill by crew size instead of a stack of add-ons,”</em> shipped as a net-cost comparison sales tool, not a headline.</td>
+</tr>
+<tr>
+<td><em class="q">“Cheapest roofing software”</em> / <em class="q">“save up to [X]%”</em></td>
+<td>Whether any savings percentage or cheapest claim can be substantiated; a rival is flat and cheaper at entry.<a class="cref" href="#ref1"><sup>1</sup></a></td>
+<td><em class="q">“One predictable bill, no per-seat tax, no add-on surprises.”</em> Win on predictable total cost.</td>
+</tr>
+<tr>
+<td><em class="q">“Fully automated / runs itself, no hands”</em></td>
+<td>Whether an absolute automation claim is supportable pre-revenue, before the demo proves it. [confirm with a professional]</td>
+<td><em class="q">“Built to all but run itself; you confirm the calls that matter.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Carrier-approved insurance reports”</em></td>
+<td>The report is self-disclosed as not carrier-approved, so this claim would be false as stated. [confirm with a professional]</td>
+<td><em class="q">“A documentation PDF the adjuster works from,”</em> positioned as a documentation aid.</td>
+</tr>
+<tr>
+<td><em class="q">“#1 roofing platform”</em> / <em class="q">“Trusted by roofers everywhere”</em></td>
+<td>A ranking or trust claim has no basis pre-revenue; confirm whether it can run at all before customers exist. [confirm with a professional]</td>
+<td><em class="q">“Built for the <strong class="stat">$2</strong>-10M roofer”</em> / <em class="q">“Built by a roofer for the <strong class="stat">$2</strong>-10M contractor.”</em></td>
+</tr>
+<tr>
+<td>The 15-day free trial offer and its cancellation terms</td>
+<td>Whether the trial disclosures, the auto-renewal consent, and the cancellation flow meet the federal and, where relevant, California subscription rules.<a class="cref" href="#ref3"><sup>3</sup></a> <a class="cref" href="#ref4"><sup>4</sup></a></td>
+<td><em class="q">“You can cancel as easily as you signed up,”</em> with cancellation terms shown before sign-up.</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>3. A Quick Channel Check</h2>
+<p>The channels your strategy puts in play, one line each, naming the one thing to confirm.</p>
+<ul class="cues"><li><strong>Email (cold outbound to roofing contractors).</strong> Commercial email to business prospects is covered by the CAN-SPAM Act; confirm your messages carry a valid physical postal address, a working opt-out, and a non-deceptive subject and <em class="q">“From”</em> line, and that opt-outs are honored.<a class="cref" href="#ref6"><sup>6</sup></a></li><li><strong>SMS or text marketing.</strong> If you market by text, the TCPA and the FCC’s one-to-one consent rule generally require prior express written consent before a promotional text; confirm your consent capture before any text campaign, including the business-number versus personal-cell nuance for contractor owners.<a class="cref" href="#ref7"><sup>7</sup></a></li><li><strong>Paid ads (Google, Meta, LinkedIn).</strong> Each platform layers its own policies on top of FTC rules, including limits on unsubstantiated and misleading comparison claims and a requirement that the ad match the landing page; confirm your savings and comparison claims against each platform’s policy at launch.<a class="cref" href="#ref8"><sup>8</sup></a></li><li><strong>Lead and customer data.</strong> As you collect contact data through web capture and trial sign-up, the CCPA and CPRA and parallel state privacy laws may apply once you cross revenue or data-volume thresholds; confirm your data-collection notices and monitor the thresholds as you grow.<a class="cref" href="#ref9"><sup>9</sup></a></li></ul>
+<h2 class="sec" id="sec5"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>4. What to Take to Your Professional</h2>
+<p>A short checklist of what to confirm before you publish. Each is framed as a question for your counsel or regulatory specialist.</p>
+<ul class="cues"><li>What documentation do we need on file as a reasonable basis for the <em class="q">“replaces 5 tools”</em> and <em class="q">“<strong class="stat">$400</strong>-<strong class="stat">$900</strong>+/mo stack”</em> claims before they run?<a class="cref" href="#ref1"><sup>1</sup></a> <a class="cref" href="#ref2"><sup>2</sup></a></li><li>Can any uniqueness, <em class="q">“cheapest,”</em> <em class="q">“#1,”</em> or percentage-savings claim be supported, or should it stay retired until we have evidence?<a class="cref" href="#ref1"><sup>1</sup></a> <a class="cref" href="#ref2"><sup>2</sup></a></li><li>Do our 15-day trial disclosures, auto-renewal consent, and cancellation flow meet the federal Click-to-Cancel rule, and does our California subscriber volume trigger the state Automatic Renewal Law?<a class="cref" href="#ref3"><sup>3</sup></a> <a class="cref" href="#ref4"><sup>4</sup></a></li><li>When we collect our first testimonials and reviews, how do we disclose any incentive and handle negative reviews under the FTC rules?<a class="cref" href="#ref5"><sup>5</sup></a></li><li>Does our cold email meet CAN-SPAM, and if we add SMS, what consent do we need under the TCPA and the FCC one-to-one rule?<a class="cref" href="#ref6"><sup>6</sup></a> <a class="cref" href="#ref7"><sup>7</sup></a></li><li>What privacy notices do we owe for the lead and customer data we collect, and at what growth point do CCPA, CPRA, or other state privacy laws apply to us?<a class="cref" href="#ref9"><sup>9</sup></a></li><li>Which jurisdictions are we marketing into? We have assumed US federal law throughout; confirm whether state laws (California first) or any international rules apply to our subscriber base and our data.<a class="cref" href="#ref4"><sup>4</sup></a> <a class="cref" href="#ref9"><sup>9</sup></a></li><li>We have treated FDA, HIPAA, SEC, FINRA, and contractor-licensing rules as outside our scope because PitchPro is a B2B roofing operations tool; confirm that holds if we ever claim to help users obtain licensing or pass inspections.<a class="cref" href="#ref10"><sup>10</sup></a></li></ul>
+<h2 class="sec" id="sec6"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>5. What We Looked At</h2>
+<h3>Sources</h3>
+<ul class="cues"><li>FTC Policy Statement Regarding Advertising Substantiation, ftc.gov (March 11, 1983, still operative); FTC Press Release, <em class="q">“FTC Warns Almost 700 Marketing Companies,”</em> ftc.gov (April 2023); 16 CFR Part 1, 2023 Adjustments to Civil Penalty Amounts, ftc.gov (2024).</li><li>FTC Statement of Policy Regarding Comparative Advertising, ftc.gov (August 13, 1979, still operative); FTC Advertising Substantiation Principles, ftc.gov.</li><li>FTC Negative Option Rule (Click-to-Cancel), 16 CFR Part 425, finalized October 2024, ftc.gov; FTC v. Adobe complaint, ftc.gov (June 2024).</li><li>California Automatic Renewal Law, Cal. Bus. &amp; Prof. Code §§ 17600-17606, as amended by SB 1013 (September 24, 2024), effective July 1, 2025; Sidley Austin LLP client alert, sidley.com (October 2024); Venable LLP client alert, venable.com (September 2024).</li><li>FTC Revised Endorsement Guides, 16 CFR Part 255, effective June 2023, ftc.gov; FTC Consumer Reviews and Testimonials Rule, effective October 21, 2024, ftc.gov (August 2024).</li><li>CAN-SPAM Act, 15 U.S.C. §§ 7701-7713; FTC, <em class="q">“CAN-SPAM Act: A Compliance Guide for Business,”</em> ftc.gov; FTC blog on B2B senders, ftc.gov (August 2023).</li><li>Telephone Consumer Protection Act, 47 U.S.C. § 227; FCC One-to-One Consent Rule (FCC 24-24, January 2024), effective January 27, 2025, fcc.gov; FCC DA-24-910A1, docs.fcc.gov (September 2024).</li><li>Google Ads Policies (Misrepresentation), support.google.com/adspolicy; Meta Advertising Standards, transparency.fb.com/policies/ad-standards; LinkedIn Advertising Policies, business.linkedin.com/marketing-solutions/ads/ad-policies. Platform policies update frequently; confirm at launch.</li><li>California Consumer Privacy Act, Cal. Civ. Code §§ 1798.100 et seq., as amended by the California Privacy Rights Act (Prop. 24, 2020), effective January 1, 2023, enforcement effective July 1, 2023; CPPA FAQ, cppa.ca.gov; thresholds at Cal. Civ. Code § 1798.140(d). Parallel comprehensive privacy laws exist in Virginia, Colorado, Connecticut, Texas, and other states.</li><li>Scope-bounding note based on product category: PitchPro is a B2B roofing operations SaaS, not a health, financial, or securities product, so FDA, HIPAA, SEC, FINRA, and state contractor-licensing rules do not govern its marketing. No regulatory citation required. [confirm with a professional]</li></ul></main>
+ <footer class="foot"><span class="logo wordmark" style="font-size:13px;font-weight:800;letter-spacing:-.5px;color:#0C1E33">Fenn &amp; Hart</span></footer>
+</div></body></html>

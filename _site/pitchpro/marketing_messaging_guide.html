@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PITCHPRO — Marketing &amp; Messaging Guide</title>
+<style>:root{--ink:#1A2A10;--brand:#5B911F;--brand2:#3E6614;--accent:#E0892A;
+--wash:#F4F7EF;--azwash:#EBF2E4;--line:#E2E8F0;--slate:#475569;
+--h2:#5B911F;--h3:#406616;--h4:#E0892A;--boxbg:#EFF4E9;--boxborder:#C1D5AA;--boxlabel:#54851D;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo wordmark" style="font-size:27px;font-weight:800;letter-spacing:-.5px;color:#1A2A10">PitchPro</span><div class="kicker">PITCHPRO</div><h1>Marketing &amp; Messaging Guide</h1><div class="accentrule"></div><p class="tagline">The guide for everyone who writes, says, or ships a word about the company.</p><div class="meta">Prepared by Fenn &amp; Hart<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>0. How to Use This Guide</h2>
+<p>This guide turns PitchPro’s source of truth into positioning and copy a roofing-software company can ship. Every sample line is finished copy in one committed voice. Lift it, adapt it, ship it. Where the guide states the position, it states it word for word from the source of truth, so the homepage, the cold email, the sales deck, and the renewal note all march to the same line.</p>
+<p>The source of truth is the single statement three views resolve into, weighted to what leadership believes:</p>
+<ul class="cues"><li><strong>Internal View</strong> - what the founder believes, weighted most heavily.</li><li><strong>Customer-Facing View</strong> - what the PitchPro website and public materials say today.</li><li><strong>Market Perception</strong> - how roofing contractors and the market see the category now.</li></ul>
+<h4>What each team pulls from here</h4>
+<ul class="cues"><li><strong>Marketing:</strong> the hero, the taglines, the LinkedIn headlines, the cold-email openers.</li><li><strong>Sales:</strong> the talk-tracks, the objection responses, the deck cover.</li><li><strong>Customer success:</strong> the onboarding, mid-term, and renewal email language.</li><li><strong>Partners and resellers:</strong> the channel message and the support-ownership answer.</li></ul>
+<p><strong>A note on claims.</strong> PitchPro is pre-revenue, so several claims here are written in their defensible form, framed as the position to set rather than the result to assert. Where a claim carries a compliance consideration, it is flagged in the separate Compliance Guide for Review. Confirm substantiation and any required disclosure with a qualified professional before publishing. Any line tagged [client to confirm before publication] needs a fact or a working surface behind it before it goes live.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>1. The Unified Source of Truth</h2>
+<p>Everything in this guide builds up from one statement. Read it first, then build every headline, deck, email, and answer downward from it.</p>
+<div class="callout"><strong>Source of truth.</strong> PitchPro is the roofing-native operating system for the underserved <strong class="stat">$2</strong>-10M contractor. It turns the lead-to-QuickBooks chaos of five disconnected tools into one platform built to all but run itself, with predictable headcount-based pricing in place of per-seat-plus-add-on stacks, so a working roofer finally feels relief instead of overhead.</div>
+<p>The market today sees four to six roofing platforms all calling themselves <em class="q">“all-in-one,”</em> and it sees a category where the biggest funded player already ships breadth. Underneath that, leadership sees one platform built for the working roofer to run end to end with very little hands-on upkeep. The job of this guide is to move what the market sees toward what leadership already sees: a roofing-native system that carries the job from the first lead to the QuickBooks export and asks almost nothing of the operator in between.</p>
+<h3>1.1 Brand Line Options</h3>
+<p>A CMO can write from either of these. Both carry the whole.</p>
+<ul class="cues"><li><em class="q">“Roofing software that runs the back office so you can run the roofs.”</em></li><li><em class="q">“One platform for the <strong class="stat">$2</strong>-10M roofer. Lead to QuickBooks, built to all but run itself.”</em></li></ul>
+<h3>1.2 The Three Things This Guide Holds in One Line</h3>
+<ul class="cues"><li><strong>Who it is built for:</strong> the <strong class="stat">$2</strong>-10M roofing contractor who already pays for several tools, can run a desktop platform, and works mostly through subcontractors paid by the job.</li><li><strong>How it wins:</strong> roofing-native depth across the full lead-to-QuickBooks workflow, automation built to all but run the job tracking itself, and one predictable headcount-based bill with no per-seat tax and no add-on surprises.</li><li><strong>Why it exists:</strong> so a working roofer stops paying the tax of five disconnected apps and feels relief instead of overhead.</li></ul>
+<h3>1.3 Purpose &amp; Belief (the Why)</h3>
+<p>The Golden Circle for this brand, in plain words. The foundation the pillars hang from.</p>
+<ul class="cues"><li><strong>Why (the cause):</strong> a roofer should run the whole business from one place and feel like a trusted buddy simplified their life, the <em class="q">“why didn’t I do this before”</em> feeling, instead of carrying the overhead of stitching tools together.</li><li><strong>How (the non-negotiables):</strong> built roofing-native, not a generic field-service tool bent to fit. Priced as one bill by headcount, never per seat, never an add-on surprise. Designed so the system carries the busywork and the operator confirms the work that matters.</li><li><strong>What (the proof of the why):</strong> the platform covers everything from a lead to the QuickBooks export, the auto-advancing project whiteboard keeps every job moving with little hands-on upkeep, and the 15-second AI quote turns a measurement PDF into a priced draft. The pillars below are these promises made specific.</li><li><strong>The contrarian belief (the wedge):</strong> leadership believes the way to win the <strong class="stat">$2</strong>-10M roofer is to win the unglamorous backbone, clean QuickBooks and a real mobile experience and no add-on surprises, while funded rivals keep out-shouting each other on breadth. Competitors would dispute that the boring parts decide the sale. The positioning leans here, and a working demo plus early trial results will confirm it.</li></ul>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>2. Messaging Pillars</h2>
+<p>The pillars below are facets of the single source of truth. Each is the same platform seen from a different seat, and each points back to the whole. Each pillar lands hardest on the personas it was built for, so concentrate the proof where it converts.</p>
+<h4>Pillar 1: One roofing-native platform, built to all but run itself.</h4>
+<ol class="numlist"><li><strong>Connects to HOW it wins:</strong> PitchPro carries the job from the first lead to the QuickBooks export inside one roofing-native system, with the auto-advancing project whiteboard moving jobs along so the operator sees where every job sits with very little hands-on upkeep. Roofers say one integrated system is the reason they stay and the thing they cannot find: <em class="q">“I stay because I haven’t found anything else that integrates project management, crm and a calendar in one software.”</em> <em class="q">“I like that AccuLynx keeps all jobs, leads, documents, photos, notes, and communication inside one system. It eliminates the chaos of using multiple apps.”</em> This pillar leans on the runs-itself half of the source of truth, which the company is building toward and cannot yet demonstrate against a live demo, so treat it as the bet PitchPro is making and confirm it with the demo. The well-proven half is the operational backbone competitors leave unfinished.</li><li><strong>The move (make the market see it):</strong> lead the homepage and the deck on roofing-native, built-to-run-itself automation for the <strong class="stat">$2</strong>-10M roofer. Show the auto-advancing whiteboard and the 15-second AI quote in a working demo before claiming <em class="q">“runs itself”</em> in a headline. Until the demo runs live, let speed-to-quote carry the top line and treat full automation as the promise on the way. Pour engineering into the backbone rivals fail at: clean two-way QuickBooks, a real mobile experience, and no add-on surprises.</li><li><strong>What each team gets:</strong> marketing gets the hero and the <em class="q">“built to run itself”</em> narrative. Sales gets the demo walkthrough and the <em class="q">“show me where my jobs are without touching anything”</em> talk-track. Content and CS get the onboarding story that the system carries the busywork.</li></ol>
+<h4>Pillar 2: Built for roofing, not bent to fit it.</h4>
+<ol class="numlist"><li><strong>Connects to WHO it is built for:</strong> PitchPro is built for the roofer’s actual workflow, the subcontractor paid by the job, the measurement PDF, the supplier price, the insurance photo report. Roofers switch away from generic tools for exactly this reason: <em class="q">“It was limited in roofing specific integrations.”</em> A roofer who quoted a generic estimator put it plainly: <em class="q">“It doesn’t have an option to generate multiple estimate tiers within the same estimate, so the only way to do a ‘good, better, best’ estimate strategy is to generate three separate estimates, which is time consuming.”</em> The quoting tool and the profitability calculator already account for the subcontractor-by-the-job model the <strong class="stat">$2</strong>-10M roofer runs on.</li><li><strong>The move (make the market see it):</strong> name the roofing-native workflow on every surface. Show the 15-second AI quote ingesting a Roofr or EagleView measurement PDF and returning a priced draft. Speak the trade’s language: squares, pitch, waste factor, supplier price, the kitchen-table proposal. Position against generic field-service tools by being specific where they are general.</li><li><strong>What each team gets:</strong> marketing gets the <em class="q">“for roofers, by the workflow”</em> angle. Sales gets the roofing-native feature list to demo. Content gets blog topics aimed at <em class="q">“roofing CRM”</em> and <em class="q">“roofing software”</em> searches.</li></ol>
+<h4>Pillar 3: One predictable bill, no per-seat tax, no add-on surprises.</h4>
+<ol class="numlist"><li><strong>Connects to the commercial posture:</strong> PitchPro prices by headcount, one bill, <strong class="stat">$399 </strong>a month for up to 20 employees, with no per-seat charge and no features held back behind paid add-ons. Roofers carry real resentment toward the stack-and-charge model: <em class="q">“Everything is an add-on, and you have to commit to the whole portion of that add-on in regard to price… when you start to crest into the thousand-dollar range, the bang for your buck is lessened.”</em> <em class="q">“The price is a bit high and if you want to utilize some additional features you have to pay substantially more.”</em> Incumbent per-user stacks reach well over a thousand dollars a month for a full setup. This pillar wins on predictability, never on being the cheapest, because a funded rival is already flat and cheaper at the entry tier. Whether <strong class="stat">$399 </strong>beats a competitor’s net cost depends on a roofer’s real measurement-report volume [client to confirm before publication].</li><li><strong>The move (make the market see it):</strong> position pricing as <em class="q">“one predictable bill for your whole crew”</em> aimed at the <strong class="stat">$2</strong>-10M roofer tired of being nickel-and-dimed. Build a net-cost comparison that adds up the total a roofer actually pays, subscription plus per-report fees plus add-ons, and use it as a sales tool. Never run a <em class="q">“cheapest”</em> or unqualified savings claim in paid ads or on the homepage.</li><li><strong>What each team gets:</strong> marketing gets the <em class="q">“no add-on surprises”</em> value hook. Sales gets the net-cost comparison worksheet. CS gets the renewal line that the bill does not creep.</li></ol>
+<h4>Pillar 4: We answer to the operator, not a parent company.</h4>
+<ol class="numlist"><li><strong>Connects to the service relationship:</strong> roofers describe being treated as a hostage by software they cannot leave cleanly and cannot reach when it breaks: <em class="q">“they hold their data hostage.”</em> <em class="q">“I sat on hold for over an hour today waiting for a customer service representative who never even came to the line.”</em> <em class="q">“Support hours. Not available evenings and weekends. We often have issues outside of normal business hours.”</em> PitchPro is built to be the trusted buddy that simplified the roofer’s life, a relationship the operator can hold the company to. This is an earn-it-then-claim-it pillar: PitchPro is pre-revenue, so the service promise is set now and proven by the first customers [client to confirm before publication].</li><li><strong>The move (make the market see it):</strong> set the service standard in plain commitments the company will keep, clean data export if a customer leaves, a real human to reach, support when roofing actually happens. Do not claim a support outcome until trial customers can vouch for it. Collect the first named service stories the moment they exist and lead with them next.</li><li><strong>What each team gets:</strong> marketing gets the <em class="q">“you can hold us to it”</em> promise. Sales gets the answer to the cancellation-friction and data-hostage objections. CS gets the onboarding and renewal scripts that make the promise real.</li></ol>
+<h4>Pillar 5: We capture the roofers already searching, and reach the ones who aren’t.</h4>
+<ol class="numlist"><li><strong>Connects to HOW it wins:</strong> <em class="q">“roofing CRM”</em> and <em class="q">“roofing software”</em> are active search categories where competitors rank and run paid search, while many small roofers are passive and have to be shown the product. PitchPro reaches both: outbound and a low-friction 15-day free trial for the roofer who isn’t looking, and a content and search layer for the roofer who is. This pillar tracks an open call in the Brief, the right push-and-capture mix, so treat the search investment as a test to run, not a settled budget [client to confirm before publication].</li><li><strong>The move (make the market see it):</strong> stand up roofing-specific content aimed at the searches buyers already make, and run a small paid-search test on <em class="q">“roofing CRM”</em> and <em class="q">“roofing software”</em> against an outbound test. Keep the 15-day free trial as the low-friction offer in both motions. Let cost-per-activated-trial decide the mix.</li><li><strong>What each team gets:</strong> marketing gets the content plan and the paid-search test brief. Sales gets the trial as the easy yes. Content gets the search-term map.</li></ol>
+<p>Five pillars, one platform: built roofing-native, run almost on its own, priced as one predictable bill, backed by a service relationship the operator can hold the company to, and put in front of every roofer whether they are searching or not.</p>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>3. Audience</h2>
+<p>The interviews surfaced one primary buyer, the <strong class="stat">$2</strong>-10M roofing contractor running the whole business himself, and a set of secondary seats around that buyer: the field crew who needs the work on a phone, the office or finance person who lives in QuickBooks, and the channel and reseller partners who carry the message. Each is a real seat at the same platform. The anchor gets the full profile. The others get compact blocks that point back to the unified truth. None is deleted because the strategy narrowed.</p>
+<h3>3.0 Ideal Customer Profile (the operating spec)</h3>
+<p>A spec an SDR or marketer can act on.</p>
+<p><strong>Ideal Account Profile</strong></p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Profile</th>
+<th>Firmographics</th>
+<th>Opportunity (the justification)</th>
+</tr></thead><tbody>
+<tr>
+<td>Core: the growing <strong class="stat">$2</strong>-10M roofer</td>
+<td><strong class="stat">$2</strong>-10M annual revenue; roughly 5-50 people counting subs; US; established and growing; already paying for several tools (a photo app, a measurement tool, a CRM, spreadsheets)</td>
+<td>The documented underserved band between cheap general tools and premium platforms that charge well over a thousand a month. They feel fragmentation pain daily and have budget, and no incumbent fully serves them. Highest-fit target now.</td>
+</tr>
+<tr>
+<td>Adjacent: the storm and insurance-restoration roofer</td>
+<td><strong class="stat">$2</strong>-10M roofer with heavy storm or insurance-restoration volume; estimators running many inspections a day in a surge</td>
+<td>Speed-to-proposal is the buying trigger here. PitchPro can win on the kitchen-table quote. Pursue carefully: the insurance photo report is <em class="q">“not carrier-approved,”</em> so lead with how fast the quote reaches the homeowner and keep carrier workflow out of the claim [client to confirm before publication].</td>
+</tr>
+<tr>
+<td>Watch: the sub-<strong class="stat">$2M</strong> solo or small operator</td>
+<td>Owner-operator below <strong class="stat">$2M</strong>, price-sensitive, often on free or near-free tools</td>
+<td>Real volume but the wrong fit today. The <strong class="stat">$399 </strong>floor and the no-free-tier stance cede this band. Track for an entry path later; do not target now.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Opportunity per profile.</strong> The core <strong class="stat">$2</strong>-10M roofer is the reason this list exists: a documented, underserved, budget-holding segment with daily fragmentation pain and no incumbent that fully fits. The storm and restoration roofer represents the highest-intent trigger in the category and a faster sales cycle, with the caveat above. The sub-<strong class="stat">$2M</strong> operator is named so the team knows to pass on it, not chase it.</p>
+<p><strong>Selection criterion (</strong><strong><em class="q">“</strong><strong>best</strong><strong>”</em></strong><strong> </strong><strong>= ?).</strong> A best customer is a <strong class="stat">$2</strong>-10M roofer who consolidates real tools into PitchPro and stays, because retention and expansion, not the lowest acquisition price, is what compounds toward recurring revenue. The best ones refer other roofers.</p>
+<p><strong>Buying-committee map</strong></p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Role</th>
+<th>Who they are</th>
+<th>The one message they need</th>
+</tr></thead><tbody>
+<tr>
+<td>User</td>
+<td>The owner himself, plus the office or estimating lead</td>
+<td><em class="q">“This runs the back office so you can run the roofs.”</em></td>
+</tr>
+<tr>
+<td>Economic buyer</td>
+<td>The owner or principal</td>
+<td><em class="q">“One predictable bill for your whole crew, no per-seat tax.”</em></td>
+</tr>
+<tr>
+<td>Blocker</td>
+<td>The person who set up the current tools, or the bookkeeper burned by a bad QuickBooks sync</td>
+<td><em class="q">“Clean two-way QuickBooks and a clean export if you ever leave.”</em></td>
+</tr>
+<tr>
+<td>Champion</td>
+<td>The office or operations person drowning in double entry</td>
+<td><em class="q">“Enter it once. It flows from lead to QuickBooks on its own.”</em></td>
+</tr>
+</tbody></table></div>
+<ol class="numlist"><li><strong>Negative ICP / disqualifiers.</strong> Pure price-shoppers who will choose a free tier. Solo operators below <strong class="stat">$2M</strong> with no budget. Enterprise roofers above 50-plus who need deep custom workflows beyond the Scale tier. Roofers who need carrier-approved insurance documentation today, since the report is <em class="q">“not carrier-approved.”</em> Buyers who want a fully proven, reference-heavy product right now, since PitchPro is pre-revenue.</li><li><strong>Most-valuable cut.</strong> The highest-expansion roofer is the <strong class="stat">$2</strong>-10M operator who starts at <strong class="stat">$399 </strong>and grows past 20 people into the <strong class="stat">$599 </strong>tier while consolidating more tools each quarter. That matches the <em class="q">“best customer”</em> rule above: retention and growth, not cheapest to acquire.</li><li><strong>Where to reach them.</strong> Roofing-specific search (<em class="q">“roofing CRM,”</em> <em class="q">“roofing software,”</em> <em class="q">“best roofing software”</em>), the roofing-software review and roundup pages, roofing trade groups and supplier networks, and direct outbound to <strong class="stat">$2</strong>-10M roofers running fragmented stacks. The 15-day free trial is the low-friction entry in every channel.</li></ol>
+<h3>3.1 Primary Persona: Danny, the $2-10M roofing owner</h3>
+<ul class="cues"><li><strong>Who they are:</strong> the owner of a roofing company doing <strong class="stat">$2</strong>-10M a year, running it himself off several tools that don’t talk to each other, tech-savvy enough to operate a desktop platform but not to build one, working mostly through subs paid by the job.</li><li><strong>Pain:</strong> every job lives in three or four places. The estimate is in one tool, the photos in another, the measurements in a PDF, the books in QuickBooks, and the data gets re-entered by hand. <em class="q">“I have to double enter everything OR use a completely different estimating suite…. which I would rather not do.”</em></li><li><strong>Job to be done:</strong> when he wins a job, he wants the lead, the quote, the photos, the schedule, and the invoice to live in one roofing-native place and flow to QuickBooks on their own, so he can run more roofs without hiring an office person to babysit software.</li><li><strong>Goal:</strong> stop being the integration glue between five apps. <em class="q">“I stay because I haven’t found anything else that integrates project management, crm and a calendar in one software.”</em></li><li><strong>How they fit the whole:</strong> he feels every pillar. He is who the platform is built for, the <strong class="stat">$2</strong>-10M roofer the source of truth names.</li></ul>
+<h3>3.2 Secondary Persona: the field crew lead</h3>
+<ul class="cues"><li><strong>Who they are:</strong> the foreman or crew lead working off a phone on the roof and in the truck.</li><li><strong>Job to be done:</strong> when he is on site, he wants the job details, photos, and next steps on his phone, so he never has to open a desktop browser in the field.</li><li><strong>The message that lands:</strong> <em class="q">“Built for the truck and the roof, not just the office desk.”</em></li><li><strong>Where to reach them:</strong> through the owner who buys, in the demo and onboarding where mobile shows up first.</li></ul>
+<h3>3.3 Secondary Persona: the office or finance lead</h3>
+<ul class="cues"><li><strong>Who they are:</strong> the office manager, bookkeeper, or accounts person who owns QuickBooks and the paperwork.</li><li><strong>Job to be done:</strong> when an estimate becomes a job and a job becomes an invoice, she wants it to sync to QuickBooks cleanly, so the books are right without manual reconciling.</li><li><strong>The message that lands:</strong> <em class="q">“Two-way QuickBooks that keeps your books right. Enter it once.”</em></li><li><strong>Where to reach them:</strong> in the demo’s QuickBooks segment and in onboarding email.</li></ul>
+<h3>3.4 Secondary Persona: the channel and reseller partner</h3>
+<ul class="cues"><li><strong>Who they are:</strong> a consultant, supplier, or software partner who could recommend or resell PitchPro to roofing contractors.</li><li><strong>Job to be done:</strong> when they put a tool in front of a roofer, they want a product their client will stay happy with and that they can stand behind on support, so the recommendation strengthens their own relationship.</li><li><strong>The message that lands:</strong> <em class="q">“One predictable platform your roofers will thank you for, with support that answers to the operator.”</em></li><li><strong>Where to reach them:</strong> roofing supplier networks, trade events, and direct partner outreach.</li></ul>
+<h2 class="sec" id="sec5"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>4. The Buyer’s Journey &amp; Internal Voice</h2>
+<p>The buyer’s internal voice at each stage, the questions they are actually asking.</p>
+<h4>Awareness (the roofer realizes the tool sprawl is the problem)</h4>
+<ul class="cues"><li><em class="q">“Sometimes, using multiple software applications, to try and get one job done can be frustrating.”</em></li></ul>
+<h4>Research (the roofer is actively looking for one system)</h4>
+<ul class="cues"><li><em class="q">“I haven’t found anything else that integrates project management, crm and a calendar in one software.”</em></li></ul>
+<h4>Evaluation (the roofer is comparing platforms)</h4>
+<ul class="cues"><li><em class="q">“Will it actually sync with my version of QuickBooks, or will it break my books like the last one?”</em></li></ul>
+<h4>Purchase (the roofer is weighing the logistics of switching)</h4>
+<ul class="cues"><li><em class="q">“How long until this is running? I do not have the extensive hours to get this going on top of my day to day.”</em></li></ul>
+<h4>Use &amp; Succeed (the roofer is getting value and wondering why they waited)</h4>
+<ul class="cues"><li><em class="q">“Why didn’t I do this before? I can see where every job is without touching a thing.”</em></li></ul>
+<h3>4.6 Trigger Events</h3>
+<p>The real-world moments that move a prospect between stages. Use them for retargeting, re-engagement, and lead scoring.</p>
+<ul class="cues"><li><em class="q">“I just paid another per-report fee and an add-on charge in the same week, and the bill keeps creeping.”</em></li><li><em class="q">“QuickBooks and my CRM disagreed again and I spent the afternoon fixing the books.”</em></li><li><em class="q">“My field guys are opening the desktop site on their phones because the mobile app barely works.”</em></li><li><em class="q">“I lost a storm job because a competitor handed the homeowner a proposal before I did.”</em></li><li><em class="q">“I tried to cancel a tool and got stuck, or got billed after I thought I cancelled.”</em></li><li><em class="q">“I hired my fifth person and the per-seat charges jumped again.”</em></li></ul>
+<h2 class="sec" id="sec6"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>5. Core Messaging Strategy</h2>
+<h3>5.1 Brand Promise</h3>
+<p>Run your whole roofing business from one place, from the first lead to the QuickBooks export, on a system built to all but run itself, for one predictable bill.</p>
+<h3>5.2 Golden Formula, One-Liners &amp; Taglines</h3>
+<p>Three finished options per slot, written fresh in the resolved voice.</p>
+<p><strong>The Golden Formula:</strong> [target audience] who want to [goal] but struggle with [hurdle]. PitchPro helps them by [solution], so they can [outcome].</p>
+<p><strong>Golden Formula populated per persona:</strong></p>
+<ul class="cues"><li><strong>Danny, the <strong class="stat">$2</strong>-10M roofing owner:</strong> <strong class="stat">$2</strong>-10M roofers who want to run the whole business from one place but struggle with five tools that don’t talk and constant double entry. PitchPro helps them by carrying the job from lead to QuickBooks on a roofing-native platform built to all but run itself, so they can run more roofs without babysitting software.</li><li><strong>The office or finance lead:</strong> office managers who want the books to be right but struggle with CRM-to-QuickBooks syncs that break. PitchPro helps them with clean two-way QuickBooks, so they enter it once and stop reconciling errors.</li><li><strong>The channel and reseller partner:</strong> partners who want to recommend a tool their roofers will stay happy with but struggle to stand behind support they don’t own. PitchPro helps them with one predictable platform and support that answers to the operator, so the recommendation strengthens their relationship.</li></ul>
+<p><strong>Primary Tagline, three finished options:</strong></p>
+<ul class="cues"><li><em class="q">“Run the roofs. We’ll run the rest.”</em> - Rationale: speaks to the owner’s real job and the runs-itself promise in five words.</li><li><em class="q">“One platform. Lead to QuickBooks. Built for roofers.”</em> - Rationale: names the workflow and the roofing-native fit without a superlative.</li><li><em class="q">“The roofing platform that almost runs itself.”</em> - Rationale: leads on the automation wedge; defensible once the demo is live.</li></ul>
+<p><strong>Recommended:</strong> Option 1, because it puts the operator’s job first and carries the relief payload, and it holds whether or not the full automation is demonstrable yet.</p>
+<p><strong>Supporting Taglines, three per surface:</strong></p>
+<p>Website hero: 1. <em class="q">“Five tools, one bill, zero double entry.”</em> 2. <em class="q">“From the first lead to the QuickBooks export, all in one place.”</em> 3. <em class="q">“Roofing software built for working contractors, priced by your crew.”</em></p>
+<p>Email signature and deck: 1. <em class="q">“PitchPro: the roofing operating system for the <strong class="stat">$2</strong>-10M contractor.”</em> 2. <em class="q">“One predictable bill. No per-seat tax. No add-on surprises.”</em> 3. <em class="q">“Built to all but run itself.”</em></p>
+<p class="listlead"><strong>Value Hook, three finished options:</strong> 1. <em class="q">“Enter it once. It flows from lead to QuickBooks on its own.”</em></p>
+<ul class="bul"><li>Rationale: the double-entry pain is the most-cited and most felt. 2. <em class="q">“One predictable bill for your whole crew, no per-seat tax.”</em></li><li>Rationale: the pricing wedge stated as predictability, not as cheapest. 3. <em class="q">“See where every job sits without touching a thing.”</em></li><li>Rationale: the auto-advancing whiteboard in the operator’s own terms.</li></ul>
+<h2 class="sec" id="sec7"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>6. Product &amp; Service Messaging</h2>
+<h3>6.1 The PitchPro platform</h3>
+<p>Built for the roofer who runs a <strong class="stat">$2</strong>-10M company off five tools that don’t talk to each other. He wins the job, then loses the afternoon moving the same information between a photo app, a measurement PDF, a CRM, and QuickBooks. PitchPro carries the whole job inside one roofing-native platform, from the first lead to the QuickBooks export, so he runs the business from one place and feels relief instead of overhead.</p>
+<h3>6.2 Core tools</h3>
+<ol class="numlist"><li><strong>The 15-second AI quote.</strong> Built for the estimator who is tired of transcribing a measurement report by hand. Drop in a Roofr or EagleView measurement PDF, and PitchPro reads the line items and the roof measurements and returns a priced draft quote, with the operator confirming before it ships. The AI flags its own confidence on the aerial measurement so the operator knows when to look twice.</li><li><strong>The auto-advancing project whiteboard.</strong> Built for the owner who wants to know where every job sits without chasing anyone. The whiteboard moves jobs along on its own, so the operator sees the state of the business with very little hands-on upkeep.</li><li><strong>The profitability calculator and quoting tools.</strong> Built for the roofer who runs through subcontractors paid by the job. The quoting and profitability tools already account for the sub-by-the-job model, so the numbers reflect how a <strong class="stat">$2</strong>-10M roofer actually works.</li><li><strong>Two-way QuickBooks.</strong> Built for the office lead burned by a sync that broke the books. The job carries through to a clean QuickBooks export, so the books stay right without manual reconciling. [client to confirm before publication: confirm the depth and direction of the QuickBooks sync that is live at launch.]</li><li><strong>The insurance photo report.</strong> Built for the roofer assembling documentation for an adjuster. It produces a PDF the adjuster works from. It is not carrier-approved or industry-certified, so position it as a documentation aid, never as a carrier-approved workflow.</li></ol>
+<h3>6.3 Feature-Benefit Set</h3>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Feature</th>
+<th>Functional Benefit</th>
+<th>Emotional Benefit (sample customer-voice)</th>
+<th>Buying-Committee Role</th>
+</tr></thead><tbody>
+<tr>
+<td>Lead-to-QuickBooks in one platform</td>
+<td>Enter information once; it carries through every stage</td>
+<td><em class="q">“I’m not the glue between five apps anymore.”</em></td>
+<td>Operator / Champion</td>
+</tr>
+<tr>
+<td>Auto-advancing project whiteboard</td>
+<td>See where every job sits without manual updating</td>
+<td><em class="q">“I can finally see the whole business at a glance.”</em></td>
+<td>Operator / Exec</td>
+</tr>
+<tr>
+<td>15-second AI quote from a measurement PDF</td>
+<td>Turn a measurement report into a priced draft in seconds</td>
+<td><em class="q">“I’m not retyping a report into my estimator at midnight.”</em></td>
+<td>Operator / Estimator</td>
+</tr>
+<tr>
+<td>Two-way QuickBooks sync</td>
+<td>Keep the books accurate without manual reconciling</td>
+<td><em class="q">“My bookkeeper isn’t fixing sync errors every week.”</em></td>
+<td>Finance / Blocker</td>
+</tr>
+<tr>
+<td>Profitability calculator built for sub-by-the-job</td>
+<td>Price jobs the way the business actually runs</td>
+<td><em class="q">“The numbers finally match how I pay my crews.”</em></td>
+<td>Operator / Finance</td>
+</tr>
+<tr>
+<td>Roofing-native workflow</td>
+<td>Use software that speaks squares, pitch, and waste factor</td>
+<td><em class="q">“It actually knows roofing. It speaks my language.”</em></td>
+<td>Operator / User</td>
+</tr>
+<tr>
+<td>Headcount-based flat pricing</td>
+<td>Predict the bill as the crew grows</td>
+<td><em class="q">“I’m not punished with a new charge every time I hire.”</em></td>
+<td>Economic buyer</td>
+</tr>
+<tr>
+<td>Mobile field access</td>
+<td>Work the job from a phone on the roof</td>
+<td><em class="q">“My guys aren’t opening the desktop site in the truck.”</em></td>
+<td>Field crew / User</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec8"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>7. Competitive Edge &amp; Differentiators</h2>
+<h3>7.1 Key Differentiators</h3>
+<ul class="cues"><li><strong>Roofing-native depth across the full workflow.</strong> PitchPro is built for the roofer’s actual job, the measurement PDF, the sub paid by the job, the supplier price, where generic field-service tools stay general. Roofers leave generic tools for exactly this reason.</li><li><strong>Built to all but run itself.</strong> The auto-advancing whiteboard and the 15-second AI quote are designed so the system carries the busywork and the operator confirms what matters. This is the wedge where competitors are thinnest and the bet PitchPro is making; confirm with a live demo.</li><li><strong>One predictable headcount-based bill.</strong> <strong class="stat">$399 </strong>for up to 20 employees, no per-seat tax, no add-on surprises, aimed at the <strong class="stat">$2</strong>-10M roofer worn down by stack-and-charge pricing. Win on predictability, not on being cheapest.</li><li><strong>A service relationship the operator can hold the company to.</strong> PitchPro is built to answer to the roofer, with clean data export and reachable support, against incumbents roofers describe as holding data hostage and going dark on support.</li></ul>
+<h3>7.2 Objection-Handling Library</h3>
+<p>Each Firm Response leads with the claim and ends in an operative verb. Each proof anchor is ledger-sourced or tagged for confirmation.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Objection (buyer voice, sample)</th>
+<th>Firm Response (resolved voice, sample)</th>
+<th>Proof Anchor</th>
+</tr></thead><tbody>
+<tr>
+<td><em class="q">“I only run a few trucks. Isn’t this built for bigger companies?”</em></td>
+<td><em class="q">“PitchPro is built for the <strong class="stat">$2</strong>-10M roofer, which is your band. Start at <strong class="stat">$399 </strong>for up to 20 people and grow into it. Start the free trial.”</em></td>
+<td>The <strong class="stat">$2</strong>-10M segment is the documented target; pricing starts at <strong class="stat">$399 </strong>for up to 20 employees.</td>
+</tr>
+<tr>
+<td><em class="q">“We slow way down in winter. I don’t want to pay year-round for software I barely touch in the off-season.”</em></td>
+<td><em class="q">“You pay one predictable bill by headcount, not per use, so the cost stays flat and known. Look at the off-season math with us before you decide.”</em></td>
+<td>Headcount-based flat pricing; no per-use or per-report metering. [client to confirm before publication: any seasonal pause or annual option.]</td>
+</tr>
+<tr>
+<td><em class="q">“Software always costs more than the sticker. What are the add-on fees?”</em></td>
+<td><em class="q">“There are no add-on surprises. One bill by crew size covers the platform. Run the net-cost comparison and see the real total.”</em></td>
+<td>Flat headcount pricing; roofers cite add-on resentment elsewhere: <em class="q">“Everything is an add-on… the bang for your buck is lessened.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“A competitor is cheaper to start, and even has a free tier.”</em></td>
+<td><em class="q">“We don’t compete on the lowest sticker. We compete on the lowest predictable total once reports and add-ons are counted. Compare the real monthly total.”</em></td>
+<td>Position on predictable total cost of ownership, never cheapest. [client to confirm before publication: net-cost result at the target report volume.]</td>
+</tr>
+<tr>
+<td><em class="q">“The last tool’s QuickBooks sync broke my books. Why trust yours?”</em></td>
+<td><em class="q">“PitchPro carries the job to a clean QuickBooks export so the books stay right. Test the sync in your free trial before you commit.”</em></td>
+<td>Roofers report broken syncs: <em class="q">“Sales tax does not sync properly with qbo!”</em> [client to confirm before publication: live sync depth at launch.]</td>
+</tr>
+<tr>
+<td><em class="q">“I got burned before. I tried to cancel and got stuck, then got billed after I thought I cancelled.”</em></td>
+<td><em class="q">“You can cancel as easily as you signed up, and you keep a clean export of your data. Read the cancellation terms before you start.”</em></td>
+<td>Roofers report data-hostage cancellations: <em class="q">“they hold their data hostage.”</em> Tie to the Compliance Guide on cancellation terms. [client to confirm before publication.]</td>
+</tr>
+<tr>
+<td><em class="q">“If I buy through a partner, who actually fixes things when they break?”</em></td>
+<td><em class="q">“Support answers to you, the operator, not a chain of handoffs. Ask your partner to put you straight in touch with us.”</em></td>
+<td>Roofers cite slow, unreachable support elsewhere: <em class="q">“I sat on hold for over an hour… who never even came to the line.”</em> [client to confirm before publication: partner support model.]</td>
+</tr>
+<tr>
+<td><em class="q">“You’re a small company. What happens when a bigger player buys you or you fold?”</em></td>
+<td><em class="q">“Your data is yours and exports cleanly whatever happens, and the platform is built to keep running with little upkeep. Start the trial and judge it on the product.”</em></td>
+<td>Clean data export commitment; roofers fear lock-in: <em class="q">“they hold their data hostage.”</em> [client to confirm before publication: data-portability commitment.]</td>
+</tr>
+<tr>
+<td><em class="q">“Setup took the last guys months. I don’t have the time.”</em></td>
+<td><em class="q">“PitchPro is built to run with very little hands-on upkeep, so getting going does not take a dedicated hire. Walk through onboarding in the demo.”</em></td>
+<td>Roofers describe brutal incumbent setup: <em class="q">“A very long and hard setup… Bring on someone just to set this up for you.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“My field crew hated the last mobile app and went back to the desktop site.”</em></td>
+<td><em class="q">“Build the job on a phone from the roof, not a desktop browser in the truck. See the mobile flow in the demo.”</em></td>
+<td>Roofers cite mobile failure: <em class="q">“our field guys have resorted to opening the desktop version on their browsers.”</em> [client to confirm before publication: mobile feature set at launch.]</td>
+</tr>
+<tr>
+<td><em class="q">“Can it really run itself, or is that just a slogan?”</em></td>
+<td><em class="q">“The whiteboard advances jobs on its own and the AI drafts the quote; you confirm the calls that matter. See it run live in the demo.”</em></td>
+<td>Auto-advancing whiteboard and 15-second AI quote are the named features; demo gates the claim. [client to confirm before publication: live demo.]</td>
+</tr>
+<tr>
+<td><em class="q">“You have no customers yet. Why would I be first?”</em></td>
+<td><em class="q">“You judge PitchPro on the product in a 15-day free trial, not on a logo wall. Try it on a real job before you commit a dollar.”</em></td>
+<td>PitchPro is pre-revenue; the 15-day free trial is the low-risk way in.</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec9"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>8. Brand Voice &amp; Personality</h2>
+<h3>8.1 Brand Essence</h3>
+<p>The roofing-native platform that carries the back-office load so a working contractor can run more roofs and feel relief instead of overhead.</p>
+<h3>8.2 Voice Archetype</h3>
+<p>The Primary Voice is the trusted buddy in the trade: a sharp, plain-spoken roofer who built the tool he wished he had and talks to other roofers the way one owner talks to another at the supply yard. He respects the operator’s intelligence and gets to the point, because the reader has roofs to run. He is warm and direct, and he never talks down.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>We Say (resolved-voice sample)</th>
+<th>We Do Not Say (the rejected generic register)</th>
+</tr></thead><tbody>
+<tr>
+<td><em class="q">“Run the roofs. We’ll run the rest.”</em></td>
+<td><em class="q">“Empowering contractors to unlock their full potential.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Enter it once. It flows to QuickBooks on its own.”</em></td>
+<td><em class="q">“A seamless, end-to-end workflow solution.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“One bill for your whole crew. No per-seat tax.”</em></td>
+<td><em class="q">“Flexible pricing tailored to your unique needs.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Built for roofing, down to squares, pitch, and waste factor.”</em></td>
+<td><em class="q">“A robust, all-in-one platform for the modern enterprise.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“See where every job sits without touching a thing.”</em></td>
+<td><em class="q">“Real-time visibility across your entire operation.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“You can cancel as easily as you signed up.”</em></td>
+<td><em class="q">“Customer-centric solutions that delight.”</em></td>
+</tr>
+<tr>
+<td><em class="q">“Drop the measurement PDF. Get a priced draft back.”</em></td>
+<td><em class="q">“Leverage AI to revolutionize your estimating.”</em></td>
+</tr>
+</tbody></table></div>
+<h4>Tone calibration</h4>
+<ul class="cues"><li><strong>Marketing, website, outbound:</strong> confident and plain, one clear claim at a time, the operator’s own words, no superlatives PitchPro cannot back.</li><li><strong>Sales, one to one:</strong> a peer at the supply yard, diagnose first with a real question, then show, then ask for the trial.</li><li><strong>Support, post-purchase:</strong> the trusted buddy who already simplified their life, calm, fast, and on the operator’s side.</li></ul>
+<h3>8.3 Personality</h3>
+<ul class="cues"><li><strong>Archetype:</strong> the Everyman with a streak of the Sage, a roofer who knows the trade and built the fix.</li><li><strong>Personality traits:</strong> plain-spoken, dependable, sharp, warm, no-nonsense.</li><li><strong>How they make others feel:</strong> like a buddy finally took the software headache off their plate and they can breathe.</li></ul>
+<h2 class="sec" id="sec10"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>9. Channel Application Examples</h2>
+<p>Fresh sample copy in the resolved voice for the surfaces teams ship most.</p>
+<h3>9.1 Sample Homepage Hero (three finished options)</h3>
+<ul class="bul deflist"><li><strong>Option A</strong> - H1: <em class="q">“Run the roofs. We’ll run the rest.”</em> - Sub-H1: <em class="q">“One roofing-native platform from the first lead to the QuickBooks export, built to all but run itself, for one predictable bill.”</em> - CTA: <em class="q">“Start free trial”</em> - Rationale: leads on the operator’s job and the relief payload; no superlative to disprove.</li><li><strong>Option B</strong> - H1: <em class="q">“Five tools, one bill, zero double entry.”</em> - Sub-H1: <em class="q">“PitchPro carries the whole job in one place for the <strong class="stat">$2</strong>-10M roofer, so you stop being the glue between apps.”</em> - CTA: <em class="q">“See it in action”</em> - Rationale: names the fragmentation pain and the consolidation fix in concrete terms.</li><li><strong>Option C</strong> - H1: <em class="q">“The roofing platform built for working contractors.”</em> - Sub-H1: <em class="q">“Lead to QuickBooks, priced by your crew, with no per-seat tax and no add-on surprises.”</em> - CTA: <em class="q">“Start free trial”</em> - Rationale: roofing-native plus the pricing wedge, both defensible today.</li></ul>
+<p><strong>Recommended:</strong> Option A, because it carries the source of truth and the runs-itself bet in one line and holds while the demo proves the automation.</p>
+<h3>9.2 Sample LinkedIn Ad Headlines (three per persona)</h3>
+<p>Danny, the <strong class="stat">$2</strong>-10M roofing owner: 1. <em class="q">“Stop being the glue between five apps.”</em> 2. <em class="q">“Run your whole roofing business from one place.”</em> 3. <em class="q">“Lead to QuickBooks. One platform. One bill.”</em></p>
+<p>The office or finance lead: 1. <em class="q">“Two-way QuickBooks that keeps your books right.”</em> 2. <em class="q">“Enter it once. Stop fixing sync errors.”</em> 3. <em class="q">“The end of double entry for your office.”</em></p>
+<p>The channel and reseller partner: 1. <em class="q">“Recommend a roofing platform they’ll thank you for.”</em> 2. <em class="q">“One predictable tool your roofers will stay on.”</em> 3. <em class="q">“Support that answers to the operator.”</em></p>
+<h3>9.3 Sample Cold-Email Openers (two per trigger event)</h3>
+<p>Trigger: another per-report fee and add-on charge in the same week. 1. <em class="q">“Saw your team is on a per-report measurement tool. Most <strong class="stat">$2</strong>-10M roofers we talk to are surprised when they add up the reports plus add-ons against one flat bill. Want the net-cost math on your volume?”</em> 2. <em class="q">“Quick question: how much of your software bill last month was add-ons and per-report fees you didn’t plan for? PitchPro is one predictable bill by crew size. Worth a look?”</em></p>
+<p>Trigger: QuickBooks and the CRM disagreed again. 1. <em class="q">“If your CRM and QuickBooks fought again this month, you’re not alone, it’s the most common complaint we hear from roofers. PitchPro carries the job to a clean QuickBooks export. Want to test the sync on a real job?”</em> 2. <em class="q">“Bookkeeper spending afternoons reconciling sync errors? That’s the exact problem PitchPro was built to kill. Open to a 15-second look?”</em></p>
+<p>Trigger: field crew opening the desktop site on their phones. 1. <em class="q">“If your field guys are opening the desktop site on their phones, the mobile app is failing them. PitchPro is built to work from the roof. Want to see the field flow?”</em> 2. <em class="q">“Heard this from a roofer last week: ‘my crew gave up on the mobile app.’ Is that you? Worth fifteen minutes to see how PitchPro handles the field.”</em></p>
+<p>Trigger: lost a storm job because a competitor proposed first. 1. <em class="q">“In a storm market, the roofer who hands over a proposal first usually wins. PitchPro turns a measurement PDF into a priced draft fast. Want to see the 15-second quote?”</em> 2. <em class="q">“If you’ve lost a storm job to whoever quoted first, speed is the whole game. PitchPro drafts the quote from your measurement report so you propose at the kitchen table. Quick demo?”</em></p>
+<p>Trigger: got stuck cancelling a tool or billed after cancelling. 1. <em class="q">“If you’ve ever fought to cancel software or got billed after you thought you were done, you’ll appreciate this: PitchPro lets you cancel as easily as you signed up and keeps a clean export of your data. Worth a look?”</em> 2. <em class="q">“Tired of software that holds your data hostage? PitchPro is built so your data is yours and the exit is clean. Open to seeing the platform?”</em></p>
+<p>Trigger: hired the fifth person and per-seat charges jumped. 1. <em class="q">“Hiring shouldn’t raise your software bill. PitchPro is one flat price by headcount, not per seat. Want the numbers for your crew size?”</em> 2. <em class="q">“If your last hire triggered another per-seat charge, here’s a different model: <strong class="stat">$399 </strong>covers up to 20 people, flat. Worth fifteen minutes?”</em></p>
+<h3>9.4 Sample Sales-Deck Cover Slide</h3>
+<ul class="cues"><li>Title: <em class="q">“Run the roofs. We’ll run the rest.”</em></li><li>Subtitle: <em class="q">“PitchPro: the roofing operating system for the <strong class="stat">$2</strong>-10M contractor.”</em></li><li>Recommended visual anchor: a single clean screen of the auto-advancing whiteboard showing several jobs in motion, signaling one place where the whole business lives. Not a stock photo of a roof.</li></ul>
+<h3>9.5 Sales Talk-Tracks (one per persona)</h3>
+<p class="listlead"><strong>Danny, the <strong class="stat">$2</strong>-10M roofing owner.</strong></p>
+<ul class="bul"><li>Diagnostic opener: <em class="q">“Walk me through what happens from the minute you win a job to the minute it hits your books. How many tools touch it?”</em></li><li>Reframe: <em class="q">“So the same job gets entered three or four times by hand. That re-entry is the tax you’re paying, and it’s exactly what PitchPro was built to remove.”</em></li><li>The move: show the lead-to-QuickBooks flow live, then start the free trial on one of his real jobs.</li></ul>
+<p class="listlead"><strong>The office or finance lead.</strong></p>
+<ul class="bul"><li>Diagnostic opener: <em class="q">“When an estimate becomes an invoice, how much of your week goes to fixing what didn’t sync to QuickBooks?”</em></li><li>Reframe: <em class="q">“That reconciling is unpaid work the software should be doing. Clean two-way QuickBooks means you enter it once.”</em></li><li>The move: demo the QuickBooks segment, then run a test sync in the trial.</li></ul>
+<p class="listlead"><strong>The channel and reseller partner.</strong></p>
+<ul class="bul"><li>Diagnostic opener: <em class="q">“When you recommend a tool to a roofer, what’s the thing most likely to come back on you afterward?”</em></li><li>Reframe: <em class="q">“Support and price creep are what damage the relationship. PitchPro is one predictable bill with support that answers to the operator, so the recommendation strengthens your standing.”</em></li><li>The move: set up a partner walkthrough and a shared trial for a client roofer.</li></ul>
+<h3>9.6 Customer-Success / Lifecycle Email Templates</h3>
+<ol class="numlist"><li><strong>Onboarding.</strong> Subject: Let’s get your first job running in PitchPro Hi [First Name], welcome aboard. Here’s the fastest path to value: bring in one active job, drop its measurement PDF into the quote tool, and watch the priced draft come back. Then connect QuickBooks so it flows on its own. Reply to this email anytime, a real person answers. Want a 15-minute setup call? [Booking link]</li><li><strong>Mid-term check-in.</strong> Subject: How’s the back office feeling, [First Name]? Hi [First Name], you’re [X] days into PitchPro. Most roofers tell us the moment it clicks is the first time they see every job on the whiteboard without touching a thing. Are you there yet? If anything still lives outside PitchPro, tell me what it is and I’ll show you how to bring it in. [Reply or booking link]</li><li><strong>Renewal (framed as continuation).</strong> Subject: Keep the roofs running, [First Name] Hi [First Name], your plan continues on [date] at [plan and price]. Nothing changes, same predictable bill for your crew, no per-seat surprises. If your team grew past [tier headcount], let’s make sure you’re on the right tier so the price still fits. Anything you’d like to get more out of before then? [Reply or booking link]</li></ol>
+<h2 class="sec" id="sec11"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>10. Banned-Word Glossary</h2>
+<p>In addition to the universal AI-tells bans, do not use any phrase below anywhere in PitchPro copy.</p>
+<div class="tbl-wrap"><table>
+<thead><tr>
+<th>Banned / Avoid</th>
+<th>Use Instead</th>
+<th>Why</th>
+</tr></thead><tbody>
+<tr>
+<td>The only all-in-one</td>
+<td>The roofing-native platform built to run itself for the <strong class="stat">$2</strong>-10M contractor</td>
+<td>The superlative is false the moment a buyer checks a funded rival, and it triggers a higher substantiation burden.</td>
+</tr>
+<tr>
+<td>Cheapest roofing software</td>
+<td>One predictable bill, no per-seat tax, no add-on surprises</td>
+<td>A rival is flat and cheaper at entry, so the win is predictable total cost. The sticker-price claim loses.</td>
+</tr>
+<tr>
+<td>Save up to [X]% / saves you thousands</td>
+<td>One bill by crew size instead of a stack of add-ons</td>
+<td>Unsubstantiated savings figures need a reasonable basis on file before they run.</td>
+</tr>
+<tr>
+<td>Carrier-approved insurance reports</td>
+<td>A documentation PDF the adjuster works from</td>
+<td>The report is self-disclosed as not carrier-approved; claiming otherwise is false.</td>
+</tr>
+<tr>
+<td>#1 roofing platform</td>
+<td>Built for the <strong class="stat">$2</strong>-10M roofer</td>
+<td>A ranking claim with no basis; pre-revenue, there is nothing to rank on.</td>
+</tr>
+<tr>
+<td>Fully automated / runs itself, no hands</td>
+<td>Built to all but run itself; you confirm the calls that matter</td>
+<td>The automation is unproven pre-revenue; an absolute claim overstates it.</td>
+</tr>
+<tr>
+<td>Enterprise-grade</td>
+<td>Built for working roofing contractors</td>
+<td>Enterprise-grade is decorative and wrong for the <strong class="stat">$2</strong>-10M band.</td>
+</tr>
+<tr>
+<td>Revolutionary / game-changing roofing software</td>
+<td>The roofing platform built to take the busywork off your plate</td>
+<td>Hype the reader discounts on sight; state the concrete benefit.</td>
+</tr>
+<tr>
+<td>Seamless integration</td>
+<td>Your job flows from lead to QuickBooks in one place</td>
+<td>Seamless is an empty intensifier; name what actually connects.</td>
+</tr>
+<tr>
+<td>Best-in-class support</td>
+<td>Support that answers to you, the operator</td>
+<td>A claim with no proof yet; state the commitment, not a ranking.</td>
+</tr>
+<tr>
+<td>Trusted by roofers everywhere</td>
+<td>Built by a roofer for the <strong class="stat">$2</strong>-10M contractor</td>
+<td>PitchPro is pre-revenue; a trust claim with no customers is false.</td>
+</tr>
+<tr>
+<td>Cutting-edge AI</td>
+<td>AI that drafts the quote from your measurement PDF</td>
+<td>Name the feature and what it does, not the buzzword.</td>
+</tr>
+<tr>
+<td>Effortless onboarding</td>
+<td>Built to run with very little hands-on upkeep</td>
+<td>Effortless overpromises; describe the low-upkeep reality plainly.</td>
+</tr>
+</tbody></table></div>
+<h2 class="sec" id="sec12"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>11. What Success Looks Like</h2>
+<p>Directional outcomes if the positioning lands. No metric targets, no dates.</p>
+<h3>First 90 Days</h3>
+<ul class="cues"><li><strong>The surfaces tell one true story.</strong> The homepage, the deck, and the outbound all say the same defensible thing: the roofing-native platform built to run itself for the <strong class="stat">$2</strong>-10M roofer. The <em class="q">“only all-in-one”</em> superlative is gone, the checkout takes real payment, and the demo runs. Leading indicator: count the public surfaces still carrying a banned phrase or placeholder content, and watch that count fall to zero.</li></ul>
+<h3>First Year</h3>
+<ul class="cues"><li><strong>A demonstrable spine and the first proof.</strong> The 15-second quote and the auto-advancing whiteboard can be shown live, the first trial roofers are activating, and the first named outcomes exist to quote in the next version of this copy. Leading indicator: count activated trial customers and the first service and consolidation stories as they accrue.</li></ul>
+<h3>Steady State</h3>
+<ul class="cues"><li><strong>A captured channel and a happy base.</strong> A defined share of new trials arrives from roofers who searched and found PitchPro, the renewal conversation reads as a continuation the roofer expects, and roofers describe the <em class="q">“why didn’t I do this before”</em> relief in their own words. Leading indicator: count trials sourced from organic and paid search, and the number of unprompted referrals from existing roofers.</li></ul>
+<h2 class="sec" id="sec13"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>12. Final Takeaways</h2>
+<ul class="cues"><li><strong>Takeaway 1:</strong> PitchPro is the roofing-native operating system for the <strong class="stat">$2</strong>-10M contractor, lead to QuickBooks, built to all but run itself.</li><li><strong>Takeaway 2:</strong> The edge is the unglamorous backbone done right: clean QuickBooks, real mobile, no add-on surprises.</li><li><strong>Takeaway 3:</strong> The customer outcome is relief, one place for the whole business and the room to run more roofs.</li><li><strong>Takeaway 4:</strong> The messaging centers the working <strong class="stat">$2</strong>-10M roofer who already pays for five tools that don’t talk.</li><li><strong>Takeaway 5:</strong> PitchPro wins on a predictable bill and a service the operator can hold the company to, and stays out of superlative and cheapest claims.</li></ul>
+<h2 class="sec" id="sec14"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12H4zM14 4v4h4M8 13h8M8 17h6"/></svg></span>Appendix A. Rationale for Targeting the $2-10M Roofer at $399 and Above</h2>
+<p>The decision most likely to draw a challenge is anchoring the brand on the <strong class="stat">$2</strong>-10M band at a <strong class="stat">$399 </strong>floor while declining the sub-<strong class="stat">$2M</strong> price-shopper and the free-tier funnel.</p>
+<ul class="cues"><li>The <strong class="stat">$2</strong>-10M band is documented as an underserved no-man’s-land, sitting between cheap general tools and premium platforms that charge well over a thousand a month for a full setup.</li><li>These roofers already spend real money on a fragmented stack, often over a thousand a month for a full software stack, so the budget exists and the pain is daily.</li><li>A funded rival already owns the lowest sticker and a free tier, so competing on cheapest is a margin war PitchPro loses; predictable total cost is the winnable frame.</li><li>The <strong class="stat">$399 </strong>floor covers up to 20 employees, which fits the staffing of a growing <strong class="stat">$2</strong>-10M roofer and gives an expansion path into the <strong class="stat">$599 </strong>and <strong class="stat">$999 </strong>tiers as the crew grows.</li><li>Whether <strong class="stat">$399 </strong>beats a rival’s net cost depends on a roofer’s real measurement-report volume, so the pricing claim ships as a sales-tool comparison, not a headline, until that volume is known [client to confirm before publication].</li></ul></main>
+ <footer class="foot"><span class="logo wordmark" style="font-size:13px;font-weight:800;letter-spacing:-.5px;color:#1A2A10">PitchPro</span></footer>
+</div></body></html>

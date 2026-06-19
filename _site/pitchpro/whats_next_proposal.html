@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PITCHPRO — What’s Next Proposal</title>
+<style>:root{--ink:#0C1E33;--brand:#1B4F8A;--brand2:#2E74B5;--accent:#E0A93B;
+--wash:#EFF3F7;--azwash:#E4EAF1;--line:#E2E8F0;--slate:#475569;
+--h2:#1B4F8A;--h3:#133761;--h4:#E0A93B;--boxbg:#E8EDF3;--boxborder:#A8BCD3;--boxlabel:#19497F;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo wordmark" style="font-size:27px;font-weight:800;letter-spacing:-.5px;color:#0C1E33">Fenn &amp; Hart</span><div class="kicker">PITCHPRO</div><h1>What’s Next Proposal</h1><div class="accentrule"></div><p class="tagline">The forward work that turns one source of truth into a launch the market can verify.</p><div class="meta">Prepared by Fenn &amp; Hart<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>0. The Commitment</h2>
+<p>The next phase takes PitchPro from a position on paper to a launch a buyer can verify. It operationalizes one choice: PitchPro is the roofing-native platform built to run itself for the <strong class="stat">$2</strong>-10M contractor, and every public surface, every sales tool, and the one data asset that could become a moat gets built to back that claim. The work below repairs the surfaces that contradict the position today, builds the demo and the net-cost tool that prove it, instruments the pricing and profitability data from the first quote, stands up the capture side of demand, and collects the first named customer outcomes the company has none of yet. Each move targets the same <strong class="stat">$2</strong>-10M roofing contractor defined in the messaging work: tech-savvy, running several disconnected tools, working mostly through per-job subcontractors.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg></span>1. Initiative Cards</h2>
+<h3>Initiative 1. Repair the public surfaces before any campaign runs</h3>
+<ol class="numlist"><li><strong>Confidence this is the right next move.</strong> 5/5. The fixes are fully inside PitchPro’s control and a campaign on broken surfaces burns its scarcest resource, first impressions.</li><li><strong>The Move.</strong> PitchPro takes the checkout out of test mode, replaces the placeholder demo page with a real walkthrough, and fills the empty About and blog pages before a single dollar of outreach runs.</li><li><strong>Why Now.</strong> A high-intent buyer who arrives at a checkout still reading <em class="q">“Test mode”</em> and a <em class="q">“Watch a demo”</em> button that lands on a broken placeholder leaves, and the new <em class="q">“built to run itself”</em> position reads as vaporware against a funded incumbent. This is the gate the pre-mortem puts on every other move: outreach cannot ship over surfaces that contradict the promise.</li><li><strong>Scope.</strong> Stripe moved into live mode with a working payment path. The /walkthrough page replaced with a recorded product tour. The /about page written and published. The /blog stood up and ready to hold content. A surface-by-surface sweep confirming no live page still carries <em class="q">“the only all-in-one.”</em></li></ol>
+<p><strong>Effort.</strong> 2/5.</p>
+<p><strong>Sequence note.</strong> Depends on nothing. This is the only move that needs no decision beyond go, and every campaign-facing initiative waits behind it.</p>
+<p><em>Do first. The surface repair gates all outreach. Until the checkout takes real payment and the demo runs, no demand-generation dollar should leave the building.</em></p>
+<h3>Initiative 2. Ship a working demo of the runs-itself product</h3>
+<ol class="numlist"><li><strong>The Move.</strong> PitchPro builds a live walkthrough of the 15-second AI quote and the auto-advancing whiteboard so the runs-itself promise can be shown rather than asserted.</li><li><strong>Scope.</strong> A recorded or live demo that runs the auto-advancing whiteboard end to end. A demo of the AI quote producing a priced estimate from a measurement PDF. A short set of trial-user message tests run against the demo, measuring whether automation-as-spine or speed-to-quote drives sign-up and activation. The activation read that decides which message leads the brand.</li><li><strong>Why Now.</strong> The spine of the brand leans on automation that cannot be demonstrated against a placeholder, and there are no customers to vouch for it. Alignment Point 1 leaves the fork open on purpose: lead on <em class="q">“runs itself”</em> only once it can be shown, and let speed-to-quote carry the headline until then. The demo is the artifact that closes that fork.</li><li><strong>Confidence this is the right next move.</strong> 4/5. The well-evidenced half is the operational backbone competitors fail at; the demo is what lets PitchPro claim the runs-itself half honestly.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Depends on the surfaces being live, since the demo replaces the placeholder page from Initiative 1.</p>
+<h3>Initiative 3. Instrument the pricing and profitability data from the first quote</h3>
+<ol class="numlist"><li><strong>Why Now.</strong> PitchPro has no proven moat today, and Roofr holds the live structural one through ABC Supply equity and the SRS Distribution price feed. The one candidate shaped like a moat is a proprietary roofing pricing and job-profitability dataset that compounds as quotes flow through it. The decision in Alignment Point 4 is whether the company captures and learns from every quote from day one, so the asset compounds instead of accumulating dead records.</li><li><strong>The Move.</strong> PitchPro instruments the AI quote engine to capture every quote’s pricing and realized job profitability from the first customer, building the dataset that could become the moat.</li><li><strong>Scope.</strong> Data capture wired into the quote-to-job flow so each quote’s inputs, price, and realized profitability are stored and queryable. A defined schema for the pricing and profitability records. The volume and accuracy targets that would prove the asset compounds, set with engineering. A held decision, with engineering, committing to capture from the first customer rather than retrofitting later.</li><li><strong>Confidence this is the right next move.</strong> 4/5. The moat itself is unproven, and instrumenting early costs almost nothing while it is the only way the asset ever starts.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Must be in place before the first customer transacts, so it runs alongside the demo and ahead of any customer onboarding.</p>
+<h3>Initiative 4. Build the net-cost comparison tool</h3>
+<ol class="numlist"><li><strong>The Move.</strong> PitchPro builds a net-cost comparison that models its flat <strong class="stat">$399 </strong>against Roofr’s net cost across low, medium, and high measurement-report volume, and ships it as a sales-enablement tool.</li><li><strong>Why Now.</strong> PitchPro wins on predictable total cost, never on being cheapest, because Roofr is flat with a permanent <strong class="stat">$0 </strong>tier and PitchPro’s <strong class="stat">$399 </strong>floor sits at the bottom of the stack it replaces. Alignment Point 3 leaves one number unresolved: whether flat <strong class="stat">$399 </strong>actually beats Roofr’s <strong class="stat">$349 </strong>plus per-report fees plus add-ons depends on the target roofer’s real report volume. The model resolves it and arms the sales conversation.</li><li><strong>Scope.</strong> A net-cost model that nets in measurement-report fees and add-ons rather than quoting a sticker price. Three usage bands, low, medium, and high report volume, each comparing PitchPro flat <strong class="stat">$399 </strong>against Roofr Scale plus reports plus needed add-ons. A confirmed read on the target customer’s real monthly report volume. A one-page comparison the founder can put in front of a prospect.</li><li><strong>Confidence this is the right next move.</strong> 4/5. The predictability frame holds regardless of the head-to-head outcome, and the tool both confirms the pricing story and equips the sale.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Depends on confirming the target customer’s report volume; can run in parallel with the demo and the data instrumentation.</p>
+<h3>Initiative 5. Stand up the capture side of demand and test the channel mix</h3>
+<ol class="numlist"><li><strong>The Move.</strong> PitchPro fills the blog with roofing-specific content targeting <em class="q">“roofing CRM”</em> and <em class="q">“roofing software,”</em> keeps the outbound push to the passive majority, and runs a small paid-search test against an outbound test to let cost-per-activated-trial decide the budget split.</li><li><strong>Why Now.</strong> <em class="q">“Roofing CRM”</em> and <em class="q">“roofing software”</em> are active search categories where competitors rank and run paid search, and PitchPro captures none of that demand because its blog returns an empty page. Alignment Point 5 keeps the push to the passive majority and adds a capture layer for the buyers already searching, then lets a head-to-head test set the mix.</li><li><strong>Scope.</strong> The blog filled with roofing-specific content built around the active search terms. A small paid-search test on <em class="q">“roofing CRM”</em> and <em class="q">“roofing software.”</em> A parallel outbound test to the passive majority, with the 15-day trial as the conversion offer. A cost-per-activated-trial comparison across the two channels that allocates budget to whichever wins.</li><li><strong>Confidence this is the right next move.</strong> 3/5. Active search demand is worth capturing cheaply, and the empty blog is a free asset bleeding traffic now. The budget split waits on the test.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> The blog fill depends on the surfaces being live. The paid-search test depends on the new headline copy and a working demo to send traffic to.</p>
+<h3>Initiative 6. Run the first-customer interview and case-study program</h3>
+<ol class="numlist"><li><strong>The Move.</strong> Once the first 15-day-trial customers convert, PitchPro runs a structured interview and story-collection program across them, producing the named outcomes, testimonials, and case studies the company has none of yet.</li><li><strong>Why Now.</strong> PitchPro is pre-revenue with no testimonials, no case studies, and no logo wall, and the public site carries no proof at all. The Brief commits the company to collecting the first named outcomes so the next version of the position can lead with proof instead of stating the case categorically. Securing the right to publish those outcomes starts in the trial-customer agreement, before any story exists.</li><li><strong>Scope.</strong> Testimonial-release language built into the first trial-customer agreements so outcomes are publishable the moment they exist. A set of custom interviews with the first converted trial customers, run to surface the lead-to-QuickBooks relief and the time recovered. Two to three published case studies with named outcomes. A short library of quotable testimonials for the site and sales use.</li><li><strong>Confidence this is the right next move.</strong> 4/5. Proof is the missing trust apparatus the whole position needs, and the program is honest forward work that produces it as soon as customers convert.</li></ol>
+<p><strong>Effort.</strong> 2/5.</p>
+<p><strong>Sequence note.</strong> The release language goes into agreements from the first trial. The interviews and case studies wait on trial customers converting.</p>
+<h3>Initiative 7. Open the supplier and data-relationship conversations</h3>
+<ol class="numlist"><li><strong>The Move.</strong> PitchPro opens conversations toward at least one defensible supplier or data relationship a new entrant could not assemble off the shelf, pursued in parallel with the build rather than as a gate on launch.</li><li><strong>Why Now.</strong> The data asset becomes a moat only when it pairs measurably sharper pricing recommendations with a relationship a rival cannot replicate, and Roofr already holds that kind of advantage through ABC Supply equity and the SRS feed across 430+ locations. The pre-mortem warns that any move built to wait on an outside yes can stall the launch, so these conversations start early and run beside the work PitchPro fully controls.</li><li><strong>Scope.</strong> A target list of suppliers and data partners whose relationship would be hard for a new entrant to assemble. Opening conversations with the strongest one or two. A read on what each relationship would require and what it would defend. A clear fallback: ship the launch on the surfaces, the predictable-cost position, and the captured demand PitchPro controls, so no single external yes can block it.</li><li><strong>Confidence this is the right next move.</strong> 3/5. The relationship is what would turn the data asset from a compounding dataset into a defended one, and starting early keeps it off the launch’s critical path.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Runs in parallel with the data instrumentation in Initiative 3; never gates the launch, which proceeds on the controlled surfaces regardless.</p>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>2. Sequencing</h2>
+<p>The initiatives order by dependency and impact, not by calendar.</p>
+<p>The surface repair runs first and alone. Initiative 1 gates every campaign-facing move, and it depends on nothing but a decision to go. Until the checkout takes real payment and the demo page resolves to a real walkthrough, the company holds outreach.</p>
+<p>Once the surfaces are live, three build moves run together: the working demo (Initiative 2), the data instrumentation (Initiative 3), and the net-cost tool (Initiative 4). The demo and the instrumentation both need to be ready before the first customer transacts, and the net-cost tool arms the sale that the demo opens. The supplier conversations (Initiative 7) run alongside this build, off the critical path, so the launch never waits on an outside yes.</p>
+<p>The capture layer (Initiative 5) follows the surface repair and the new headline copy, since it sends search traffic to pages that must already say the right thing and show a working demo. The first-customer interview and case-study program (Initiative 6) seeds its release language into the trial agreements from the start, then produces its proof once trial customers convert. The launch ships on the surfaces, the predictable-cost position, and the captured demand the company controls, so a stalled supplier conversation or a slow first conversion never blocks it.</p>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>3. What We Need From You</h2>
+<p>Each initiative needs a decision or an input from the leadership team to start.</p>
+<ul class="cues"><li><strong>Initiative 1, surface repair.</strong> A go decision and engineering time on the Stripe live-mode switch, the demo recording, and the About and blog pages. No further input needed beyond the resources.</li><li><strong>Initiative 2, the demo.</strong> A decision on whether to lead the brand on <em class="q">“built to run itself”</em> or let speed-to-quote carry the headline until the automation is demonstrable, settled by the trial-user tests. Engineering time to make the demo show-ready.</li><li><strong>Initiative 3, data instrumentation.</strong> A commitment from engineering to capture every quote’s pricing and realized profitability from the first customer, and the volume and accuracy targets that would prove the asset.</li><li><strong>Initiative 4, net-cost tool.</strong> The target customer’s real monthly measurement-report volume, the one number that decides whether flat <strong class="stat">$399 </strong>beats Roofr at the relevant usage.</li><li><strong>Initiative 5, capture and channel test.</strong> Approval of a small paid-search budget for the test and a decision to let cost-per-activated-trial set the eventual split.</li><li><strong>Initiative 6, interview and case-study program.</strong> Approval to put testimonial-release language into the first trial-customer agreements, and access to the first converted trial customers.</li><li><strong>Initiative 7, supplier and data relationships.</strong> The names of the suppliers and data partners worth approaching, and authority to open the conversations.</li></ul></main>
+ <footer class="foot"><span class="logo wordmark" style="font-size:13px;font-weight:800;letter-spacing:-.5px;color:#0C1E33">Fenn &amp; Hart</span></footer>
+</div></body></html>

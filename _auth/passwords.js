@@ -4,6 +4,7 @@ export const PASSWORDS = {
   "azuga": "ad23915b146dbec7a3be2ea785e0bf55032e33e501ba34a11181487ec25a113c",
   "demo": "8ad7d9dcb49893d10e4429c4b107bca23a1b27cc8ac27ebeabdccf8e9bd00c61",
   "nexqloud": "d41b71b9e4dc6f4749b8116e2a4c820ae933fa30b3a72b996cb8700a7f263177",
+  "pitchpro": "cf2e27c37b1f9f55de19865a8fa8660028fa448d246a80ef95e60c715aaefecc",
   "print-shop": "cda0bc4b27a85517af6770df5b2428f021a4aa685157f9fcbc122ddaf17628c0",
   "redx": "d81a8592d51bb085fb5bb76b54bd357153c24bd85141547ed6b30ad0a9b71797",
   "reverse-cavity": "3a7c17d6f32f8bf17176b3632a726c463314a95d3c81d189ec5bb53406de6843"
