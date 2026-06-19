@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPECIALIZED PROPERTY MANAGEMENT — What’s Next Proposal</title>
+<style>:root{--ink:#0B1A2B;--brand:#0E2A47;--brand2:#1F4E79;--accent:#C2A23B;
+--wash:#EEF0F2;--azwash:#E2E5E9;--line:#E2E8F0;--slate:#475569;
+--h2:#0E2A47;--h3:#0A1D32;--h4:#C2A23B;--boxbg:#E7EAED;--boxborder:#A3AEB9;--boxlabel:#0D2741;}
+*{box-sizing:border-box;}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{margin:0;background:#eceff3;color:var(--ink);font-family:'Inter','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.62;}
+.page{max-width:820px;margin:0 auto;background:#fff;}
+.bar{height:6px;display:flex;} .bar i{flex:1;}
+.bar .b1{background:var(--brand);} .bar .b2{background:var(--brand2);} .bar .b3{background:var(--accent);}
+.toolbar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 22px;}
+.navlink{color:var(--slate);text-decoration:none;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;}
+.navlink:hover{color:var(--brand);}
+.printbtn{background:var(--brand);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;}
+.printbtn:hover{filter:brightness(1.07);}
+.wrap{padding:0 64px 72px;}
+nav.toc{margin:30px 0 10px;padding:18px 24px;background:var(--wash);border:1px solid var(--line);border-radius:10px;}
+nav.toc h3{margin:0 0 8px;font-size:15px;font-weight:700;color:var(--brand);}
+nav.toc ol{margin:0;padding-left:22px;} nav.toc li{margin:5px 0;}
+nav.toc a{color:var(--ink);text-decoration:none;} nav.toc a:hover{color:var(--brand);text-decoration:underline;}
+.cover{padding:70px 64px 54px;border-bottom:1px solid var(--line);}
+.cover .logo{height:56px;margin-bottom:30px;}
+.cover .kicker{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:14px;}
+.cover h1{font-size:42px;line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.5px;color:var(--ink);}
+.cover .accentrule{width:64px;height:4px;background:var(--accent);margin:0 0 22px;}
+.cover .tagline{font-size:17px;color:var(--slate);max-width:60ch;margin:0 0 30px;line-height:1.5;}
+.cover .meta{font-size:13.5px;color:var(--slate);}
+h2.sec{font-size:24px;font-weight:800;letter-spacing:-.3px;margin:46px 0 6px;padding-top:18px;color:var(--h2);}
+h2.sec::after{content:"";display:block;width:46px;height:3px;background:var(--accent);margin-top:10px;}
+.secicon{display:inline-flex;width:32px;height:32px;border-radius:9px;background:var(--boxbg);border:1px solid var(--boxborder);color:var(--h2);align-items:center;justify-content:center;margin-right:12px;vertical-align:-7px;}
+.secicon svg{width:18px;height:18px;}
+h3{font-size:18.5px;font-weight:700;margin:30px 0 4px;color:var(--h3);}
+h4{font-size:15.5px;font-weight:700;margin:22px 0 2px;color:var(--h4);}
+p{margin:11px 0;} strong{font-weight:700;} .stat{font-weight:700;}
+.cite{color:var(--brand);font-size:.7em;font-weight:600;}
+a.cref{text-decoration:none;} a.cref sup{color:var(--brand);font-size:.7em;font-weight:700;} a.cref:hover sup{text-decoration:underline;}
+em.q{font-style:italic;}
+.listlead{margin:18px 0 4px;font-weight:700;color:var(--ink);}
+ul.bul{margin:4px 0 14px;padding-left:24px;} ul.bul li{margin:6px 0;padding-left:4px;} ul.bul li::marker{color:var(--brand);}
+ul.deflist li strong:first-child{color:var(--h4);}
+ul.cues{list-style:none;margin:8px 0 16px;padding:0;}
+ul.cues li{margin:6px 0;padding:8px 14px;border-left:3px solid var(--brand2);background:var(--wash);font-style:italic;color:#334155;border-radius:0 4px 4px 0;}
+ul.persp{list-style:none;margin:14px 0 18px;padding:0;}
+ul.persp li{margin:10px 0;padding:6px 0 6px 16px;border-left:3px solid var(--boxborder);}
+ul.persp li strong:first-child{color:var(--h3);}
+ol.numlist{margin:14px 0 18px;padding:0;counter-reset:nl;list-style:none;}
+ol.numlist li{position:relative;margin:10px 0;padding:2px 0 2px 42px;counter-increment:nl;}
+ol.numlist li::before{content:counter(nl);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--boxbg);color:var(--boxlabel);border:1px solid var(--boxborder);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+blockquote{margin:14px 0;padding:12px 18px;border-left:3px solid var(--accent);background:var(--wash);color:#334155;border-radius:0 4px 4px 0;}
+.callout{margin:22px 0;padding:18px 22px;background:var(--boxbg);border:1px solid var(--boxborder);border-radius:10px;font-size:15.5px;line-height:1.55;}
+.callout strong:first-child{color:var(--boxlabel);}
+.figcap{font-size:13px;color:var(--slate);margin:30px 0 4px;} .figcap strong{color:var(--accent);}
+figure.chart{margin:6px 0 26px;padding:20px 22px;border:1px solid var(--line);border-radius:10px;background:#fff;break-inside:avoid;page-break-inside:avoid;}
+figure.chart svg,figure.chart img{width:100%;height:auto;display:block;}
+.tbl-wrap{margin:18px 0 26px;overflow-x:auto;break-inside:avoid;}
+table{border-collapse:collapse;width:100%;font-size:13px;}
+thead th{background:var(--ink);color:#fff;font-weight:600;text-align:left;padding:10px 12px;vertical-align:top;}
+thead th.azcol{background:var(--brand);}
+tbody td{padding:9px 12px;vertical-align:top;border-bottom:1px solid var(--line);color:#1f2937;}
+tbody tr:nth-child(even) td{background:var(--wash);}
+td.azcol{background:var(--azwash)!important;font-weight:500;}
+ol.refs{margin:14px 0 10px;padding-left:34px;font-size:12.5px;color:var(--slate);line-height:1.55;}
+ol.refs li{margin:5px 0;padding-left:4px;} ol.refs li::marker{color:var(--brand);font-weight:600;}
+ol.refs li:target{background:var(--boxbg);border-radius:4px;}
+a.srclink{color:var(--brand);text-decoration:none;word-break:break-all;} a.srclink:hover{text-decoration:underline;}
+.foot{padding:18px 64px;border-top:1px solid var(--line);display:flex;align-items:center;}
+.foot .logo{height:22px;opacity:.5;}
+@media print{
+ body{background:#fff;font-size:10.6pt;line-height:1.5;}
+ .toolbar{display:none!important;} .page{max-width:none;margin:0;}
+ .cover{padding:0 0 30px;} .wrap{padding:0;} .foot{padding:14px 0;}
+ h2.sec{page-break-after:avoid;break-after:avoid;margin-top:26px;} h3,h4{page-break-after:avoid;break-after:avoid;}
+ figure.chart,.tbl-wrap,.callout{page-break-inside:avoid;break-inside:avoid;}
+ tr,td,th{page-break-inside:avoid;} thead{display:table-header-group;}
+ @page{margin:16mm 15mm;}
+}</style></head>
+<body><div class="page">
+ <div class="toolbar"><span class="brandmark"><a class="navlink" href="index.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>All reports</a></span>
+  <button class="printbtn" onclick="window.print()" aria-label="Print or save as PDF">
+   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+   Print / Save PDF</button></div>
+ <div class="bar"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+ <header class="cover"><span class="logo wordmark" style="font-size:27px;font-weight:800;letter-spacing:-.5px;color:#0B1A2B">Fenn &amp; Hart</span><div class="kicker">SPECIALIZED PROPERTY MANAGEMENT</div><h1>What’s Next Proposal</h1><div class="accentrule"></div><p class="tagline">The defined work that turns the unified position into something the DFW market can see and trust.</p><div class="meta">Prepared by [Author - to be filled]<br>June 2026</div></header>
+ <main class="wrap"><h2 class="sec" id="sec1"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>0. The Commitment</h2>
+<p>The next phase builds the trust apparatus and the proof the middle-band position rests on. Today the firm’s strongest claim, one named manager who actually picks up, is the same thing its own Dallas owners report is broken at 1.13 out of 5, and there is not yet a single named, releasable customer story to put against it. So the work runs in order: collect first-party customer evidence and stand up the proof surface, fix the service-delivery continuity the reviews name, then earn the right to amplify the relationship promise to the headline. Each initiative below carries a defined scope, a conviction rating on whether it is the right move, and an effort rating. They sequence by what each one depends on, not by a calendar.</p>
+<h2 class="sec" id="sec2"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg></span>1. Initiative Cards</h2>
+<h3>Initiative 1. The customer story and proof program</h3>
+<ol class="numlist"><li><strong>Do-first.</strong> This is the only initiative that starts on the firm’s own decision, and every claim the new positioning makes waits on the evidence it produces. Start it now; the rest of the plan is gated on it.</li><li><strong>The Move.</strong> We run AI-led custom interviews with the firm’s own owners and tenants and build the first library of named, releasable customer stories the brand has ever held.</li><li><strong>Why Now.</strong> The firm’s public review picture sits at 1.13 out of 5 across the Dallas BBB file, and there is no harvestable named testimonial anywhere on the surface to balance it. Every downstream claim, the middle-band fit, the named-steward promise, the satisfaction and retention figures, currently rests on executive characterization, with no customer on record saying it.</li><li><strong>Scope.</strong> Target the firm’s serious middle-band owners (the 5-50-door accounts) plus a tenant cross-section. The interviews confirm four things the executive transcripts could only assert: the buyer-versus-tenant split, the job-to-be-done timeline from first inquiry to signed management agreement, the win and loss forces at the switching moment, and the emotional registers owners actually use about relief, trust, and being left in the dark. The program produces named case studies with signed releases, pull-quote testimonials for the public surface, and a baseline NPS the firm can track against.</li><li><strong>Confidence this is the right next move.</strong> 5/5. The firm has zero first-party customer stories and a 1.13 public floor, so the trust apparatus is the highest-leverage thing to build and nothing downstream is credible without it.</li><li><strong>What would raise it.</strong> Nothing higher to reach; the first signed, releasable customer stories confirm the program landed.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Starts on the firm’s go-ahead and account list. Its outputs feed Initiatives 3, 4, 5, and 7.</p>
+<h3>Initiative 2. The owner-contact continuity turnaround</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We diagnose where account continuity breaks and stand up the named-owner-of-each-account model and response-time commitment the reviews say is missing.</li><li><strong>Why Now.</strong> Amplifying the relationship promise before the delivery is fixed would broadcast a say-do gap to the exact owners who already rate it 1.13 out of 5. The named-manager model is the firm’s spine, so the discipline is to make it true before claiming it louder.</li><li><strong>Scope.</strong> Audit owner-contact continuity end to end: average tenure of an owner’s assigned manager, and the share of inquiries a named person resolves against the share that dies in a queue. From the audit we define one stable named owner per account, write the guaranteed response-time standard, and set the transparent-fee disclosure. We then track a moving public-review trend as the proof the turnaround landed.</li><li><strong>Confidence this is the right next move.</strong> 5/5. The reviews name continuity and response time directly, the fix is operational work the audit defines, and the whole fix-then-claim sequence depends on it.</li><li><strong>What would raise it.</strong> Nothing higher to reach; a public-review trend moving off the 1.13 floor confirms the turnaround held.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> Runs alongside Initiative 1. The review-trend movement it produces is the precondition for Initiative 7.</p>
+<h3>Initiative 3. The middle-band repositioning</h3>
+<ul class="persp"><li><strong>Why this, and why now.</strong> Leadership points at three different target customers and the website points at a fourth, while the market structure settles it: <strong class="stat">89.6%</strong> of US single-family rentals sit with 1-to-5-door owners and institutions hold under <strong class="stat">5%</strong>, which defines a serious-but-not-institutional DFW middle band the firm already books and has never claimed.</li></ul>
+<ol class="numlist"><li><strong>The Move.</strong> We confirm the band against the firm’s own book, then write a door-count and owner-profile definition onto the homepage and the acquisition pages.</li><li><strong>Scope.</strong> Pull the client door-count distribution to settle which band the book actually occupies. If it skews to 5-50-door owners, the middle-band spine is confirmed and we write the explicit definition onto the customer-facing surface. If it skews single-door, we narrow the spine to the small serious owner and write that instead. Either way the surface stops addressing four audiences and names one.</li><li><strong>Confidence this is the right next move.</strong> 3/5. The underserved middle band is structurally real, but which band the firm actually occupies waits on its own door-count data, so this is a leaning call until the book confirms it.</li><li><strong>What would raise it.</strong> The firm’s own client door-count distribution showing the book skews to 5-50-door owners.</li></ol>
+<p><strong>Effort.</strong> 4/5.</p>
+<p><strong>Sequence note.</strong> The door-count pull can begin immediately; the customer-story evidence from Initiative 1 sharpens the owner-profile language before it goes onto the surface.</p>
+<h3>Initiative 4. The brand-voice ratification</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We confirm the warm-relief register the homepage already leans into and get leadership to ratify it as the single brand voice.</li><li><strong>Why Now.</strong> Three brand personalities live in the leadership team (seasoned authority, modern-tools innovation, best-friend warmth), and they resolve into one figure: a seasoned steward who uses modern tools to keep you personally cared for. The live homepage already leads with the warm-relief note. Leadership has to ratify the register the surface already uses.</li><li><strong>Scope.</strong> A voice audit of the live surface to confirm the warm-relief lean, a read of how the audience actually perceives the brand (a register the firm has no external evidence on yet), and a sign-off session where leadership ratifies warm-relief as the lead voice with authority and modern tools as supporting notes. The output is a one-page voice standard every writer works from.</li><li><strong>Confidence this is the right next move.</strong> 4/5. The synthesis figure is sound and the live voice already leans warm; the ratification step exists because no external audience read yet confirms the market hears it that way.</li><li><strong>What would raise it.</strong> An external read of how the audience actually perceives the brand, confirming the warm-relief register lands.</li></ol>
+<p><strong>Effort.</strong> 2/5.</p>
+<p><strong>Sequence note.</strong> The audience-perception read draws on the emotional registers surfaced in Initiative 1, so it sharpens once those interviews run.</p>
+<h3>Initiative 5. The two-track acquisition messaging build</h3>
+<p><strong>The Move.</strong> We build a slow-erosion nurture track and an acute-crisis-moment track so the firm reaches owners at both the priming stage and the trigger stage.</p>
+<p><strong>Why Now.</strong> Owners do not switch on one signal. Chronic communication failure primes an owner to leave, and a discrete eviction or vacancy event is the acute trigger that starts the search, so a single-trigger campaign misses half the funnel.</p>
+<p><strong>Scope.</strong></p>
+<ul class="cues"><li>A chronic-nurture sequence aimed at the slow erosion of trust, voiced for owners who are not yet looking.</li><li>An acute-trigger campaign timed to the eviction or vacancy moment, with Texas SB 38 as the dated eviction-complexity hook.</li><li>A budget split between the two tracks set from the firm’s owner switching-event data, once Initiative 1 measures how many owners arrive at a crisis moment versus after prolonged dissatisfaction.</li></ul>
+<p><strong>Confidence this is the right next move.</strong> 3/5. The chronic-primes-acute sequence is a reasonable read of how owners switch, drawn from inference until the firm’s own switching-event data confirms it.</p>
+<p><strong>What would raise it.</strong> Owner switching-event data showing what share of new clients arrive at a discrete eviction or vacancy moment versus after prolonged dissatisfaction.</p>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Depends on the ratified position (Initiatives 3 and 4) and the switching-event ratio from Initiative 1.</p>
+<h3>Initiative 6. The proof-backed speed claim</h3>
+<ul class="persp"><li><strong>Effort first, because it is light: 2/5.</strong> This work is gated behind a single condition and stays small.</li></ul>
+<ol class="numlist"><li><strong>The Move.</strong> We measure the firm’s own time-to-lease against the DFW benchmark once the owner dashboard ships, and publish a speed claim only if the number beats the norm.</li><li><strong>Why Now.</strong> Owner portals, screening, and analytics are off-the-shelf, competitors already ship comparable or better, and the firm’s headline dashboard is still forthcoming, so any speed or technology claim made today is contestable. The disciplined move is to gate the claim on a measured number.</li><li><strong>Scope.</strong> Once the dashboard ships, measure the firm’s own time-to-lease and hold it against the 27-to-31-day DFW leasing norm. If it clears, write the proof-backed speed line and position the dashboard as a tool in service of the named steward. If it does not clear, hold the claim and the technology copy stays in the supporting role.</li><li><strong>Confidence this is the right next move.</strong> 5/5. Gating the claim on a real number is the only way to make a technology or speed line defensible once it ships.</li><li><strong>What would raise it.</strong> Nothing higher to reach; a measured time-to-lease that beats the 27-to-31-day DFW norm turns the gate into a publishable claim.</li></ol>
+<p><strong>Effort.</strong> 2/5.</p>
+<p><strong>Sequence note.</strong> Gated on the dashboard shipping and the time-to-lease measurement; nothing else depends on it.</p>
+<h3>Initiative 7. The headline amplification of relationship accountability</h3>
+<ol class="numlist"><li><strong>The Move.</strong> We promote the named-steward promise to the lead reason-to-believe once the public-review trend moves off its current floor.</li><li><strong>Why Now.</strong> The relationship promise is the firm’s most resonant and most unanimous claim, and the moment the delivery turnaround shows in a moving review trend, it converts from a liability into the defensible headline the nationals will not staff and the mom-and-pops cannot match.</li><li><strong>Scope.</strong> When the public-review trend moves off 1.13 out of 5, rewrite the homepage hero around the named steward, promote the relationship promise from a supporting note to the lead, and back it with the named customer stories from Initiative 1 and the continuity proof from Initiative 2. This is the payoff the whole sequence is built toward.</li><li><strong>Confidence this is the right next move.</strong> 4/5. The promise is the firm’s strongest asset and the right eventual headline. The rating holds at 4 because the trigger is an earned review-trend movement the firm does not yet have.</li><li><strong>What would raise it.</strong> A public-review trend off the 1.13 floor with releasable customer stories on hand to back the headline.</li></ol>
+<p><strong>Effort.</strong> 3/5.</p>
+<p><strong>Sequence note.</strong> Holds until Initiative 2 moves the review trend and Initiative 1 supplies releasable stories. It ships last by design.</p>
+<h2 class="sec" id="sec3"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>2. Sequencing</h2>
+<p>The order follows what each initiative depends on, not a calendar.</p>
+<p>Initiatives 1 and 2 start first and run together. The customer story program collects the first-party evidence everything downstream needs, and the continuity turnaround fixes the delivery the new headline cannot honestly claim until it is true. These two carry the whole sequence.</p>
+<p>Initiatives 3 and 4 settle the position itself: the segment the brand anchors on and the voice it speaks in. The door-count pull in Initiative 3 can begin immediately, and both sharpen once the customer interviews surface the owner profile and the emotional registers.</p>
+<p>Initiative 5 builds the acquisition tracks on top of the settled position and the switching-event ratio. Initiative 6 sits on its own gate, the dashboard shipping and a measured time-to-lease, and waits there.</p>
+<p>Initiative 7 ships last by design. It promotes the relationship promise to the headline only after the review trend moves and the customer stories exist to back it.</p>
+<h2 class="sec" id="sec4"><span class="secicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>3. What We Need From You</h2>
+<p>Each initiative starts on a specific input or decision from the leadership team.</p>
+<ul class="cues"><li><strong>Initiative 1.</strong> A go-ahead and a target account list for the customer interviews (the 5-50-door owners and a tenant cross-section), plus authority to request testimonial releases.</li><li><strong>Initiative 2.</strong> Access to owner-contact records and manager-assignment history for the continuity audit, and a decision on the guaranteed response-time standard the firm will commit to publicly.</li><li><strong>Initiative 3.</strong> The firm’s client door-count distribution, and the fork decision it forces: if the book skews single-door, narrow the spine to the small serious owner; if it skews 5-50-door, commit to the middle band.</li><li><strong>Initiative 4.</strong> Leadership availability for the voice-ratification sign-off and confirmation that warm-relief leads with authority and modern tools as supporting notes.</li><li><strong>Initiative 5.</strong> Sign-off on running two coordinated acquisition tracks, a chronic-nurture track and an acute-trigger track, and the budget envelope to split between them.</li><li><strong>Initiative 6.</strong> The dashboard ship confirmation and access to the firm’s own time-to-lease data once it is measurable.</li><li><strong>Initiative 7.</strong> A standing decision to promote the relationship promise to the headline when the review trend clears its current floor, so the move ships the moment the condition is met.</li></ul></main>
+ <footer class="foot"><span class="logo wordmark" style="font-size:13px;font-weight:800;letter-spacing:-.5px;color:#0B1A2B">Fenn &amp; Hart</span></footer>
+</div></body></html>
